@@ -32,13 +32,6 @@ public class Pipeline {
 		this._genVersion = genVersion;
 	}
 
-    /**
-     * Continue a pipeline
-     * Continue a pipeline from the setup phase.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.ContinuePipelineResponse continuePipeline(DrevOps.CircleCi.models.operations.ContinuePipelineRequestBody request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(baseUrl, "/pipeline/continue");
@@ -80,13 +73,6 @@ public class Pipeline {
         return res;
     }
 
-    /**
-     * Get a pipeline by ID
-     * Returns a pipeline by the pipeline ID.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.GetPipelineByIdResponse getPipelineById(DrevOps.CircleCi.models.operations.GetPipelineByIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetPipelineByIdRequest.class, baseUrl, "/pipeline/{pipeline-id}", request, null);
@@ -126,13 +112,6 @@ public class Pipeline {
         return res;
     }
 
-    /**
-     * Get a pipeline by pipeline number
-     * Returns a pipeline by the pipeline number.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.GetPipelineByNumberResponse getPipelineByNumber(DrevOps.CircleCi.models.operations.GetPipelineByNumberRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetPipelineByNumberRequest.class, baseUrl, "/project/{project-slug}/pipeline/{pipeline-number}", request, null);
@@ -172,13 +151,6 @@ public class Pipeline {
         return res;
     }
 
-    /**
-     * Get a pipeline's configuration
-     * Returns a pipeline's configuration by ID.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.GetPipelineConfigByIdResponse getPipelineConfigById(DrevOps.CircleCi.models.operations.GetPipelineConfigByIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetPipelineConfigByIdRequest.class, baseUrl, "/pipeline/{pipeline-id}/config", request, null);
@@ -218,13 +190,6 @@ public class Pipeline {
         return res;
     }
 
-    /**
-     * Get your pipelines
-     * Returns a sequence of all pipelines for this project triggered by the user.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.ListMyPipelinesResponse listMyPipelines(DrevOps.CircleCi.models.operations.ListMyPipelinesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ListMyPipelinesRequest.class, baseUrl, "/project/{project-slug}/pipeline/mine", request, null);
@@ -270,13 +235,6 @@ public class Pipeline {
         return res;
     }
 
-    /**
-     * Get a list of pipelines
-     * Returns all pipelines for the most recently built projects (max 250) you follow in an organization.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.ListPipelinesResponse listPipelines(DrevOps.CircleCi.models.operations.ListPipelinesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(baseUrl, "/pipeline");
@@ -322,13 +280,6 @@ public class Pipeline {
         return res;
     }
 
-    /**
-     * Get all pipelines
-     * Returns all pipelines for this project.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.ListPipelinesForProjectResponse listPipelinesForProject(DrevOps.CircleCi.models.operations.ListPipelinesForProjectRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ListPipelinesForProjectRequest.class, baseUrl, "/project/{project-slug}/pipeline", request, null);
@@ -374,13 +325,6 @@ public class Pipeline {
         return res;
     }
 
-    /**
-     * Get a pipeline's workflows
-     * Returns a paginated list of workflows by pipeline ID.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.ListWorkflowsByPipelineIdResponse listWorkflowsByPipelineId(DrevOps.CircleCi.models.operations.ListWorkflowsByPipelineIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ListWorkflowsByPipelineIdRequest.class, baseUrl, "/pipeline/{pipeline-id}/workflow", request, null);
@@ -426,13 +370,6 @@ public class Pipeline {
         return res;
     }
 
-    /**
-     * Trigger a new pipeline
-     * Triggers a new pipeline on the project.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.TriggerPipelineResponse triggerPipeline(DrevOps.CircleCi.models.operations.TriggerPipelineRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.TriggerPipelineRequest.class, baseUrl, "/project/{project-slug}/pipeline", request, null);

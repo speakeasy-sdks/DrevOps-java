@@ -32,13 +32,6 @@ public class Context {
 		this._genVersion = genVersion;
 	}
 
-    /**
-     * Add or update an environment variable
-     * Create or update an environment variable within a context. Returns information about the environment variable, not including its value.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.AddEnvironmentVariableToContextResponse addEnvironmentVariableToContext(DrevOps.CircleCi.models.operations.AddEnvironmentVariableToContextRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.AddEnvironmentVariableToContextRequest.class, baseUrl, "/context/{context-id}/environment-variable/{env-var-name}", request, null);
@@ -80,12 +73,6 @@ public class Context {
         return res;
     }
 
-    /**
-     * Create a new context
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.CreateContextResponse createContext(DrevOps.CircleCi.models.operations.CreateContextRequestBody request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(baseUrl, "/context");
@@ -127,12 +114,6 @@ public class Context {
         return res;
     }
 
-    /**
-     * Delete a context
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.DeleteContextResponse deleteContext(DrevOps.CircleCi.models.operations.DeleteContextRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.DeleteContextRequest.class, baseUrl, "/context/{context-id}", request, null);
@@ -172,13 +153,6 @@ public class Context {
         return res;
     }
 
-    /**
-     * Remove an environment variable
-     * Delete an environment variable from a context.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.DeleteEnvironmentVariableFromContextResponse deleteEnvironmentVariableFromContext(DrevOps.CircleCi.models.operations.DeleteEnvironmentVariableFromContextRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.DeleteEnvironmentVariableFromContextRequest.class, baseUrl, "/context/{context-id}/environment-variable/{env-var-name}", request, null);
@@ -218,13 +192,6 @@ public class Context {
         return res;
     }
 
-    /**
-     * Get a context
-     * Returns basic information about a context.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.GetContextResponse getContext(DrevOps.CircleCi.models.operations.GetContextRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetContextRequest.class, baseUrl, "/context/{context-id}", request, null);
@@ -264,13 +231,6 @@ public class Context {
         return res;
     }
 
-    /**
-     * List contexts
-     * List all contexts for an owner.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.ListContextsResponse listContexts(DrevOps.CircleCi.models.operations.ListContextsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(baseUrl, "/context");
@@ -316,13 +276,6 @@ public class Context {
         return res;
     }
 
-    /**
-     * List environment variables
-     * List information about environment variables in a context, not including their values.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.ListEnvironmentVariablesFromContextResponse listEnvironmentVariablesFromContext(DrevOps.CircleCi.models.operations.ListEnvironmentVariablesFromContextRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ListEnvironmentVariablesFromContextRequest.class, baseUrl, "/context/{context-id}/environment-variable", request, null);

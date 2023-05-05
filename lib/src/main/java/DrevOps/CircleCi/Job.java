@@ -30,13 +30,6 @@ public class Job {
 		this._genVersion = genVersion;
 	}
 
-    /**
-     * Cancel job
-     * Cancel job with a given job number.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.CancelJobResponse cancelJob(DrevOps.CircleCi.models.operations.CancelJobRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.CancelJobRequest.class, baseUrl, "/project/{project-slug}/job/{job-number}/cancel", request, null);
@@ -76,13 +69,6 @@ public class Job {
         return res;
     }
 
-    /**
-     * Get a job's artifacts
-     * Returns a job's artifacts.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.GetJobArtifactsResponse getJobArtifacts(DrevOps.CircleCi.models.operations.GetJobArtifactsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetJobArtifactsRequest.class, baseUrl, "/project/{project-slug}/{job-number}/artifacts", request, null);
@@ -122,13 +108,6 @@ public class Job {
         return res;
     }
 
-    /**
-     * Get job details
-     * Returns job details.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.GetJobDetailsResponse getJobDetails(DrevOps.CircleCi.models.operations.GetJobDetailsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetJobDetailsRequest.class, baseUrl, "/project/{project-slug}/job/{job-number}", request, null);
@@ -168,13 +147,6 @@ public class Job {
         return res;
     }
 
-    /**
-     * Get test metadata
-     * Get test metadata for a build. In the rare case where there is more than 250MB of test data on the job, no results will be returned.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.GetTestsResponse getTests(DrevOps.CircleCi.models.operations.GetTestsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetTestsRequest.class, baseUrl, "/project/{project-slug}/{job-number}/tests", request, null);

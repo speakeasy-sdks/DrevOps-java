@@ -32,12 +32,6 @@ public class Webhook {
 		this._genVersion = genVersion;
 	}
 
-    /**
-     * Create a webhook
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.CreateWebhookResponse createWebhook(DrevOps.CircleCi.models.operations.CreateWebhookRequestBody request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(baseUrl, "/webhook");
@@ -79,12 +73,6 @@ public class Webhook {
         return res;
     }
 
-    /**
-     * Delete a webhook
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.DeleteWebhookResponse deleteWebhook(DrevOps.CircleCi.models.operations.DeleteWebhookRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.DeleteWebhookRequest.class, baseUrl, "/webhook/{webhook-id}", request, null);
@@ -124,13 +112,6 @@ public class Webhook {
         return res;
     }
 
-    /**
-     * Get a webhook
-     * Get a webhook by id.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.GetWebhookByIdResponse getWebhookById(DrevOps.CircleCi.models.operations.GetWebhookByIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetWebhookByIdRequest.class, baseUrl, "/webhook/{webhook-id}", request, null);
@@ -170,13 +151,6 @@ public class Webhook {
         return res;
     }
 
-    /**
-     * List webhooks
-     * Get a list of webhook that match the given scope-type and scope-id
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.GetWebhooksResponse getWebhooks(DrevOps.CircleCi.models.operations.GetWebhooksRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(baseUrl, "/webhook");
@@ -222,12 +196,6 @@ public class Webhook {
         return res;
     }
 
-    /**
-     * Update a webhook
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.UpdateWebhookResponse updateWebhook(DrevOps.CircleCi.models.operations.UpdateWebhookRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.UpdateWebhookRequest.class, baseUrl, "/webhook/{webhook-id}", request, null);

@@ -31,13 +31,6 @@ public class Project {
 		this._genVersion = genVersion;
 	}
 
-    /**
-     * Create a new checkout key
-     * Creates a new checkout key. This API request is only usable with a user API token.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.CreateCheckoutKeyResponse createCheckoutKey(DrevOps.CircleCi.models.operations.CreateCheckoutKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.CreateCheckoutKeyRequest.class, baseUrl, "/project/{project-slug}/checkout-key", request, null);
@@ -79,13 +72,6 @@ public class Project {
         return res;
     }
 
-    /**
-     * Create an environment variable
-     * Creates a new environment variable.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.CreateEnvVarResponse createEnvVar(DrevOps.CircleCi.models.operations.CreateEnvVarRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.CreateEnvVarRequest.class, baseUrl, "/project/{project-slug}/envvar", request, null);
@@ -127,13 +113,6 @@ public class Project {
         return res;
     }
 
-    /**
-     * Delete a checkout key
-     * Deletes the checkout key.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.DeleteCheckoutKeyResponse deleteCheckoutKey(DrevOps.CircleCi.models.operations.DeleteCheckoutKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.DeleteCheckoutKeyRequest.class, baseUrl, "/project/{project-slug}/checkout-key/{fingerprint}", request, null);
@@ -173,13 +152,6 @@ public class Project {
         return res;
     }
 
-    /**
-     * Delete an environment variable
-     * Deletes the environment variable named :name.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.DeleteEnvVarResponse deleteEnvVar(DrevOps.CircleCi.models.operations.DeleteEnvVarRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.DeleteEnvVarRequest.class, baseUrl, "/project/{project-slug}/envvar/{name}", request, null);
@@ -219,13 +191,6 @@ public class Project {
         return res;
     }
 
-    /**
-     * Get a checkout key
-     * Returns an individual checkout key.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.GetCheckoutKeyResponse getCheckoutKey(DrevOps.CircleCi.models.operations.GetCheckoutKeyRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetCheckoutKeyRequest.class, baseUrl, "/project/{project-slug}/checkout-key/{fingerprint}", request, null);
@@ -265,13 +230,6 @@ public class Project {
         return res;
     }
 
-    /**
-     * Get a masked environment variable
-     * Returns the masked value of environment variable :name.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.GetEnvVarResponse getEnvVar(DrevOps.CircleCi.models.operations.GetEnvVarRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetEnvVarRequest.class, baseUrl, "/project/{project-slug}/envvar/{name}", request, null);
@@ -311,13 +269,6 @@ public class Project {
         return res;
     }
 
-    /**
-     * Get a project
-     * Retrieves a project by project slug.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.GetProjectBySlugResponse getProjectBySlug(DrevOps.CircleCi.models.operations.GetProjectBySlugRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetProjectBySlugRequest.class, baseUrl, "/project/{project-slug}", request, null);
@@ -357,13 +308,6 @@ public class Project {
         return res;
     }
 
-    /**
-     * Get all checkout keys
-     * Returns a sequence of checkout keys for `:project`.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.ListCheckoutKeysResponse listCheckoutKeys(DrevOps.CircleCi.models.operations.ListCheckoutKeysRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ListCheckoutKeysRequest.class, baseUrl, "/project/{project-slug}/checkout-key", request, null);
@@ -403,13 +347,6 @@ public class Project {
         return res;
     }
 
-    /**
-     * List all environment variables
-     * Returns four 'x' characters, in addition to the last four ASCII characters of the value, consistent with the display of environment variable values on the CircleCI website.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.ListEnvVarsResponse listEnvVars(DrevOps.CircleCi.models.operations.ListEnvVarsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ListEnvVarsRequest.class, baseUrl, "/project/{project-slug}/envvar", request, null);

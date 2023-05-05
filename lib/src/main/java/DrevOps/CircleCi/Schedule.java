@@ -32,13 +32,6 @@ public class Schedule {
 		this._genVersion = genVersion;
 	}
 
-    /**
-     * Create a schedule
-     * Creates a schedule and returns the created schedule.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.CreateScheduleResponse createSchedule(DrevOps.CircleCi.models.operations.CreateScheduleRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.CreateScheduleRequest.class, baseUrl, "/project/{project-slug}/schedule", request, null);
@@ -80,13 +73,6 @@ public class Schedule {
         return res;
     }
 
-    /**
-     * Delete a schedule
-     * Deletes the schedule by id.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.DeleteScheduleByIdResponse deleteScheduleById(DrevOps.CircleCi.models.operations.DeleteScheduleByIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.DeleteScheduleByIdRequest.class, baseUrl, "/schedule/{schedule-id}", request, null);
@@ -126,13 +112,6 @@ public class Schedule {
         return res;
     }
 
-    /**
-     * Get a schedule
-     * Get a schedule by id.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.GetScheduleByIdResponse getScheduleById(DrevOps.CircleCi.models.operations.GetScheduleByIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetScheduleByIdRequest.class, baseUrl, "/schedule/{schedule-id}", request, null);
@@ -172,13 +151,6 @@ public class Schedule {
         return res;
     }
 
-    /**
-     * Get all schedules
-     * Returns all schedules for this project.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.ListSchedulesForProjectResponse listSchedulesForProject(DrevOps.CircleCi.models.operations.ListSchedulesForProjectRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ListSchedulesForProjectRequest.class, baseUrl, "/project/{project-slug}/schedule", request, null);
@@ -224,13 +196,6 @@ public class Schedule {
         return res;
     }
 
-    /**
-     * Update a schedule
-     * Updates a schedule and returns the updated schedule.
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public DrevOps.CircleCi.models.operations.UpdateScheduleResponse updateSchedule(DrevOps.CircleCi.models.operations.UpdateScheduleRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.UpdateScheduleRequest.class, baseUrl, "/schedule/{schedule-id}", request, null);
