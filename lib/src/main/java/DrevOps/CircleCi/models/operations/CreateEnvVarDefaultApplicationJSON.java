@@ -15,6 +15,7 @@ public class CreateEnvVarDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public CreateEnvVarDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

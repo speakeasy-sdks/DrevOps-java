@@ -15,6 +15,7 @@ public class DeleteContextMessageResponse {
      */
     @JsonProperty("message")
     public String message;
+
     public DeleteContextMessageResponse withMessage(String message) {
         this.message = message;
         return this;

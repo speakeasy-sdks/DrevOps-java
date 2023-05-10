@@ -13,6 +13,7 @@ public class ListCheckoutKeysRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public ListCheckoutKeysRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;

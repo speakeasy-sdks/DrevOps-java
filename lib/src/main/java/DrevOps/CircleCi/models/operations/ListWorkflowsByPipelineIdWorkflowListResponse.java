@@ -15,6 +15,7 @@ public class ListWorkflowsByPipelineIdWorkflowListResponse {
      */
     @JsonProperty("items")
     public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow[] items;
+
     public ListWorkflowsByPipelineIdWorkflowListResponse withItems(ListWorkflowsByPipelineIdWorkflowListResponseWorkflow[] items) {
         this.items = items;
         return this;
@@ -25,6 +26,7 @@ public class ListWorkflowsByPipelineIdWorkflowListResponse {
      */
     @JsonProperty("next_page_token")
     public String nextPageToken;
+
     public ListWorkflowsByPipelineIdWorkflowListResponse withNextPageToken(String nextPageToken) {
         this.nextPageToken = nextPageToken;
         return this;

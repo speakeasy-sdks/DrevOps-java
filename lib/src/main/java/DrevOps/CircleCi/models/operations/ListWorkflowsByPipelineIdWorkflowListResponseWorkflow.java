@@ -20,6 +20,7 @@ public class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("canceled_by")
     public String canceledBy;
+
     public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow withCanceledBy(String canceledBy) {
         this.canceledBy = canceledBy;
         return this;
@@ -32,6 +33,7 @@ public class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created_at")
     public OffsetDateTime createdAt;
+
     public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -40,6 +42,7 @@ public class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("errored_by")
     public String erroredBy;
+
     public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow withErroredBy(String erroredBy) {
         this.erroredBy = erroredBy;
         return this;
@@ -50,6 +53,7 @@ public class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow {
      */
     @JsonProperty("id")
     public String id;
+
     public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow withId(String id) {
         this.id = id;
         return this;
@@ -60,6 +64,7 @@ public class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow {
      */
     @JsonProperty("name")
     public String name;
+
     public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow withName(String name) {
         this.name = name;
         return this;
@@ -70,6 +75,7 @@ public class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow {
      */
     @JsonProperty("pipeline_id")
     public String pipelineId;
+
     public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow withPipelineId(String pipelineId) {
         this.pipelineId = pipelineId;
         return this;
@@ -80,6 +86,7 @@ public class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow {
      */
     @JsonProperty("pipeline_number")
     public Long pipelineNumber;
+
     public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow withPipelineNumber(Long pipelineNumber) {
         this.pipelineNumber = pipelineNumber;
         return this;
@@ -90,6 +97,7 @@ public class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow {
      */
     @JsonProperty("project_slug")
     public String projectSlug;
+
     public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;
@@ -97,6 +105,7 @@ public class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow {
     
     @JsonProperty("started_by")
     public String startedBy;
+
     public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow withStartedBy(String startedBy) {
         this.startedBy = startedBy;
         return this;
@@ -107,6 +116,7 @@ public class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow {
      */
     @JsonProperty("status")
     public ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatusEnum status;
+
     public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow withStatus(ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatusEnum status) {
         this.status = status;
         return this;
@@ -119,6 +129,7 @@ public class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("stopped_at")
     public OffsetDateTime stoppedAt;
+
     public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow withStoppedAt(OffsetDateTime stoppedAt) {
         this.stoppedAt = stoppedAt;
         return this;
@@ -130,6 +141,7 @@ public class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tag")
     public ListWorkflowsByPipelineIdWorkflowListResponseWorkflowTagEnum tag;
+
     public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow withTag(ListWorkflowsByPipelineIdWorkflowListResponseWorkflowTagEnum tag) {
         this.tag = tag;
         return this;

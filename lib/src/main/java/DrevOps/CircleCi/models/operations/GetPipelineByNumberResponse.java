@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetPipelineByNumberResponse {
     
     public String contentType;
+
     public GetPipelineByNumberResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class GetPipelineByNumberResponse {
      */
     
     public GetPipelineByNumberPipeline pipeline;
+
     public GetPipelineByNumberResponse withPipeline(GetPipelineByNumberPipeline pipeline) {
         this.pipeline = pipeline;
         return this;
@@ -27,6 +29,7 @@ public class GetPipelineByNumberResponse {
     
     
     public Integer statusCode;
+
     public GetPipelineByNumberResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class GetPipelineByNumberResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetPipelineByNumberResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class GetPipelineByNumberResponse {
      */
     
     public GetPipelineByNumberDefaultApplicationJSON getPipelineByNumberDefaultApplicationJSONObject;
+
     public GetPipelineByNumberResponse withGetPipelineByNumberDefaultApplicationJSONObject(GetPipelineByNumberDefaultApplicationJSON getPipelineByNumberDefaultApplicationJSONObject) {
         this.getPipelineByNumberDefaultApplicationJSONObject = getPipelineByNumberDefaultApplicationJSONObject;
         return this;

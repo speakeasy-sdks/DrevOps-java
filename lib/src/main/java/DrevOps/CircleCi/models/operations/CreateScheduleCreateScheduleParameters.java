@@ -17,6 +17,7 @@ public class CreateScheduleCreateScheduleParameters {
      */
     @JsonProperty("attribution-actor")
     public CreateScheduleCreateScheduleParametersAttributionActorEnum attributionActor;
+
     public CreateScheduleCreateScheduleParameters withAttributionActor(CreateScheduleCreateScheduleParametersAttributionActorEnum attributionActor) {
         this.attributionActor = attributionActor;
         return this;
@@ -28,6 +29,7 @@ public class CreateScheduleCreateScheduleParameters {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("description")
     public String description;
+
     public CreateScheduleCreateScheduleParameters withDescription(String description) {
         this.description = description;
         return this;
@@ -38,6 +40,7 @@ public class CreateScheduleCreateScheduleParameters {
      */
     @JsonProperty("name")
     public String name;
+
     public CreateScheduleCreateScheduleParameters withName(String name) {
         this.name = name;
         return this;
@@ -48,6 +51,7 @@ public class CreateScheduleCreateScheduleParameters {
      */
     @JsonProperty("parameters")
     public java.util.Map<String, Object> parameters;
+
     public CreateScheduleCreateScheduleParameters withParameters(java.util.Map<String, Object> parameters) {
         this.parameters = parameters;
         return this;
@@ -58,6 +62,7 @@ public class CreateScheduleCreateScheduleParameters {
      */
     @JsonProperty("timetable")
     public Object timetable;
+
     public CreateScheduleCreateScheduleParameters withTimetable(Object timetable) {
         this.timetable = timetable;
         return this;

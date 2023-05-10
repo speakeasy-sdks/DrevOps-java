@@ -15,6 +15,7 @@ public class GetPipelineByIdPipelineErrors {
      */
     @JsonProperty("message")
     public String message;
+
     public GetPipelineByIdPipelineErrors withMessage(String message) {
         this.message = message;
         return this;
@@ -25,6 +26,7 @@ public class GetPipelineByIdPipelineErrors {
      */
     @JsonProperty("type")
     public GetPipelineByIdPipelineErrorsTypeEnum type;
+
     public GetPipelineByIdPipelineErrors withType(GetPipelineByIdPipelineErrorsTypeEnum type) {
         this.type = type;
         return this;

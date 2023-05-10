@@ -13,6 +13,7 @@ public class GetProjectBySlugRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public GetProjectBySlugRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;

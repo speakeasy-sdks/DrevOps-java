@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class GetProjectBySlugProject {
     @JsonProperty("id")
     public String id;
+
     public GetProjectBySlugProject withId(String id) {
         this.id = id;
         return this;
@@ -22,6 +23,7 @@ public class GetProjectBySlugProject {
      */
     @JsonProperty("name")
     public String name;
+
     public GetProjectBySlugProject withName(String name) {
         this.name = name;
         return this;
@@ -32,6 +34,7 @@ public class GetProjectBySlugProject {
      */
     @JsonProperty("organization_id")
     public String organizationId;
+
     public GetProjectBySlugProject withOrganizationId(String organizationId) {
         this.organizationId = organizationId;
         return this;
@@ -42,6 +45,7 @@ public class GetProjectBySlugProject {
      */
     @JsonProperty("organization_name")
     public String organizationName;
+
     public GetProjectBySlugProject withOrganizationName(String organizationName) {
         this.organizationName = organizationName;
         return this;
@@ -52,6 +56,7 @@ public class GetProjectBySlugProject {
      */
     @JsonProperty("organization_slug")
     public String organizationSlug;
+
     public GetProjectBySlugProject withOrganizationSlug(String organizationSlug) {
         this.organizationSlug = organizationSlug;
         return this;
@@ -62,6 +67,7 @@ public class GetProjectBySlugProject {
      */
     @JsonProperty("slug")
     public String slug;
+
     public GetProjectBySlugProject withSlug(String slug) {
         this.slug = slug;
         return this;
@@ -72,6 +78,7 @@ public class GetProjectBySlugProject {
      */
     @JsonProperty("vcs_info")
     public GetProjectBySlugProjectVcsInfo vcsInfo;
+
     public GetProjectBySlugProject withVcsInfo(GetProjectBySlugProjectVcsInfo vcsInfo) {
         this.vcsInfo = vcsInfo;
         return this;

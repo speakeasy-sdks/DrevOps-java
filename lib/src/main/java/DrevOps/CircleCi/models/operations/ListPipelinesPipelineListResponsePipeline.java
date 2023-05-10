@@ -24,6 +24,7 @@ public class ListPipelinesPipelineListResponsePipeline {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created_at")
     public OffsetDateTime createdAt;
+
     public ListPipelinesPipelineListResponsePipeline withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -34,6 +35,7 @@ public class ListPipelinesPipelineListResponsePipeline {
      */
     @JsonProperty("errors")
     public ListPipelinesPipelineListResponsePipelineErrors[] errors;
+
     public ListPipelinesPipelineListResponsePipeline withErrors(ListPipelinesPipelineListResponsePipelineErrors[] errors) {
         this.errors = errors;
         return this;
@@ -44,6 +46,7 @@ public class ListPipelinesPipelineListResponsePipeline {
      */
     @JsonProperty("id")
     public String id;
+
     public ListPipelinesPipelineListResponsePipeline withId(String id) {
         this.id = id;
         return this;
@@ -54,6 +57,7 @@ public class ListPipelinesPipelineListResponsePipeline {
      */
     @JsonProperty("number")
     public Long number;
+
     public ListPipelinesPipelineListResponsePipeline withNumber(Long number) {
         this.number = number;
         return this;
@@ -64,6 +68,7 @@ public class ListPipelinesPipelineListResponsePipeline {
      */
     @JsonProperty("project_slug")
     public String projectSlug;
+
     public ListPipelinesPipelineListResponsePipeline withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;
@@ -74,6 +79,7 @@ public class ListPipelinesPipelineListResponsePipeline {
      */
     @JsonProperty("state")
     public ListPipelinesPipelineListResponsePipelineStateEnum state;
+
     public ListPipelinesPipelineListResponsePipeline withState(ListPipelinesPipelineListResponsePipelineStateEnum state) {
         this.state = state;
         return this;
@@ -84,6 +90,7 @@ public class ListPipelinesPipelineListResponsePipeline {
      */
     @JsonProperty("trigger")
     public ListPipelinesPipelineListResponsePipelineTrigger trigger;
+
     public ListPipelinesPipelineListResponsePipeline withTrigger(ListPipelinesPipelineListResponsePipelineTrigger trigger) {
         this.trigger = trigger;
         return this;
@@ -92,6 +99,7 @@ public class ListPipelinesPipelineListResponsePipeline {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("trigger_parameters")
     public java.util.Map<String, Object> triggerParameters;
+
     public ListPipelinesPipelineListResponsePipeline withTriggerParameters(java.util.Map<String, Object> triggerParameters) {
         this.triggerParameters = triggerParameters;
         return this;
@@ -105,6 +113,7 @@ public class ListPipelinesPipelineListResponsePipeline {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("updated_at")
     public OffsetDateTime updatedAt;
+
     public ListPipelinesPipelineListResponsePipeline withUpdatedAt(OffsetDateTime updatedAt) {
         this.updatedAt = updatedAt;
         return this;
@@ -116,6 +125,7 @@ public class ListPipelinesPipelineListResponsePipeline {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("vcs")
     public ListPipelinesPipelineListResponsePipelineVcs vcs;
+
     public ListPipelinesPipelineListResponsePipeline withVcs(ListPipelinesPipelineListResponsePipelineVcs vcs) {
         this.vcs = vcs;
         return this;

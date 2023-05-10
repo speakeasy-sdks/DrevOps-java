@@ -24,6 +24,7 @@ public class GetPipelineByIdPipeline {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created_at")
     public OffsetDateTime createdAt;
+
     public GetPipelineByIdPipeline withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -34,6 +35,7 @@ public class GetPipelineByIdPipeline {
      */
     @JsonProperty("errors")
     public GetPipelineByIdPipelineErrors[] errors;
+
     public GetPipelineByIdPipeline withErrors(GetPipelineByIdPipelineErrors[] errors) {
         this.errors = errors;
         return this;
@@ -44,6 +46,7 @@ public class GetPipelineByIdPipeline {
      */
     @JsonProperty("id")
     public String id;
+
     public GetPipelineByIdPipeline withId(String id) {
         this.id = id;
         return this;
@@ -54,6 +57,7 @@ public class GetPipelineByIdPipeline {
      */
     @JsonProperty("number")
     public Long number;
+
     public GetPipelineByIdPipeline withNumber(Long number) {
         this.number = number;
         return this;
@@ -64,6 +68,7 @@ public class GetPipelineByIdPipeline {
      */
     @JsonProperty("project_slug")
     public String projectSlug;
+
     public GetPipelineByIdPipeline withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;
@@ -74,6 +79,7 @@ public class GetPipelineByIdPipeline {
      */
     @JsonProperty("state")
     public GetPipelineByIdPipelineStateEnum state;
+
     public GetPipelineByIdPipeline withState(GetPipelineByIdPipelineStateEnum state) {
         this.state = state;
         return this;
@@ -84,6 +90,7 @@ public class GetPipelineByIdPipeline {
      */
     @JsonProperty("trigger")
     public GetPipelineByIdPipelineTrigger trigger;
+
     public GetPipelineByIdPipeline withTrigger(GetPipelineByIdPipelineTrigger trigger) {
         this.trigger = trigger;
         return this;
@@ -92,6 +99,7 @@ public class GetPipelineByIdPipeline {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("trigger_parameters")
     public java.util.Map<String, Object> triggerParameters;
+
     public GetPipelineByIdPipeline withTriggerParameters(java.util.Map<String, Object> triggerParameters) {
         this.triggerParameters = triggerParameters;
         return this;
@@ -105,6 +113,7 @@ public class GetPipelineByIdPipeline {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("updated_at")
     public OffsetDateTime updatedAt;
+
     public GetPipelineByIdPipeline withUpdatedAt(OffsetDateTime updatedAt) {
         this.updatedAt = updatedAt;
         return this;
@@ -116,6 +125,7 @@ public class GetPipelineByIdPipeline {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("vcs")
     public GetPipelineByIdPipelineVcs vcs;
+
     public GetPipelineByIdPipeline withVcs(GetPipelineByIdPipelineVcs vcs) {
         this.vcs = vcs;
         return this;

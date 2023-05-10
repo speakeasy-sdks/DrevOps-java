@@ -24,6 +24,7 @@ public class ListPipelinesForProjectPipelineListResponsePipeline {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created_at")
     public OffsetDateTime createdAt;
+
     public ListPipelinesForProjectPipelineListResponsePipeline withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -34,6 +35,7 @@ public class ListPipelinesForProjectPipelineListResponsePipeline {
      */
     @JsonProperty("errors")
     public ListPipelinesForProjectPipelineListResponsePipelineErrors[] errors;
+
     public ListPipelinesForProjectPipelineListResponsePipeline withErrors(ListPipelinesForProjectPipelineListResponsePipelineErrors[] errors) {
         this.errors = errors;
         return this;
@@ -44,6 +46,7 @@ public class ListPipelinesForProjectPipelineListResponsePipeline {
      */
     @JsonProperty("id")
     public String id;
+
     public ListPipelinesForProjectPipelineListResponsePipeline withId(String id) {
         this.id = id;
         return this;
@@ -54,6 +57,7 @@ public class ListPipelinesForProjectPipelineListResponsePipeline {
      */
     @JsonProperty("number")
     public Long number;
+
     public ListPipelinesForProjectPipelineListResponsePipeline withNumber(Long number) {
         this.number = number;
         return this;
@@ -64,6 +68,7 @@ public class ListPipelinesForProjectPipelineListResponsePipeline {
      */
     @JsonProperty("project_slug")
     public String projectSlug;
+
     public ListPipelinesForProjectPipelineListResponsePipeline withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;
@@ -74,6 +79,7 @@ public class ListPipelinesForProjectPipelineListResponsePipeline {
      */
     @JsonProperty("state")
     public ListPipelinesForProjectPipelineListResponsePipelineStateEnum state;
+
     public ListPipelinesForProjectPipelineListResponsePipeline withState(ListPipelinesForProjectPipelineListResponsePipelineStateEnum state) {
         this.state = state;
         return this;
@@ -84,6 +90,7 @@ public class ListPipelinesForProjectPipelineListResponsePipeline {
      */
     @JsonProperty("trigger")
     public ListPipelinesForProjectPipelineListResponsePipelineTrigger trigger;
+
     public ListPipelinesForProjectPipelineListResponsePipeline withTrigger(ListPipelinesForProjectPipelineListResponsePipelineTrigger trigger) {
         this.trigger = trigger;
         return this;
@@ -92,6 +99,7 @@ public class ListPipelinesForProjectPipelineListResponsePipeline {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("trigger_parameters")
     public java.util.Map<String, Object> triggerParameters;
+
     public ListPipelinesForProjectPipelineListResponsePipeline withTriggerParameters(java.util.Map<String, Object> triggerParameters) {
         this.triggerParameters = triggerParameters;
         return this;
@@ -105,6 +113,7 @@ public class ListPipelinesForProjectPipelineListResponsePipeline {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("updated_at")
     public OffsetDateTime updatedAt;
+
     public ListPipelinesForProjectPipelineListResponsePipeline withUpdatedAt(OffsetDateTime updatedAt) {
         this.updatedAt = updatedAt;
         return this;
@@ -116,6 +125,7 @@ public class ListPipelinesForProjectPipelineListResponsePipeline {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("vcs")
     public ListPipelinesForProjectPipelineListResponsePipelineVcs vcs;
+
     public ListPipelinesForProjectPipelineListResponsePipeline withVcs(ListPipelinesForProjectPipelineListResponsePipelineVcs vcs) {
         this.vcs = vcs;
         return this;

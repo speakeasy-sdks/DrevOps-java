@@ -15,6 +15,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSON {
      */
     @JsonProperty("average_test_count")
     public Long averageTestCount;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSON withAverageTestCount(Long averageTestCount) {
         this.averageTestCount = averageTestCount;
         return this;
@@ -25,6 +26,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSON {
      */
     @JsonProperty("most_failed_tests")
     public GetProjectWorkflowTestMetrics200ApplicationJSONMostFailedTests[] mostFailedTests;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSON withMostFailedTests(GetProjectWorkflowTestMetrics200ApplicationJSONMostFailedTests[] mostFailedTests) {
         this.mostFailedTests = mostFailedTests;
         return this;
@@ -35,6 +37,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSON {
      */
     @JsonProperty("most_failed_tests_extra")
     public Long mostFailedTestsExtra;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSON withMostFailedTestsExtra(Long mostFailedTestsExtra) {
         this.mostFailedTestsExtra = mostFailedTestsExtra;
         return this;
@@ -45,6 +48,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSON {
      */
     @JsonProperty("slowest_tests")
     public GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests[] slowestTests;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSON withSlowestTests(GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests[] slowestTests) {
         this.slowestTests = slowestTests;
         return this;
@@ -55,6 +59,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSON {
      */
     @JsonProperty("slowest_tests_extra")
     public Long slowestTestsExtra;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSON withSlowestTestsExtra(Long slowestTestsExtra) {
         this.slowestTestsExtra = slowestTestsExtra;
         return this;
@@ -65,6 +70,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSON {
      */
     @JsonProperty("test_runs")
     public GetProjectWorkflowTestMetrics200ApplicationJSONTestRuns[] testRuns;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSON withTestRuns(GetProjectWorkflowTestMetrics200ApplicationJSONTestRuns[] testRuns) {
         this.testRuns = testRuns;
         return this;
@@ -75,6 +81,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSON {
      */
     @JsonProperty("total_test_runs")
     public Long totalTestRuns;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSON withTotalTestRuns(Long totalTestRuns) {
         this.totalTestRuns = totalTestRuns;
         return this;

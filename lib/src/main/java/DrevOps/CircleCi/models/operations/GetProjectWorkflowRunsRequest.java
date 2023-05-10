@@ -14,6 +14,7 @@ public class GetProjectWorkflowRunsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=all-branches")
     public Boolean allBranches;
+
     public GetProjectWorkflowRunsRequest withAllBranches(Boolean allBranches) {
         this.allBranches = allBranches;
         return this;
@@ -24,6 +25,7 @@ public class GetProjectWorkflowRunsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=branch")
     public String branch;
+
     public GetProjectWorkflowRunsRequest withBranch(String branch) {
         this.branch = branch;
         return this;
@@ -34,6 +36,7 @@ public class GetProjectWorkflowRunsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=end-date")
     public OffsetDateTime endDate;
+
     public GetProjectWorkflowRunsRequest withEndDate(OffsetDateTime endDate) {
         this.endDate = endDate;
         return this;
@@ -44,6 +47,7 @@ public class GetProjectWorkflowRunsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=page-token")
     public String pageToken;
+
     public GetProjectWorkflowRunsRequest withPageToken(String pageToken) {
         this.pageToken = pageToken;
         return this;
@@ -54,6 +58,7 @@ public class GetProjectWorkflowRunsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public GetProjectWorkflowRunsRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;
@@ -64,6 +69,7 @@ public class GetProjectWorkflowRunsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=start-date")
     public OffsetDateTime startDate;
+
     public GetProjectWorkflowRunsRequest withStartDate(OffsetDateTime startDate) {
         this.startDate = startDate;
         return this;
@@ -74,6 +80,7 @@ public class GetProjectWorkflowRunsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=workflow-name")
     public String workflowName;
+
     public GetProjectWorkflowRunsRequest withWorkflowName(String workflowName) {
         this.workflowName = workflowName;
         return this;

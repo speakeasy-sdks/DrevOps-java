@@ -15,6 +15,7 @@ public class CreateEnvVarEnvironmentVariablePair {
      */
     @JsonProperty("name")
     public String name;
+
     public CreateEnvVarEnvironmentVariablePair withName(String name) {
         this.name = name;
         return this;
@@ -25,6 +26,7 @@ public class CreateEnvVarEnvironmentVariablePair {
      */
     @JsonProperty("value")
     public String value;
+
     public CreateEnvVarEnvironmentVariablePair withValue(String value) {
         this.value = value;
         return this;

@@ -19,6 +19,7 @@ public class ListContexts200ApplicationJSONContext {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created_at")
     public OffsetDateTime createdAt;
+
     public ListContexts200ApplicationJSONContext withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -29,6 +30,7 @@ public class ListContexts200ApplicationJSONContext {
      */
     @JsonProperty("id")
     public String id;
+
     public ListContexts200ApplicationJSONContext withId(String id) {
         this.id = id;
         return this;
@@ -39,6 +41,7 @@ public class ListContexts200ApplicationJSONContext {
      */
     @JsonProperty("name")
     public String name;
+
     public ListContexts200ApplicationJSONContext withName(String name) {
         this.name = name;
         return this;

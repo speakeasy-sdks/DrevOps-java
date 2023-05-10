@@ -17,6 +17,7 @@ public class GetJobDetailsJobDetailsExecutor {
      */
     @JsonProperty("resource_class")
     public String resourceClass;
+
     public GetJobDetailsJobDetailsExecutor withResourceClass(String resourceClass) {
         this.resourceClass = resourceClass;
         return this;
@@ -28,6 +29,7 @@ public class GetJobDetailsJobDetailsExecutor {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("type")
     public String type;
+
     public GetJobDetailsJobDetailsExecutor withType(String type) {
         this.type = type;
         return this;

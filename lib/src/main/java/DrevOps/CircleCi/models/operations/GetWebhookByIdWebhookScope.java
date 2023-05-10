@@ -15,6 +15,7 @@ public class GetWebhookByIdWebhookScope {
      */
     @JsonProperty("id")
     public String id;
+
     public GetWebhookByIdWebhookScope withId(String id) {
         this.id = id;
         return this;
@@ -25,6 +26,7 @@ public class GetWebhookByIdWebhookScope {
      */
     @JsonProperty("type")
     public String type;
+
     public GetWebhookByIdWebhookScope withType(String type) {
         this.type = type;
         return this;

@@ -15,6 +15,7 @@ public class GetFlakyTests200ApplicationJSON {
      */
     @JsonProperty("flaky-tests")
     public GetFlakyTests200ApplicationJSONFlakyTests[] flakyTests;
+
     public GetFlakyTests200ApplicationJSON withFlakyTests(GetFlakyTests200ApplicationJSONFlakyTests[] flakyTests) {
         this.flakyTests = flakyTests;
         return this;
@@ -25,6 +26,7 @@ public class GetFlakyTests200ApplicationJSON {
      */
     @JsonProperty("total-flaky-tests")
     public Double totalFlakyTests;
+
     public GetFlakyTests200ApplicationJSON withTotalFlakyTests(Double totalFlakyTests) {
         this.totalFlakyTests = totalFlakyTests;
         return this;

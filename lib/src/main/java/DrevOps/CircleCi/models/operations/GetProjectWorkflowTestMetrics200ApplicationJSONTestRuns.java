@@ -12,6 +12,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONTestRuns {
      */
     @JsonProperty("pipeline_number")
     public Long pipelineNumber;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONTestRuns withPipelineNumber(Long pipelineNumber) {
         this.pipelineNumber = pipelineNumber;
         return this;
@@ -22,6 +23,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONTestRuns {
      */
     @JsonProperty("success_rate")
     public Float successRate;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONTestRuns withSuccessRate(Float successRate) {
         this.successRate = successRate;
         return this;
@@ -32,6 +34,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONTestRuns {
      */
     @JsonProperty("test_counts")
     public GetProjectWorkflowTestMetrics200ApplicationJSONTestRunsTestCounts testCounts;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONTestRuns withTestCounts(GetProjectWorkflowTestMetrics200ApplicationJSONTestRunsTestCounts testCounts) {
         this.testCounts = testCounts;
         return this;
@@ -42,6 +45,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONTestRuns {
      */
     @JsonProperty("workflow_id")
     public Object workflowId;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONTestRuns withWorkflowId(Object workflowId) {
         this.workflowId = workflowId;
         return this;

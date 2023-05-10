@@ -13,6 +13,7 @@ public class GetCollaborationsResponse {
      */
     
     public GetCollaborationsCollaboration[] collaborations;
+
     public GetCollaborationsResponse withCollaborations(GetCollaborationsCollaboration[] collaborations) {
         this.collaborations = collaborations;
         return this;
@@ -20,6 +21,7 @@ public class GetCollaborationsResponse {
     
     
     public String contentType;
+
     public GetCollaborationsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -27,6 +29,7 @@ public class GetCollaborationsResponse {
     
     
     public Integer statusCode;
+
     public GetCollaborationsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class GetCollaborationsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetCollaborationsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class GetCollaborationsResponse {
      */
     
     public GetCollaborationsDefaultApplicationJSON getCollaborationsDefaultApplicationJSONObject;
+
     public GetCollaborationsResponse withGetCollaborationsDefaultApplicationJSONObject(GetCollaborationsDefaultApplicationJSON getCollaborationsDefaultApplicationJSONObject) {
         this.getCollaborationsDefaultApplicationJSONObject = getCollaborationsDefaultApplicationJSONObject;
         return this;

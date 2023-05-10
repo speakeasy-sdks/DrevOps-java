@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class TriggerPipelineRequest {
     @SpeakeasyMetadata("request:mediaType=application/json")
     public TriggerPipelineTriggerPipelineParameters requestBody;
+
     public TriggerPipelineRequest withRequestBody(TriggerPipelineTriggerPipelineParameters requestBody) {
         this.requestBody = requestBody;
         return this;
@@ -20,6 +21,7 @@ public class TriggerPipelineRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public TriggerPipelineRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;

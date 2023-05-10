@@ -13,6 +13,7 @@ public class DeleteWebhookRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=webhook-id")
     public String webhookId;
+
     public DeleteWebhookRequest withWebhookId(String webhookId) {
         this.webhookId = webhookId;
         return this;

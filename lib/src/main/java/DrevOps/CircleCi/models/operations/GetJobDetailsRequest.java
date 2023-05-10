@@ -13,6 +13,7 @@ public class GetJobDetailsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=job-number")
     public Object jobNumber;
+
     public GetJobDetailsRequest withJobNumber(Object jobNumber) {
         this.jobNumber = jobNumber;
         return this;
@@ -23,6 +24,7 @@ public class GetJobDetailsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public GetJobDetailsRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;

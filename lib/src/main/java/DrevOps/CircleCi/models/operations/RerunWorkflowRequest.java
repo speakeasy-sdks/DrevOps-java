@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class RerunWorkflowRequest {
     @SpeakeasyMetadata("request:mediaType=application/json")
     public RerunWorkflowRerunWorkflowParameters requestBody;
+
     public RerunWorkflowRequest withRequestBody(RerunWorkflowRerunWorkflowParameters requestBody) {
         this.requestBody = requestBody;
         return this;
@@ -20,6 +21,7 @@ public class RerunWorkflowRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=id")
     public String id;
+
     public RerunWorkflowRequest withId(String id) {
         this.id = id;
         return this;

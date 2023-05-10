@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class ListPipelinesPipelineListResponse {
     @JsonProperty("items")
     public ListPipelinesPipelineListResponsePipeline[] items;
+
     public ListPipelinesPipelineListResponse withItems(ListPipelinesPipelineListResponsePipeline[] items) {
         this.items = items;
         return this;
@@ -22,6 +23,7 @@ public class ListPipelinesPipelineListResponse {
      */
     @JsonProperty("next_page_token")
     public String nextPageToken;
+
     public ListPipelinesPipelineListResponse withNextPageToken(String nextPageToken) {
         this.nextPageToken = nextPageToken;
         return this;

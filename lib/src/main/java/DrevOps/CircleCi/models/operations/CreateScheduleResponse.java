@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class CreateScheduleResponse {
     
     public String contentType;
+
     public CreateScheduleResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class CreateScheduleResponse {
      */
     
     public CreateScheduleSchedule schedule;
+
     public CreateScheduleResponse withSchedule(CreateScheduleSchedule schedule) {
         this.schedule = schedule;
         return this;
@@ -27,6 +29,7 @@ public class CreateScheduleResponse {
     
     
     public Integer statusCode;
+
     public CreateScheduleResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class CreateScheduleResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public CreateScheduleResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class CreateScheduleResponse {
      */
     
     public CreateScheduleDefaultApplicationJSON createScheduleDefaultApplicationJSONObject;
+
     public CreateScheduleResponse withCreateScheduleDefaultApplicationJSONObject(CreateScheduleDefaultApplicationJSON createScheduleDefaultApplicationJSONObject) {
         this.createScheduleDefaultApplicationJSONObject = createScheduleDefaultApplicationJSONObject;
         return this;

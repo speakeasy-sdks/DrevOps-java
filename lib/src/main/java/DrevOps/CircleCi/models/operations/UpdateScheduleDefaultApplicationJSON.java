@@ -15,6 +15,7 @@ public class UpdateScheduleDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public UpdateScheduleDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

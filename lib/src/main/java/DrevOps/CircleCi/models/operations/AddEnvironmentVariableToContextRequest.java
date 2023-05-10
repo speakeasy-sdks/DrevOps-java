@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class AddEnvironmentVariableToContextRequest {
     @SpeakeasyMetadata("request:mediaType=application/json")
     public AddEnvironmentVariableToContextRequestBody requestBody;
+
     public AddEnvironmentVariableToContextRequest withRequestBody(AddEnvironmentVariableToContextRequestBody requestBody) {
         this.requestBody = requestBody;
         return this;
@@ -20,6 +21,7 @@ public class AddEnvironmentVariableToContextRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=context-id")
     public String contextId;
+
     public AddEnvironmentVariableToContextRequest withContextId(String contextId) {
         this.contextId = contextId;
         return this;
@@ -30,6 +32,7 @@ public class AddEnvironmentVariableToContextRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=env-var-name")
     public String envVarName;
+
     public AddEnvironmentVariableToContextRequest withEnvVarName(String envVarName) {
         this.envVarName = envVarName;
         return this;

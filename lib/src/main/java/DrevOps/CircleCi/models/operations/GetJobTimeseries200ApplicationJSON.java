@@ -15,6 +15,7 @@ public class GetJobTimeseries200ApplicationJSON {
      */
     @JsonProperty("items")
     public GetJobTimeseries200ApplicationJSONItems[] items;
+
     public GetJobTimeseries200ApplicationJSON withItems(GetJobTimeseries200ApplicationJSONItems[] items) {
         this.items = items;
         return this;
@@ -25,6 +26,7 @@ public class GetJobTimeseries200ApplicationJSON {
      */
     @JsonProperty("next_page_token")
     public String nextPageToken;
+
     public GetJobTimeseries200ApplicationJSON withNextPageToken(String nextPageToken) {
         this.nextPageToken = nextPageToken;
         return this;

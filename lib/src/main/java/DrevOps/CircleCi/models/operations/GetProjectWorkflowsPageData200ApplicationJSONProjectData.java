@@ -15,6 +15,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectData {
      */
     @JsonProperty("metrics")
     public GetProjectWorkflowsPageData200ApplicationJSONProjectDataMetrics metrics;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectData withMetrics(GetProjectWorkflowsPageData200ApplicationJSONProjectDataMetrics metrics) {
         this.metrics = metrics;
         return this;
@@ -25,6 +26,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectData {
      */
     @JsonProperty("trends")
     public GetProjectWorkflowsPageData200ApplicationJSONProjectDataTrends trends;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectData withTrends(GetProjectWorkflowsPageData200ApplicationJSONProjectDataTrends trends) {
         this.trends = trends;
         return this;

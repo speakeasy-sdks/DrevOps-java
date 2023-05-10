@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetJobDetailsResponse {
     
     public String contentType;
+
     public GetJobDetailsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class GetJobDetailsResponse {
      */
     
     public GetJobDetailsJobDetails jobDetails;
+
     public GetJobDetailsResponse withJobDetails(GetJobDetailsJobDetails jobDetails) {
         this.jobDetails = jobDetails;
         return this;
@@ -27,6 +29,7 @@ public class GetJobDetailsResponse {
     
     
     public Integer statusCode;
+
     public GetJobDetailsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class GetJobDetailsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetJobDetailsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class GetJobDetailsResponse {
      */
     
     public GetJobDetailsDefaultApplicationJSON getJobDetailsDefaultApplicationJSONObject;
+
     public GetJobDetailsResponse withGetJobDetailsDefaultApplicationJSONObject(GetJobDetailsDefaultApplicationJSON getJobDetailsDefaultApplicationJSONObject) {
         this.getJobDetailsDefaultApplicationJSONObject = getJobDetailsDefaultApplicationJSONObject;
         return this;

@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class DeleteCheckoutKeyResponse {
     
     public String contentType;
+
     public DeleteCheckoutKeyResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class DeleteCheckoutKeyResponse {
      */
     
     public DeleteCheckoutKeyMessageResponse messageResponse;
+
     public DeleteCheckoutKeyResponse withMessageResponse(DeleteCheckoutKeyMessageResponse messageResponse) {
         this.messageResponse = messageResponse;
         return this;
@@ -27,6 +29,7 @@ public class DeleteCheckoutKeyResponse {
     
     
     public Integer statusCode;
+
     public DeleteCheckoutKeyResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class DeleteCheckoutKeyResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public DeleteCheckoutKeyResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class DeleteCheckoutKeyResponse {
      */
     
     public DeleteCheckoutKeyDefaultApplicationJSON deleteCheckoutKeyDefaultApplicationJSONObject;
+
     public DeleteCheckoutKeyResponse withDeleteCheckoutKeyDefaultApplicationJSONObject(DeleteCheckoutKeyDefaultApplicationJSON deleteCheckoutKeyDefaultApplicationJSONObject) {
         this.deleteCheckoutKeyDefaultApplicationJSONObject = deleteCheckoutKeyDefaultApplicationJSONObject;
         return this;

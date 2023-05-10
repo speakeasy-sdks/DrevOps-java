@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetProjectWorkflowMetricsResponse {
     
     public String contentType;
+
     public GetProjectWorkflowMetricsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class GetProjectWorkflowMetricsResponse {
     
     
     public Integer statusCode;
+
     public GetProjectWorkflowMetricsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class GetProjectWorkflowMetricsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetProjectWorkflowMetricsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -34,6 +37,7 @@ public class GetProjectWorkflowMetricsResponse {
      */
     
     public GetProjectWorkflowMetrics200ApplicationJSON getProjectWorkflowMetrics200ApplicationJSONObject;
+
     public GetProjectWorkflowMetricsResponse withGetProjectWorkflowMetrics200ApplicationJSONObject(GetProjectWorkflowMetrics200ApplicationJSON getProjectWorkflowMetrics200ApplicationJSONObject) {
         this.getProjectWorkflowMetrics200ApplicationJSONObject = getProjectWorkflowMetrics200ApplicationJSONObject;
         return this;
@@ -44,6 +48,7 @@ public class GetProjectWorkflowMetricsResponse {
      */
     
     public GetProjectWorkflowMetricsDefaultApplicationJSON getProjectWorkflowMetricsDefaultApplicationJSONObject;
+
     public GetProjectWorkflowMetricsResponse withGetProjectWorkflowMetricsDefaultApplicationJSONObject(GetProjectWorkflowMetricsDefaultApplicationJSON getProjectWorkflowMetricsDefaultApplicationJSONObject) {
         this.getProjectWorkflowMetricsDefaultApplicationJSONObject = getProjectWorkflowMetricsDefaultApplicationJSONObject;
         return this;

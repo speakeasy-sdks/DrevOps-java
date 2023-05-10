@@ -15,6 +15,7 @@ public class GetPipelineByNumberDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public GetPipelineByNumberDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

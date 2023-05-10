@@ -15,6 +15,7 @@ public class GetProjectWorkflowsPageDataDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public GetProjectWorkflowsPageDataDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

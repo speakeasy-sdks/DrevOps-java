@@ -13,6 +13,7 @@ public class GetPipelineConfigByIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=pipeline-id")
     public String pipelineId;
+
     public GetPipelineConfigByIdRequest withPipelineId(String pipelineId) {
         this.pipelineId = pipelineId;
         return this;

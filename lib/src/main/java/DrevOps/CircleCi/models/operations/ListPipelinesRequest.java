@@ -12,6 +12,7 @@ public class ListPipelinesRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=mine")
     public Boolean mine;
+
     public ListPipelinesRequest withMine(Boolean mine) {
         this.mine = mine;
         return this;
@@ -22,6 +23,7 @@ public class ListPipelinesRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=org-slug")
     public String orgSlug;
+
     public ListPipelinesRequest withOrgSlug(String orgSlug) {
         this.orgSlug = orgSlug;
         return this;
@@ -32,6 +34,7 @@ public class ListPipelinesRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=page-token")
     public String pageToken;
+
     public ListPipelinesRequest withPageToken(String pageToken) {
         this.pageToken = pageToken;
         return this;

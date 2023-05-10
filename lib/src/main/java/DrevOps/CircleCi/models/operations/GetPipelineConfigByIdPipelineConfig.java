@@ -17,6 +17,7 @@ public class GetPipelineConfigByIdPipelineConfig {
      */
     @JsonProperty("compiled")
     public String compiled;
+
     public GetPipelineConfigByIdPipelineConfig withCompiled(String compiled) {
         this.compiled = compiled;
         return this;
@@ -28,6 +29,7 @@ public class GetPipelineConfigByIdPipelineConfig {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("compiled-setup-config")
     public String compiledSetupConfig;
+
     public GetPipelineConfigByIdPipelineConfig withCompiledSetupConfig(String compiledSetupConfig) {
         this.compiledSetupConfig = compiledSetupConfig;
         return this;
@@ -39,6 +41,7 @@ public class GetPipelineConfigByIdPipelineConfig {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("setup-config")
     public String setupConfig;
+
     public GetPipelineConfigByIdPipelineConfig withSetupConfig(String setupConfig) {
         this.setupConfig = setupConfig;
         return this;
@@ -49,6 +52,7 @@ public class GetPipelineConfigByIdPipelineConfig {
      */
     @JsonProperty("source")
     public String source;
+
     public GetPipelineConfigByIdPipelineConfig withSource(String source) {
         this.source = source;
         return this;

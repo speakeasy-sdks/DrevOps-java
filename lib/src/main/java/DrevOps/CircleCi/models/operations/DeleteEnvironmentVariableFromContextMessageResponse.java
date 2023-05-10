@@ -15,6 +15,7 @@ public class DeleteEnvironmentVariableFromContextMessageResponse {
      */
     @JsonProperty("message")
     public String message;
+
     public DeleteEnvironmentVariableFromContextMessageResponse withMessage(String message) {
         this.message = message;
         return this;

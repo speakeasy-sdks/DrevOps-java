@@ -15,6 +15,7 @@ public class CancelWorkflowMessageResponse {
      */
     @JsonProperty("message")
     public String message;
+
     public CancelWorkflowMessageResponse withMessage(String message) {
         this.message = message;
         return this;

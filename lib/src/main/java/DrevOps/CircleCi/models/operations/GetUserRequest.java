@@ -13,6 +13,7 @@ public class GetUserRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=id")
     public String id;
+
     public GetUserRequest withId(String id) {
         this.id = id;
         return this;

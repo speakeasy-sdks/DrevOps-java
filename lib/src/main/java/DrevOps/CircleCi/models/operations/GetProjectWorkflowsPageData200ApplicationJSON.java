@@ -18,6 +18,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("all_branches")
     public String[] allBranches;
+
     public GetProjectWorkflowsPageData200ApplicationJSON withAllBranches(String[] allBranches) {
         this.allBranches = allBranches;
         return this;
@@ -29,6 +30,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("all_workflows")
     public String[] allWorkflows;
+
     public GetProjectWorkflowsPageData200ApplicationJSON withAllWorkflows(String[] allWorkflows) {
         this.allWorkflows = allWorkflows;
         return this;
@@ -40,6 +42,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("org_id")
     public Object orgId;
+
     public GetProjectWorkflowsPageData200ApplicationJSON withOrgId(Object orgId) {
         this.orgId = orgId;
         return this;
@@ -51,6 +54,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("project_data")
     public GetProjectWorkflowsPageData200ApplicationJSONProjectData projectData;
+
     public GetProjectWorkflowsPageData200ApplicationJSON withProjectData(GetProjectWorkflowsPageData200ApplicationJSONProjectData projectData) {
         this.projectData = projectData;
         return this;
@@ -62,6 +66,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("project_id")
     public Object projectId;
+
     public GetProjectWorkflowsPageData200ApplicationJSON withProjectId(Object projectId) {
         this.projectId = projectId;
         return this;
@@ -73,6 +78,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("project_workflow_branch_data")
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchData[] projectWorkflowBranchData;
+
     public GetProjectWorkflowsPageData200ApplicationJSON withProjectWorkflowBranchData(GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchData[] projectWorkflowBranchData) {
         this.projectWorkflowBranchData = projectWorkflowBranchData;
         return this;
@@ -84,6 +90,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("project_workflow_data")
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowData[] projectWorkflowData;
+
     public GetProjectWorkflowsPageData200ApplicationJSON withProjectWorkflowData(GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowData[] projectWorkflowData) {
         this.projectWorkflowData = projectWorkflowData;
         return this;

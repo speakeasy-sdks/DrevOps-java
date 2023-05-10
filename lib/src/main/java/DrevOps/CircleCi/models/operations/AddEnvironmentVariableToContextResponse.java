@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class AddEnvironmentVariableToContextResponse {
     
     public String contentType;
+
     public AddEnvironmentVariableToContextResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class AddEnvironmentVariableToContextResponse {
     
     
     public Integer statusCode;
+
     public AddEnvironmentVariableToContextResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class AddEnvironmentVariableToContextResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public AddEnvironmentVariableToContextResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -34,6 +37,7 @@ public class AddEnvironmentVariableToContextResponse {
      */
     
     public Object addEnvironmentVariableToContext200ApplicationJSONAnyOf;
+
     public AddEnvironmentVariableToContextResponse withAddEnvironmentVariableToContext200ApplicationJSONAnyOf(Object addEnvironmentVariableToContext200ApplicationJSONAnyOf) {
         this.addEnvironmentVariableToContext200ApplicationJSONAnyOf = addEnvironmentVariableToContext200ApplicationJSONAnyOf;
         return this;
@@ -44,6 +48,7 @@ public class AddEnvironmentVariableToContextResponse {
      */
     
     public AddEnvironmentVariableToContextDefaultApplicationJSON addEnvironmentVariableToContextDefaultApplicationJSONObject;
+
     public AddEnvironmentVariableToContextResponse withAddEnvironmentVariableToContextDefaultApplicationJSONObject(AddEnvironmentVariableToContextDefaultApplicationJSON addEnvironmentVariableToContextDefaultApplicationJSONObject) {
         this.addEnvironmentVariableToContextDefaultApplicationJSONObject = addEnvironmentVariableToContextDefaultApplicationJSONObject;
         return this;

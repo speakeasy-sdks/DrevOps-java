@@ -22,6 +22,7 @@ public class CreateContextContext {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created_at")
     public OffsetDateTime createdAt;
+
     public CreateContextContext withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -32,6 +33,7 @@ public class CreateContextContext {
      */
     @JsonProperty("id")
     public String id;
+
     public CreateContextContext withId(String id) {
         this.id = id;
         return this;
@@ -42,6 +44,7 @@ public class CreateContextContext {
      */
     @JsonProperty("name")
     public String name;
+
     public CreateContextContext withName(String name) {
         this.name = name;
         return this;

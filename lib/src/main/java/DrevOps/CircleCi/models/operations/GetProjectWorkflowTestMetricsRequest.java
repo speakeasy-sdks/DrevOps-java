@@ -13,6 +13,7 @@ public class GetProjectWorkflowTestMetricsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=all-branches")
     public Boolean allBranches;
+
     public GetProjectWorkflowTestMetricsRequest withAllBranches(Boolean allBranches) {
         this.allBranches = allBranches;
         return this;
@@ -23,6 +24,7 @@ public class GetProjectWorkflowTestMetricsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=branch")
     public String branch;
+
     public GetProjectWorkflowTestMetricsRequest withBranch(String branch) {
         this.branch = branch;
         return this;
@@ -33,6 +35,7 @@ public class GetProjectWorkflowTestMetricsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public GetProjectWorkflowTestMetricsRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;
@@ -43,6 +46,7 @@ public class GetProjectWorkflowTestMetricsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=workflow-name")
     public String workflowName;
+
     public GetProjectWorkflowTestMetricsRequest withWorkflowName(String workflowName) {
         this.workflowName = workflowName;
         return this;

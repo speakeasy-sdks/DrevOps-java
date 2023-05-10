@@ -15,6 +15,7 @@ public class GetScheduleByIdScheduleUser {
      */
     @JsonProperty("id")
     public String id;
+
     public GetScheduleByIdScheduleUser withId(String id) {
         this.id = id;
         return this;
@@ -25,6 +26,7 @@ public class GetScheduleByIdScheduleUser {
      */
     @JsonProperty("login")
     public String login;
+
     public GetScheduleByIdScheduleUser withLogin(String login) {
         this.login = login;
         return this;
@@ -35,6 +37,7 @@ public class GetScheduleByIdScheduleUser {
      */
     @JsonProperty("name")
     public String name;
+
     public GetScheduleByIdScheduleUser withName(String name) {
         this.name = name;
         return this;

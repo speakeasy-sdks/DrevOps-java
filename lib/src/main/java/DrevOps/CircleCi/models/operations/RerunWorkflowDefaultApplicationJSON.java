@@ -15,6 +15,7 @@ public class RerunWorkflowDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public RerunWorkflowDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

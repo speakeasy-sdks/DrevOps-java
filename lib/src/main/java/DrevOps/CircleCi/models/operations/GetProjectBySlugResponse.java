@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetProjectBySlugResponse {
     
     public String contentType;
+
     public GetProjectBySlugResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class GetProjectBySlugResponse {
      */
     
     public GetProjectBySlugProject project;
+
     public GetProjectBySlugResponse withProject(GetProjectBySlugProject project) {
         this.project = project;
         return this;
@@ -27,6 +29,7 @@ public class GetProjectBySlugResponse {
     
     
     public Integer statusCode;
+
     public GetProjectBySlugResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class GetProjectBySlugResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetProjectBySlugResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class GetProjectBySlugResponse {
      */
     
     public GetProjectBySlugDefaultApplicationJSON getProjectBySlugDefaultApplicationJSONObject;
+
     public GetProjectBySlugResponse withGetProjectBySlugDefaultApplicationJSONObject(GetProjectBySlugDefaultApplicationJSON getProjectBySlugDefaultApplicationJSONObject) {
         this.getProjectBySlugDefaultApplicationJSONObject = getProjectBySlugDefaultApplicationJSONObject;
         return this;

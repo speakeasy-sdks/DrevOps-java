@@ -15,6 +15,7 @@ public class GetJobTimeseries200ApplicationJSONItemsMetrics {
      */
     @JsonProperty("duration_metrics")
     public GetJobTimeseries200ApplicationJSONItemsMetricsDurationMetrics durationMetrics;
+
     public GetJobTimeseries200ApplicationJSONItemsMetrics withDurationMetrics(GetJobTimeseries200ApplicationJSONItemsMetricsDurationMetrics durationMetrics) {
         this.durationMetrics = durationMetrics;
         return this;
@@ -25,6 +26,7 @@ public class GetJobTimeseries200ApplicationJSONItemsMetrics {
      */
     @JsonProperty("failed_runs")
     public Long failedRuns;
+
     public GetJobTimeseries200ApplicationJSONItemsMetrics withFailedRuns(Long failedRuns) {
         this.failedRuns = failedRuns;
         return this;
@@ -35,6 +37,7 @@ public class GetJobTimeseries200ApplicationJSONItemsMetrics {
      */
     @JsonProperty("median_credits_used")
     public Long medianCreditsUsed;
+
     public GetJobTimeseries200ApplicationJSONItemsMetrics withMedianCreditsUsed(Long medianCreditsUsed) {
         this.medianCreditsUsed = medianCreditsUsed;
         return this;
@@ -45,6 +48,7 @@ public class GetJobTimeseries200ApplicationJSONItemsMetrics {
      */
     @JsonProperty("successful_runs")
     public Long successfulRuns;
+
     public GetJobTimeseries200ApplicationJSONItemsMetrics withSuccessfulRuns(Long successfulRuns) {
         this.successfulRuns = successfulRuns;
         return this;
@@ -55,6 +59,7 @@ public class GetJobTimeseries200ApplicationJSONItemsMetrics {
      */
     @JsonProperty("throughput")
     public Float throughput;
+
     public GetJobTimeseries200ApplicationJSONItemsMetrics withThroughput(Float throughput) {
         this.throughput = throughput;
         return this;
@@ -65,6 +70,7 @@ public class GetJobTimeseries200ApplicationJSONItemsMetrics {
      */
     @JsonProperty("total_credits_used")
     public Long totalCreditsUsed;
+
     public GetJobTimeseries200ApplicationJSONItemsMetrics withTotalCreditsUsed(Long totalCreditsUsed) {
         this.totalCreditsUsed = totalCreditsUsed;
         return this;
@@ -75,6 +81,7 @@ public class GetJobTimeseries200ApplicationJSONItemsMetrics {
      */
     @JsonProperty("total_runs")
     public Long totalRuns;
+
     public GetJobTimeseries200ApplicationJSONItemsMetrics withTotalRuns(Long totalRuns) {
         this.totalRuns = totalRuns;
         return this;

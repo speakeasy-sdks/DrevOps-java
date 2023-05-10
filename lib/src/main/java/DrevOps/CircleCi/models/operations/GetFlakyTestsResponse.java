@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetFlakyTestsResponse {
     
     public String contentType;
+
     public GetFlakyTestsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class GetFlakyTestsResponse {
     
     
     public Integer statusCode;
+
     public GetFlakyTestsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class GetFlakyTestsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetFlakyTestsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -34,6 +37,7 @@ public class GetFlakyTestsResponse {
      */
     
     public GetFlakyTests200ApplicationJSON getFlakyTests200ApplicationJSONObject;
+
     public GetFlakyTestsResponse withGetFlakyTests200ApplicationJSONObject(GetFlakyTests200ApplicationJSON getFlakyTests200ApplicationJSONObject) {
         this.getFlakyTests200ApplicationJSONObject = getFlakyTests200ApplicationJSONObject;
         return this;
@@ -44,6 +48,7 @@ public class GetFlakyTestsResponse {
      */
     
     public GetFlakyTestsDefaultApplicationJSON getFlakyTestsDefaultApplicationJSONObject;
+
     public GetFlakyTestsResponse withGetFlakyTestsDefaultApplicationJSONObject(GetFlakyTestsDefaultApplicationJSON getFlakyTestsDefaultApplicationJSONObject) {
         this.getFlakyTestsDefaultApplicationJSONObject = getFlakyTestsDefaultApplicationJSONObject;
         return this;

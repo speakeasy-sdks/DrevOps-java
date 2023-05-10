@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetWebhooksResponse {
     
     public String contentType;
+
     public GetWebhooksResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class GetWebhooksResponse {
     
     
     public Integer statusCode;
+
     public GetWebhooksResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class GetWebhooksResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetWebhooksResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -34,6 +37,7 @@ public class GetWebhooksResponse {
      */
     
     public GetWebhooks200ApplicationJSON getWebhooks200ApplicationJSONObject;
+
     public GetWebhooksResponse withGetWebhooks200ApplicationJSONObject(GetWebhooks200ApplicationJSON getWebhooks200ApplicationJSONObject) {
         this.getWebhooks200ApplicationJSONObject = getWebhooks200ApplicationJSONObject;
         return this;
@@ -44,6 +48,7 @@ public class GetWebhooksResponse {
      */
     
     public GetWebhooksDefaultApplicationJSON getWebhooksDefaultApplicationJSONObject;
+
     public GetWebhooksResponse withGetWebhooksDefaultApplicationJSONObject(GetWebhooksDefaultApplicationJSON getWebhooksDefaultApplicationJSONObject) {
         this.getWebhooksDefaultApplicationJSONObject = getWebhooksDefaultApplicationJSONObject;
         return this;

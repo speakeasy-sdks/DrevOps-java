@@ -15,6 +15,7 @@ public class GetUserUser {
      */
     @JsonProperty("id")
     public String id;
+
     public GetUserUser withId(String id) {
         this.id = id;
         return this;
@@ -25,6 +26,7 @@ public class GetUserUser {
      */
     @JsonProperty("login")
     public String login;
+
     public GetUserUser withLogin(String login) {
         this.login = login;
         return this;
@@ -35,6 +37,7 @@ public class GetUserUser {
      */
     @JsonProperty("name")
     public String name;
+
     public GetUserUser withName(String name) {
         this.name = name;
         return this;

@@ -15,6 +15,7 @@ public class AddEnvironmentVariableToContext200ApplicationJSONMessageResponse {
      */
     @JsonProperty("message")
     public String message;
+
     public AddEnvironmentVariableToContext200ApplicationJSONMessageResponse withMessage(String message) {
         this.message = message;
         return this;

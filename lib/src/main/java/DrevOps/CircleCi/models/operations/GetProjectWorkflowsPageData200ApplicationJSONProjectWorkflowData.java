@@ -12,6 +12,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowData {
      */
     @JsonProperty("metrics")
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowDataMetrics metrics;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowData withMetrics(GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowDataMetrics metrics) {
         this.metrics = metrics;
         return this;
@@ -22,6 +23,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowData {
      */
     @JsonProperty("trends")
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowDataTrends trends;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowData withTrends(GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowDataTrends trends) {
         this.trends = trends;
         return this;
@@ -32,6 +34,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowData {
      */
     @JsonProperty("workflow_name")
     public String workflowName;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowData withWorkflowName(String workflowName) {
         this.workflowName = workflowName;
         return this;

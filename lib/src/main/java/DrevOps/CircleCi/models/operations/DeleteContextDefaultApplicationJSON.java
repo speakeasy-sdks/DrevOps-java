@@ -15,6 +15,7 @@ public class DeleteContextDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public DeleteContextDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

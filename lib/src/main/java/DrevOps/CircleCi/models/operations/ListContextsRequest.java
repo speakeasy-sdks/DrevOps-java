@@ -12,6 +12,7 @@ public class ListContextsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=owner-id")
     public String ownerId;
+
     public ListContextsRequest withOwnerId(String ownerId) {
         this.ownerId = ownerId;
         return this;
@@ -22,6 +23,7 @@ public class ListContextsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=owner-slug")
     public String ownerSlug;
+
     public ListContextsRequest withOwnerSlug(String ownerSlug) {
         this.ownerSlug = ownerSlug;
         return this;
@@ -32,6 +34,7 @@ public class ListContextsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=owner-type")
     public ListContextsOwnerTypeEnum ownerType;
+
     public ListContextsRequest withOwnerType(ListContextsOwnerTypeEnum ownerType) {
         this.ownerType = ownerType;
         return this;
@@ -42,6 +45,7 @@ public class ListContextsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=page-token")
     public String pageToken;
+
     public ListContextsRequest withPageToken(String pageToken) {
         this.pageToken = pageToken;
         return this;

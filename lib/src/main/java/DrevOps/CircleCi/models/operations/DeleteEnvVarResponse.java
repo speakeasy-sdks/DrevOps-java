@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class DeleteEnvVarResponse {
     
     public String contentType;
+
     public DeleteEnvVarResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class DeleteEnvVarResponse {
      */
     
     public DeleteEnvVarMessageResponse messageResponse;
+
     public DeleteEnvVarResponse withMessageResponse(DeleteEnvVarMessageResponse messageResponse) {
         this.messageResponse = messageResponse;
         return this;
@@ -27,6 +29,7 @@ public class DeleteEnvVarResponse {
     
     
     public Integer statusCode;
+
     public DeleteEnvVarResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class DeleteEnvVarResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public DeleteEnvVarResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class DeleteEnvVarResponse {
      */
     
     public DeleteEnvVarDefaultApplicationJSON deleteEnvVarDefaultApplicationJSONObject;
+
     public DeleteEnvVarResponse withDeleteEnvVarDefaultApplicationJSONObject(DeleteEnvVarDefaultApplicationJSON deleteEnvVarDefaultApplicationJSONObject) {
         this.deleteEnvVarDefaultApplicationJSONObject = deleteEnvVarDefaultApplicationJSONObject;
         return this;

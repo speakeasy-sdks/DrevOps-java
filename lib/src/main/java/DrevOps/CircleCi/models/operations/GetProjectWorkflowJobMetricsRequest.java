@@ -13,6 +13,7 @@ public class GetProjectWorkflowJobMetricsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=all-branches")
     public Boolean allBranches;
+
     public GetProjectWorkflowJobMetricsRequest withAllBranches(Boolean allBranches) {
         this.allBranches = allBranches;
         return this;
@@ -23,6 +24,7 @@ public class GetProjectWorkflowJobMetricsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=branch")
     public String branch;
+
     public GetProjectWorkflowJobMetricsRequest withBranch(String branch) {
         this.branch = branch;
         return this;
@@ -33,6 +35,7 @@ public class GetProjectWorkflowJobMetricsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=page-token")
     public String pageToken;
+
     public GetProjectWorkflowJobMetricsRequest withPageToken(String pageToken) {
         this.pageToken = pageToken;
         return this;
@@ -43,6 +46,7 @@ public class GetProjectWorkflowJobMetricsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public GetProjectWorkflowJobMetricsRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;
@@ -53,6 +57,7 @@ public class GetProjectWorkflowJobMetricsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=reporting-window")
     public GetProjectWorkflowJobMetricsReportingWindowEnum reportingWindow;
+
     public GetProjectWorkflowJobMetricsRequest withReportingWindow(GetProjectWorkflowJobMetricsReportingWindowEnum reportingWindow) {
         this.reportingWindow = reportingWindow;
         return this;
@@ -63,6 +68,7 @@ public class GetProjectWorkflowJobMetricsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=workflow-name")
     public String workflowName;
+
     public GetProjectWorkflowJobMetricsRequest withWorkflowName(String workflowName) {
         this.workflowName = workflowName;
         return this;

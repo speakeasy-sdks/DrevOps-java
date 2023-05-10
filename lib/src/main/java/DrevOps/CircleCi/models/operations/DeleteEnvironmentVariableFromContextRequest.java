@@ -13,6 +13,7 @@ public class DeleteEnvironmentVariableFromContextRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=context-id")
     public String contextId;
+
     public DeleteEnvironmentVariableFromContextRequest withContextId(String contextId) {
         this.contextId = contextId;
         return this;
@@ -23,6 +24,7 @@ public class DeleteEnvironmentVariableFromContextRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=env-var-name")
     public String envVarName;
+
     public DeleteEnvironmentVariableFromContextRequest withEnvVarName(String envVarName) {
         this.envVarName = envVarName;
         return this;

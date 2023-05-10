@@ -15,6 +15,7 @@ public class GetJobTimeseriesDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public GetJobTimeseriesDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

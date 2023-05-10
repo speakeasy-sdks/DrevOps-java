@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class TriggerPipelineResponse {
     
     public String contentType;
+
     public TriggerPipelineResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class TriggerPipelineResponse {
      */
     
     public TriggerPipelinePipelineCreation pipelineCreation;
+
     public TriggerPipelineResponse withPipelineCreation(TriggerPipelinePipelineCreation pipelineCreation) {
         this.pipelineCreation = pipelineCreation;
         return this;
@@ -27,6 +29,7 @@ public class TriggerPipelineResponse {
     
     
     public Integer statusCode;
+
     public TriggerPipelineResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class TriggerPipelineResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public TriggerPipelineResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class TriggerPipelineResponse {
      */
     
     public TriggerPipelineDefaultApplicationJSON triggerPipelineDefaultApplicationJSONObject;
+
     public TriggerPipelineResponse withTriggerPipelineDefaultApplicationJSONObject(TriggerPipelineDefaultApplicationJSON triggerPipelineDefaultApplicationJSONObject) {
         this.triggerPipelineDefaultApplicationJSONObject = triggerPipelineDefaultApplicationJSONObject;
         return this;

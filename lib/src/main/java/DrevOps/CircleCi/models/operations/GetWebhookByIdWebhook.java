@@ -22,6 +22,7 @@ public class GetWebhookByIdWebhook {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created-at")
     public OffsetDateTime createdAt;
+
     public GetWebhookByIdWebhook withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -32,6 +33,7 @@ public class GetWebhookByIdWebhook {
      */
     @JsonProperty("events")
     public GetWebhookByIdWebhookEventsEnum[] events;
+
     public GetWebhookByIdWebhook withEvents(GetWebhookByIdWebhookEventsEnum[] events) {
         this.events = events;
         return this;
@@ -42,6 +44,7 @@ public class GetWebhookByIdWebhook {
      */
     @JsonProperty("id")
     public String id;
+
     public GetWebhookByIdWebhook withId(String id) {
         this.id = id;
         return this;
@@ -52,6 +55,7 @@ public class GetWebhookByIdWebhook {
      */
     @JsonProperty("name")
     public String name;
+
     public GetWebhookByIdWebhook withName(String name) {
         this.name = name;
         return this;
@@ -62,6 +66,7 @@ public class GetWebhookByIdWebhook {
      */
     @JsonProperty("scope")
     public GetWebhookByIdWebhookScope scope;
+
     public GetWebhookByIdWebhook withScope(GetWebhookByIdWebhookScope scope) {
         this.scope = scope;
         return this;
@@ -72,6 +77,7 @@ public class GetWebhookByIdWebhook {
      */
     @JsonProperty("signing-secret")
     public String signingSecret;
+
     public GetWebhookByIdWebhook withSigningSecret(String signingSecret) {
         this.signingSecret = signingSecret;
         return this;
@@ -84,6 +90,7 @@ public class GetWebhookByIdWebhook {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("updated-at")
     public OffsetDateTime updatedAt;
+
     public GetWebhookByIdWebhook withUpdatedAt(OffsetDateTime updatedAt) {
         this.updatedAt = updatedAt;
         return this;
@@ -94,6 +101,7 @@ public class GetWebhookByIdWebhook {
      */
     @JsonProperty("url")
     public String url;
+
     public GetWebhookByIdWebhook withUrl(String url) {
         this.url = url;
         return this;
@@ -104,6 +112,7 @@ public class GetWebhookByIdWebhook {
      */
     @JsonProperty("verify-tls")
     public Boolean verifyTls;
+
     public GetWebhookByIdWebhook withVerifyTls(Boolean verifyTls) {
         this.verifyTls = verifyTls;
         return this;

@@ -15,6 +15,7 @@ public class GetScheduleByIdDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public GetScheduleByIdDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

@@ -15,6 +15,7 @@ public class DeleteEnvironmentVariableFromContextDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public DeleteEnvironmentVariableFromContextDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

@@ -15,6 +15,7 @@ public class ApprovePendingApprovalJobByIdMessageResponse {
      */
     @JsonProperty("message")
     public String message;
+
     public ApprovePendingApprovalJobByIdMessageResponse withMessage(String message) {
         this.message = message;
         return this;

@@ -13,6 +13,7 @@ public class GetFlakyTestsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public GetFlakyTestsRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;

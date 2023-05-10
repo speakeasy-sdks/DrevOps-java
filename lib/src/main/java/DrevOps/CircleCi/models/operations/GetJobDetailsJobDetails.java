@@ -22,6 +22,7 @@ public class GetJobDetailsJobDetails {
      */
     @JsonProperty("contexts")
     public GetJobDetailsJobDetailsContexts[] contexts;
+
     public GetJobDetailsJobDetails withContexts(GetJobDetailsJobDetailsContexts[] contexts) {
         this.contexts = contexts;
         return this;
@@ -34,6 +35,7 @@ public class GetJobDetailsJobDetails {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created_at")
     public OffsetDateTime createdAt;
+
     public GetJobDetailsJobDetails withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -44,6 +46,7 @@ public class GetJobDetailsJobDetails {
      */
     @JsonProperty("duration")
     public Long duration;
+
     public GetJobDetailsJobDetails withDuration(Long duration) {
         this.duration = duration;
         return this;
@@ -54,6 +57,7 @@ public class GetJobDetailsJobDetails {
      */
     @JsonProperty("executor")
     public GetJobDetailsJobDetailsExecutor executor;
+
     public GetJobDetailsJobDetails withExecutor(GetJobDetailsJobDetailsExecutor executor) {
         this.executor = executor;
         return this;
@@ -64,6 +68,7 @@ public class GetJobDetailsJobDetails {
      */
     @JsonProperty("latest_workflow")
     public GetJobDetailsJobDetailsLatestWorkflow latestWorkflow;
+
     public GetJobDetailsJobDetails withLatestWorkflow(GetJobDetailsJobDetailsLatestWorkflow latestWorkflow) {
         this.latestWorkflow = latestWorkflow;
         return this;
@@ -74,6 +79,7 @@ public class GetJobDetailsJobDetails {
      */
     @JsonProperty("messages")
     public GetJobDetailsJobDetailsMessages[] messages;
+
     public GetJobDetailsJobDetails withMessages(GetJobDetailsJobDetailsMessages[] messages) {
         this.messages = messages;
         return this;
@@ -84,6 +90,7 @@ public class GetJobDetailsJobDetails {
      */
     @JsonProperty("name")
     public String name;
+
     public GetJobDetailsJobDetails withName(String name) {
         this.name = name;
         return this;
@@ -94,6 +101,7 @@ public class GetJobDetailsJobDetails {
      */
     @JsonProperty("number")
     public Long number;
+
     public GetJobDetailsJobDetails withNumber(Long number) {
         this.number = number;
         return this;
@@ -104,6 +112,7 @@ public class GetJobDetailsJobDetails {
      */
     @JsonProperty("organization")
     public GetJobDetailsJobDetailsOrganization organization;
+
     public GetJobDetailsJobDetails withOrganization(GetJobDetailsJobDetailsOrganization organization) {
         this.organization = organization;
         return this;
@@ -114,6 +123,7 @@ public class GetJobDetailsJobDetails {
      */
     @JsonProperty("parallel_runs")
     public GetJobDetailsJobDetailsParallelRuns[] parallelRuns;
+
     public GetJobDetailsJobDetails withParallelRuns(GetJobDetailsJobDetailsParallelRuns[] parallelRuns) {
         this.parallelRuns = parallelRuns;
         return this;
@@ -124,6 +134,7 @@ public class GetJobDetailsJobDetails {
      */
     @JsonProperty("parallelism")
     public Long parallelism;
+
     public GetJobDetailsJobDetails withParallelism(Long parallelism) {
         this.parallelism = parallelism;
         return this;
@@ -134,6 +145,7 @@ public class GetJobDetailsJobDetails {
      */
     @JsonProperty("pipeline")
     public GetJobDetailsJobDetailsPipeline pipeline;
+
     public GetJobDetailsJobDetails withPipeline(GetJobDetailsJobDetailsPipeline pipeline) {
         this.pipeline = pipeline;
         return this;
@@ -144,6 +156,7 @@ public class GetJobDetailsJobDetails {
      */
     @JsonProperty("project")
     public GetJobDetailsJobDetailsProject project;
+
     public GetJobDetailsJobDetails withProject(GetJobDetailsJobDetailsProject project) {
         this.project = project;
         return this;
@@ -156,6 +169,7 @@ public class GetJobDetailsJobDetails {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("queued_at")
     public OffsetDateTime queuedAt;
+
     public GetJobDetailsJobDetails withQueuedAt(OffsetDateTime queuedAt) {
         this.queuedAt = queuedAt;
         return this;
@@ -168,6 +182,7 @@ public class GetJobDetailsJobDetails {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("started_at")
     public OffsetDateTime startedAt;
+
     public GetJobDetailsJobDetails withStartedAt(OffsetDateTime startedAt) {
         this.startedAt = startedAt;
         return this;
@@ -178,6 +193,7 @@ public class GetJobDetailsJobDetails {
      */
     @JsonProperty("status")
     public GetJobDetailsJobDetailsStatusEnum status;
+
     public GetJobDetailsJobDetails withStatus(GetJobDetailsJobDetailsStatusEnum status) {
         this.status = status;
         return this;
@@ -191,6 +207,7 @@ public class GetJobDetailsJobDetails {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("stopped_at")
     public OffsetDateTime stoppedAt;
+
     public GetJobDetailsJobDetails withStoppedAt(OffsetDateTime stoppedAt) {
         this.stoppedAt = stoppedAt;
         return this;
@@ -201,6 +218,7 @@ public class GetJobDetailsJobDetails {
      */
     @JsonProperty("web_url")
     public String webUrl;
+
     public GetJobDetailsJobDetails withWebUrl(String webUrl) {
         this.webUrl = webUrl;
         return this;

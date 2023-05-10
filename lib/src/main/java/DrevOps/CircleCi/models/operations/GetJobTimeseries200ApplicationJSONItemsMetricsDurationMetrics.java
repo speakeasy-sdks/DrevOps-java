@@ -15,6 +15,7 @@ public class GetJobTimeseries200ApplicationJSONItemsMetricsDurationMetrics {
      */
     @JsonProperty("max")
     public Long max;
+
     public GetJobTimeseries200ApplicationJSONItemsMetricsDurationMetrics withMax(Long max) {
         this.max = max;
         return this;
@@ -25,6 +26,7 @@ public class GetJobTimeseries200ApplicationJSONItemsMetricsDurationMetrics {
      */
     @JsonProperty("median")
     public Long median;
+
     public GetJobTimeseries200ApplicationJSONItemsMetricsDurationMetrics withMedian(Long median) {
         this.median = median;
         return this;
@@ -35,6 +37,7 @@ public class GetJobTimeseries200ApplicationJSONItemsMetricsDurationMetrics {
      */
     @JsonProperty("min")
     public Long min;
+
     public GetJobTimeseries200ApplicationJSONItemsMetricsDurationMetrics withMin(Long min) {
         this.min = min;
         return this;
@@ -45,6 +48,7 @@ public class GetJobTimeseries200ApplicationJSONItemsMetricsDurationMetrics {
      */
     @JsonProperty("p95")
     public Long p95;
+
     public GetJobTimeseries200ApplicationJSONItemsMetricsDurationMetrics withP95(Long p95) {
         this.p95 = p95;
         return this;
@@ -55,6 +59,7 @@ public class GetJobTimeseries200ApplicationJSONItemsMetricsDurationMetrics {
      */
     @JsonProperty("total")
     public Long total;
+
     public GetJobTimeseries200ApplicationJSONItemsMetricsDurationMetrics withTotal(Long total) {
         this.total = total;
         return this;

@@ -13,6 +13,7 @@ public class GetWebhookByIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=webhook-id")
     public String webhookId;
+
     public GetWebhookByIdRequest withWebhookId(String webhookId) {
         this.webhookId = webhookId;
         return this;

@@ -29,6 +29,18 @@ public class User {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Collaborations
+     * Provides the set of organizations of which a user is a member or a collaborator.
+     * 
+     * The set of organizations that a user can collaborate on is composed of:
+     * 
+     * * Organizations that the current user belongs to across VCS types (e.g. BitBucket, GitHub)
+     * * The parent organization of repository that the user can collaborate on, but is not necessarily a member of
+     * * The organization of the current user's account
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.GetCollaborationsResponse getCollaborations() throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(baseUrl, "/me/collaborations");
@@ -68,6 +80,12 @@ public class User {
         return res;
     }
 
+    /**
+     * User Information
+     * Provides information about the user that is currently signed in.
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.GetCurrentUserResponse getCurrentUser() throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(baseUrl, "/me");
@@ -107,6 +125,13 @@ public class User {
         return res;
     }
 
+    /**
+     * User Information
+     * Provides information about the user with the given ID.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.GetUserResponse getUser(DrevOps.CircleCi.models.operations.GetUserRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetUserRequest.class, baseUrl, "/user/{id}", request, null);

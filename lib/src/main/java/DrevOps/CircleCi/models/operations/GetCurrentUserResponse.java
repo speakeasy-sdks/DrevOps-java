@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetCurrentUserResponse {
     
     public String contentType;
+
     public GetCurrentUserResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class GetCurrentUserResponse {
     
     
     public Integer statusCode;
+
     public GetCurrentUserResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class GetCurrentUserResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetCurrentUserResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -34,6 +37,7 @@ public class GetCurrentUserResponse {
      */
     
     public GetCurrentUserUser user;
+
     public GetCurrentUserResponse withUser(GetCurrentUserUser user) {
         this.user = user;
         return this;
@@ -44,6 +48,7 @@ public class GetCurrentUserResponse {
      */
     
     public GetCurrentUserDefaultApplicationJSON getCurrentUserDefaultApplicationJSONObject;
+
     public GetCurrentUserResponse withGetCurrentUserDefaultApplicationJSONObject(GetCurrentUserDefaultApplicationJSON getCurrentUserDefaultApplicationJSONObject) {
         this.getCurrentUserDefaultApplicationJSONObject = getCurrentUserDefaultApplicationJSONObject;
         return this;

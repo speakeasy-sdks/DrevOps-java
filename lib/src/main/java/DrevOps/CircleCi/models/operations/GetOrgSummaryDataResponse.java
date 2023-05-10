@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetOrgSummaryDataResponse {
     
     public String contentType;
+
     public GetOrgSummaryDataResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class GetOrgSummaryDataResponse {
     
     
     public Integer statusCode;
+
     public GetOrgSummaryDataResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class GetOrgSummaryDataResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetOrgSummaryDataResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -34,6 +37,7 @@ public class GetOrgSummaryDataResponse {
      */
     
     public GetOrgSummaryData200ApplicationJSON getOrgSummaryData200ApplicationJSONObject;
+
     public GetOrgSummaryDataResponse withGetOrgSummaryData200ApplicationJSONObject(GetOrgSummaryData200ApplicationJSON getOrgSummaryData200ApplicationJSONObject) {
         this.getOrgSummaryData200ApplicationJSONObject = getOrgSummaryData200ApplicationJSONObject;
         return this;
@@ -44,6 +48,7 @@ public class GetOrgSummaryDataResponse {
      */
     
     public GetOrgSummaryDataDefaultApplicationJSON getOrgSummaryDataDefaultApplicationJSONObject;
+
     public GetOrgSummaryDataResponse withGetOrgSummaryDataDefaultApplicationJSONObject(GetOrgSummaryDataDefaultApplicationJSON getOrgSummaryDataDefaultApplicationJSONObject) {
         this.getOrgSummaryDataDefaultApplicationJSONObject = getOrgSummaryDataDefaultApplicationJSONObject;
         return this;

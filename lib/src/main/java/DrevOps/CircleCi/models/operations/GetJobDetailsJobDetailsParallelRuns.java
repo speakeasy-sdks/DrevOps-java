@@ -15,6 +15,7 @@ public class GetJobDetailsJobDetailsParallelRuns {
      */
     @JsonProperty("index")
     public Long index;
+
     public GetJobDetailsJobDetailsParallelRuns withIndex(Long index) {
         this.index = index;
         return this;
@@ -25,6 +26,7 @@ public class GetJobDetailsJobDetailsParallelRuns {
      */
     @JsonProperty("status")
     public String status;
+
     public GetJobDetailsJobDetailsParallelRuns withStatus(String status) {
         this.status = status;
         return this;

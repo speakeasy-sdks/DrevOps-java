@@ -17,6 +17,7 @@ public class GetJobDetailsJobDetailsMessages {
      */
     @JsonProperty("message")
     public String message;
+
     public GetJobDetailsJobDetailsMessages withMessage(String message) {
         this.message = message;
         return this;
@@ -28,6 +29,7 @@ public class GetJobDetailsJobDetailsMessages {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("reason")
     public String reason;
+
     public GetJobDetailsJobDetailsMessages withReason(String reason) {
         this.reason = reason;
         return this;
@@ -38,6 +40,7 @@ public class GetJobDetailsJobDetailsMessages {
      */
     @JsonProperty("type")
     public String type;
+
     public GetJobDetailsJobDetailsMessages withType(String type) {
         this.type = type;
         return this;

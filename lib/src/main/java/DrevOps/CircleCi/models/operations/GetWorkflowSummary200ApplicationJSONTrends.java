@@ -15,6 +15,7 @@ public class GetWorkflowSummary200ApplicationJSONTrends {
      */
     @JsonProperty("failed_runs")
     public Float failedRuns;
+
     public GetWorkflowSummary200ApplicationJSONTrends withFailedRuns(Float failedRuns) {
         this.failedRuns = failedRuns;
         return this;
@@ -25,6 +26,7 @@ public class GetWorkflowSummary200ApplicationJSONTrends {
      */
     @JsonProperty("median_duration_secs")
     public Float medianDurationSecs;
+
     public GetWorkflowSummary200ApplicationJSONTrends withMedianDurationSecs(Float medianDurationSecs) {
         this.medianDurationSecs = medianDurationSecs;
         return this;
@@ -35,6 +37,7 @@ public class GetWorkflowSummary200ApplicationJSONTrends {
      */
     @JsonProperty("mttr")
     public Float mttr;
+
     public GetWorkflowSummary200ApplicationJSONTrends withMttr(Float mttr) {
         this.mttr = mttr;
         return this;
@@ -45,6 +48,7 @@ public class GetWorkflowSummary200ApplicationJSONTrends {
      */
     @JsonProperty("p95_duration_secs")
     public Float p95DurationSecs;
+
     public GetWorkflowSummary200ApplicationJSONTrends withP95DurationSecs(Float p95DurationSecs) {
         this.p95DurationSecs = p95DurationSecs;
         return this;
@@ -55,6 +59,7 @@ public class GetWorkflowSummary200ApplicationJSONTrends {
      */
     @JsonProperty("success_rate")
     public Float successRate;
+
     public GetWorkflowSummary200ApplicationJSONTrends withSuccessRate(Float successRate) {
         this.successRate = successRate;
         return this;
@@ -65,6 +70,7 @@ public class GetWorkflowSummary200ApplicationJSONTrends {
      */
     @JsonProperty("throughput")
     public Float throughput;
+
     public GetWorkflowSummary200ApplicationJSONTrends withThroughput(Float throughput) {
         this.throughput = throughput;
         return this;
@@ -75,6 +81,7 @@ public class GetWorkflowSummary200ApplicationJSONTrends {
      */
     @JsonProperty("total_credits_used")
     public Float totalCreditsUsed;
+
     public GetWorkflowSummary200ApplicationJSONTrends withTotalCreditsUsed(Float totalCreditsUsed) {
         this.totalCreditsUsed = totalCreditsUsed;
         return this;
@@ -85,6 +92,7 @@ public class GetWorkflowSummary200ApplicationJSONTrends {
      */
     @JsonProperty("total_runs")
     public Float totalRuns;
+
     public GetWorkflowSummary200ApplicationJSONTrends withTotalRuns(Float totalRuns) {
         this.totalRuns = totalRuns;
         return this;

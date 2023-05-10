@@ -22,6 +22,7 @@ public class UpdateWebhookWebhook {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created-at")
     public OffsetDateTime createdAt;
+
     public UpdateWebhookWebhook withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -32,6 +33,7 @@ public class UpdateWebhookWebhook {
      */
     @JsonProperty("events")
     public UpdateWebhookWebhookEventsEnum[] events;
+
     public UpdateWebhookWebhook withEvents(UpdateWebhookWebhookEventsEnum[] events) {
         this.events = events;
         return this;
@@ -42,6 +44,7 @@ public class UpdateWebhookWebhook {
      */
     @JsonProperty("id")
     public String id;
+
     public UpdateWebhookWebhook withId(String id) {
         this.id = id;
         return this;
@@ -52,6 +55,7 @@ public class UpdateWebhookWebhook {
      */
     @JsonProperty("name")
     public String name;
+
     public UpdateWebhookWebhook withName(String name) {
         this.name = name;
         return this;
@@ -62,6 +66,7 @@ public class UpdateWebhookWebhook {
      */
     @JsonProperty("scope")
     public UpdateWebhookWebhookScope scope;
+
     public UpdateWebhookWebhook withScope(UpdateWebhookWebhookScope scope) {
         this.scope = scope;
         return this;
@@ -72,6 +77,7 @@ public class UpdateWebhookWebhook {
      */
     @JsonProperty("signing-secret")
     public String signingSecret;
+
     public UpdateWebhookWebhook withSigningSecret(String signingSecret) {
         this.signingSecret = signingSecret;
         return this;
@@ -84,6 +90,7 @@ public class UpdateWebhookWebhook {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("updated-at")
     public OffsetDateTime updatedAt;
+
     public UpdateWebhookWebhook withUpdatedAt(OffsetDateTime updatedAt) {
         this.updatedAt = updatedAt;
         return this;
@@ -94,6 +101,7 @@ public class UpdateWebhookWebhook {
      */
     @JsonProperty("url")
     public String url;
+
     public UpdateWebhookWebhook withUrl(String url) {
         this.url = url;
         return this;
@@ -104,6 +112,7 @@ public class UpdateWebhookWebhook {
      */
     @JsonProperty("verify-tls")
     public Boolean verifyTls;
+
     public UpdateWebhookWebhook withVerifyTls(Boolean verifyTls) {
         this.verifyTls = verifyTls;
         return this;

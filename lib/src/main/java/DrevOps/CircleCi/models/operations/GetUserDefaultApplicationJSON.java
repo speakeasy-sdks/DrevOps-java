@@ -15,6 +15,7 @@ public class GetUserDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public GetUserDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

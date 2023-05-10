@@ -23,6 +23,7 @@ public class ListWorkflowJobsWorkflowJobListResponseJob {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("approval_request_id")
     public String approvalRequestId;
+
     public ListWorkflowJobsWorkflowJobListResponseJob withApprovalRequestId(String approvalRequestId) {
         this.approvalRequestId = approvalRequestId;
         return this;
@@ -34,6 +35,7 @@ public class ListWorkflowJobsWorkflowJobListResponseJob {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("approved_by")
     public String approvedBy;
+
     public ListWorkflowJobsWorkflowJobListResponseJob withApprovedBy(String approvedBy) {
         this.approvedBy = approvedBy;
         return this;
@@ -45,6 +47,7 @@ public class ListWorkflowJobsWorkflowJobListResponseJob {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("canceled_by")
     public String canceledBy;
+
     public ListWorkflowJobsWorkflowJobListResponseJob withCanceledBy(String canceledBy) {
         this.canceledBy = canceledBy;
         return this;
@@ -55,6 +58,7 @@ public class ListWorkflowJobsWorkflowJobListResponseJob {
      */
     @JsonProperty("dependencies")
     public String[] dependencies;
+
     public ListWorkflowJobsWorkflowJobListResponseJob withDependencies(String[] dependencies) {
         this.dependencies = dependencies;
         return this;
@@ -65,6 +69,7 @@ public class ListWorkflowJobsWorkflowJobListResponseJob {
      */
     @JsonProperty("id")
     public String id;
+
     public ListWorkflowJobsWorkflowJobListResponseJob withId(String id) {
         this.id = id;
         return this;
@@ -76,6 +81,7 @@ public class ListWorkflowJobsWorkflowJobListResponseJob {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("job_number")
     public Long jobNumber;
+
     public ListWorkflowJobsWorkflowJobListResponseJob withJobNumber(Long jobNumber) {
         this.jobNumber = jobNumber;
         return this;
@@ -86,6 +92,7 @@ public class ListWorkflowJobsWorkflowJobListResponseJob {
      */
     @JsonProperty("name")
     public String name;
+
     public ListWorkflowJobsWorkflowJobListResponseJob withName(String name) {
         this.name = name;
         return this;
@@ -96,6 +103,7 @@ public class ListWorkflowJobsWorkflowJobListResponseJob {
      */
     @JsonProperty("project_slug")
     public String projectSlug;
+
     public ListWorkflowJobsWorkflowJobListResponseJob withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;
@@ -108,6 +116,7 @@ public class ListWorkflowJobsWorkflowJobListResponseJob {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("started_at")
     public OffsetDateTime startedAt;
+
     public ListWorkflowJobsWorkflowJobListResponseJob withStartedAt(OffsetDateTime startedAt) {
         this.startedAt = startedAt;
         return this;
@@ -118,6 +127,7 @@ public class ListWorkflowJobsWorkflowJobListResponseJob {
      */
     @JsonProperty("status")
     public ListWorkflowJobsWorkflowJobListResponseJobStatusEnum status;
+
     public ListWorkflowJobsWorkflowJobListResponseJob withStatus(ListWorkflowJobsWorkflowJobListResponseJobStatusEnum status) {
         this.status = status;
         return this;
@@ -131,6 +141,7 @@ public class ListWorkflowJobsWorkflowJobListResponseJob {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("stopped_at")
     public OffsetDateTime stoppedAt;
+
     public ListWorkflowJobsWorkflowJobListResponseJob withStoppedAt(OffsetDateTime stoppedAt) {
         this.stoppedAt = stoppedAt;
         return this;
@@ -141,6 +152,7 @@ public class ListWorkflowJobsWorkflowJobListResponseJob {
      */
     @JsonProperty("type")
     public ListWorkflowJobsWorkflowJobListResponseJobTypeEnum type;
+
     public ListWorkflowJobsWorkflowJobListResponseJob withType(ListWorkflowJobsWorkflowJobListResponseJobTypeEnum type) {
         this.type = type;
         return this;

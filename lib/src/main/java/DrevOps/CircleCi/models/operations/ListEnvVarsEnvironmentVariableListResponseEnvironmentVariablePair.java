@@ -12,6 +12,7 @@ public class ListEnvVarsEnvironmentVariableListResponseEnvironmentVariablePair {
      */
     @JsonProperty("name")
     public String name;
+
     public ListEnvVarsEnvironmentVariableListResponseEnvironmentVariablePair withName(String name) {
         this.name = name;
         return this;
@@ -22,6 +23,7 @@ public class ListEnvVarsEnvironmentVariableListResponseEnvironmentVariablePair {
      */
     @JsonProperty("value")
     public String value;
+
     public ListEnvVarsEnvironmentVariableListResponseEnvironmentVariablePair withValue(String value) {
         this.value = value;
         return this;

@@ -15,6 +15,7 @@ public class CreateWebhookRequestBodyScope {
      */
     @JsonProperty("id")
     public String id;
+
     public CreateWebhookRequestBodyScope withId(String id) {
         this.id = id;
         return this;
@@ -25,6 +26,7 @@ public class CreateWebhookRequestBodyScope {
      */
     @JsonProperty("type")
     public CreateWebhookRequestBodyScopeTypeEnum type;
+
     public CreateWebhookRequestBodyScope withType(CreateWebhookRequestBodyScopeTypeEnum type) {
         this.type = type;
         return this;

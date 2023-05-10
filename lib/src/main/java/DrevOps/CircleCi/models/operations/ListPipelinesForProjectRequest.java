@@ -13,6 +13,7 @@ public class ListPipelinesForProjectRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=branch")
     public String branch;
+
     public ListPipelinesForProjectRequest withBranch(String branch) {
         this.branch = branch;
         return this;
@@ -23,6 +24,7 @@ public class ListPipelinesForProjectRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=page-token")
     public String pageToken;
+
     public ListPipelinesForProjectRequest withPageToken(String pageToken) {
         this.pageToken = pageToken;
         return this;
@@ -33,6 +35,7 @@ public class ListPipelinesForProjectRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public ListPipelinesForProjectRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;

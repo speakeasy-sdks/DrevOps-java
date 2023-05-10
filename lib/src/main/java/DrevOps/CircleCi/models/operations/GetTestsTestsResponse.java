@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class GetTestsTestsResponse {
     @JsonProperty("items")
     public GetTestsTestsResponseItems[] items;
+
     public GetTestsTestsResponse withItems(GetTestsTestsResponseItems[] items) {
         this.items = items;
         return this;
@@ -22,6 +23,7 @@ public class GetTestsTestsResponse {
      */
     @JsonProperty("next_page_token")
     public String nextPageToken;
+
     public GetTestsTestsResponse withNextPageToken(String nextPageToken) {
         this.nextPageToken = nextPageToken;
         return this;

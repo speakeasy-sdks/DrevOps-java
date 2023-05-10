@@ -13,6 +13,7 @@ public class ListEnvVarsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public ListEnvVarsRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;

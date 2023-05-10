@@ -18,6 +18,7 @@ public class TriggerPipelineTriggerPipelineParameters {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("branch")
     public String branch;
+
     public TriggerPipelineTriggerPipelineParameters withBranch(String branch) {
         this.branch = branch;
         return this;
@@ -29,6 +30,7 @@ public class TriggerPipelineTriggerPipelineParameters {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("parameters")
     public java.util.Map<String, Object> parameters;
+
     public TriggerPipelineTriggerPipelineParameters withParameters(java.util.Map<String, Object> parameters) {
         this.parameters = parameters;
         return this;
@@ -40,6 +42,7 @@ public class TriggerPipelineTriggerPipelineParameters {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tag")
     public String tag;
+
     public TriggerPipelineTriggerPipelineParameters withTag(String tag) {
         this.tag = tag;
         return this;

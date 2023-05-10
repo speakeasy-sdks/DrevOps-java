@@ -13,6 +13,7 @@ public class GetJobArtifactsResponse {
      */
     
     public GetJobArtifactsArtifactListResponse artifactListResponse;
+
     public GetJobArtifactsResponse withArtifactListResponse(GetJobArtifactsArtifactListResponse artifactListResponse) {
         this.artifactListResponse = artifactListResponse;
         return this;
@@ -20,6 +21,7 @@ public class GetJobArtifactsResponse {
     
     
     public String contentType;
+
     public GetJobArtifactsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -27,6 +29,7 @@ public class GetJobArtifactsResponse {
     
     
     public Integer statusCode;
+
     public GetJobArtifactsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class GetJobArtifactsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetJobArtifactsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class GetJobArtifactsResponse {
      */
     
     public GetJobArtifactsDefaultApplicationJSON getJobArtifactsDefaultApplicationJSONObject;
+
     public GetJobArtifactsResponse withGetJobArtifactsDefaultApplicationJSONObject(GetJobArtifactsDefaultApplicationJSON getJobArtifactsDefaultApplicationJSONObject) {
         this.getJobArtifactsDefaultApplicationJSONObject = getJobArtifactsDefaultApplicationJSONObject;
         return this;

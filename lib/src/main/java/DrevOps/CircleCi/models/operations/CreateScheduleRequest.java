@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class CreateScheduleRequest {
     @SpeakeasyMetadata("request:mediaType=application/json")
     public CreateScheduleCreateScheduleParameters requestBody;
+
     public CreateScheduleRequest withRequestBody(CreateScheduleCreateScheduleParameters requestBody) {
         this.requestBody = requestBody;
         return this;
@@ -20,6 +21,7 @@ public class CreateScheduleRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public CreateScheduleRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;

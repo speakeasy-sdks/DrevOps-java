@@ -12,6 +12,7 @@ public class CreateCheckoutKeyCheckoutKeyInput {
      */
     @JsonProperty("type")
     public CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputTypeEnum type;
+
     public CreateCheckoutKeyCheckoutKeyInput withType(CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputTypeEnum type) {
         this.type = type;
         return this;

@@ -15,6 +15,7 @@ public class TriggerPipelineDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public TriggerPipelineDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

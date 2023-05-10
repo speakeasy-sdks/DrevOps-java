@@ -13,6 +13,7 @@ public class GetPipelineByNumberRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=pipeline-number")
     public Object pipelineNumber;
+
     public GetPipelineByNumberRequest withPipelineNumber(Object pipelineNumber) {
         this.pipelineNumber = pipelineNumber;
         return this;
@@ -23,6 +24,7 @@ public class GetPipelineByNumberRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public GetPipelineByNumberRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;

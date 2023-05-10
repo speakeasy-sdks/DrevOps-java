@@ -15,6 +15,7 @@ public class RerunWorkflow202ApplicationJSON {
      */
     @JsonProperty("workflow_id")
     public String workflowId;
+
     public RerunWorkflow202ApplicationJSON withWorkflowId(String workflowId) {
         this.workflowId = workflowId;
         return this;

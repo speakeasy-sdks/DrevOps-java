@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetTestsResponse {
     
     public String contentType;
+
     public GetTestsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class GetTestsResponse {
     
     
     public Integer statusCode;
+
     public GetTestsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class GetTestsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetTestsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -34,6 +37,7 @@ public class GetTestsResponse {
      */
     
     public GetTestsTestsResponse testsResponse;
+
     public GetTestsResponse withTestsResponse(GetTestsTestsResponse testsResponse) {
         this.testsResponse = testsResponse;
         return this;
@@ -44,6 +48,7 @@ public class GetTestsResponse {
      */
     
     public GetTestsDefaultApplicationJSON getTestsDefaultApplicationJSONObject;
+
     public GetTestsResponse withGetTestsDefaultApplicationJSONObject(GetTestsDefaultApplicationJSON getTestsDefaultApplicationJSONObject) {
         this.getTestsDefaultApplicationJSONObject = getTestsDefaultApplicationJSONObject;
         return this;

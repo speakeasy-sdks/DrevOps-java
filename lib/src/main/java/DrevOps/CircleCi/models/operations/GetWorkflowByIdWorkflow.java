@@ -20,6 +20,7 @@ public class GetWorkflowByIdWorkflow {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("canceled_by")
     public String canceledBy;
+
     public GetWorkflowByIdWorkflow withCanceledBy(String canceledBy) {
         this.canceledBy = canceledBy;
         return this;
@@ -32,6 +33,7 @@ public class GetWorkflowByIdWorkflow {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created_at")
     public OffsetDateTime createdAt;
+
     public GetWorkflowByIdWorkflow withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -40,6 +42,7 @@ public class GetWorkflowByIdWorkflow {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("errored_by")
     public String erroredBy;
+
     public GetWorkflowByIdWorkflow withErroredBy(String erroredBy) {
         this.erroredBy = erroredBy;
         return this;
@@ -50,6 +53,7 @@ public class GetWorkflowByIdWorkflow {
      */
     @JsonProperty("id")
     public String id;
+
     public GetWorkflowByIdWorkflow withId(String id) {
         this.id = id;
         return this;
@@ -60,6 +64,7 @@ public class GetWorkflowByIdWorkflow {
      */
     @JsonProperty("name")
     public String name;
+
     public GetWorkflowByIdWorkflow withName(String name) {
         this.name = name;
         return this;
@@ -70,6 +75,7 @@ public class GetWorkflowByIdWorkflow {
      */
     @JsonProperty("pipeline_id")
     public String pipelineId;
+
     public GetWorkflowByIdWorkflow withPipelineId(String pipelineId) {
         this.pipelineId = pipelineId;
         return this;
@@ -80,6 +86,7 @@ public class GetWorkflowByIdWorkflow {
      */
     @JsonProperty("pipeline_number")
     public Long pipelineNumber;
+
     public GetWorkflowByIdWorkflow withPipelineNumber(Long pipelineNumber) {
         this.pipelineNumber = pipelineNumber;
         return this;
@@ -90,6 +97,7 @@ public class GetWorkflowByIdWorkflow {
      */
     @JsonProperty("project_slug")
     public String projectSlug;
+
     public GetWorkflowByIdWorkflow withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;
@@ -97,6 +105,7 @@ public class GetWorkflowByIdWorkflow {
     
     @JsonProperty("started_by")
     public String startedBy;
+
     public GetWorkflowByIdWorkflow withStartedBy(String startedBy) {
         this.startedBy = startedBy;
         return this;
@@ -107,6 +116,7 @@ public class GetWorkflowByIdWorkflow {
      */
     @JsonProperty("status")
     public GetWorkflowByIdWorkflowStatusEnum status;
+
     public GetWorkflowByIdWorkflow withStatus(GetWorkflowByIdWorkflowStatusEnum status) {
         this.status = status;
         return this;
@@ -119,6 +129,7 @@ public class GetWorkflowByIdWorkflow {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("stopped_at")
     public OffsetDateTime stoppedAt;
+
     public GetWorkflowByIdWorkflow withStoppedAt(OffsetDateTime stoppedAt) {
         this.stoppedAt = stoppedAt;
         return this;
@@ -130,6 +141,7 @@ public class GetWorkflowByIdWorkflow {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tag")
     public GetWorkflowByIdWorkflowTagEnum tag;
+
     public GetWorkflowByIdWorkflow withTag(GetWorkflowByIdWorkflowTagEnum tag) {
         this.tag = tag;
         return this;

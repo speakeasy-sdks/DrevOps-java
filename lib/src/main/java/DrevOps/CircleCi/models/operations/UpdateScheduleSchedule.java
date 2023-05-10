@@ -20,6 +20,7 @@ public class UpdateScheduleSchedule {
      */
     @JsonProperty("actor")
     public UpdateScheduleScheduleUser actor;
+
     public UpdateScheduleSchedule withActor(UpdateScheduleScheduleUser actor) {
         this.actor = actor;
         return this;
@@ -32,6 +33,7 @@ public class UpdateScheduleSchedule {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created-at")
     public OffsetDateTime createdAt;
+
     public UpdateScheduleSchedule withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -42,6 +44,7 @@ public class UpdateScheduleSchedule {
      */
     @JsonProperty("description")
     public String description;
+
     public UpdateScheduleSchedule withDescription(String description) {
         this.description = description;
         return this;
@@ -52,6 +55,7 @@ public class UpdateScheduleSchedule {
      */
     @JsonProperty("id")
     public String id;
+
     public UpdateScheduleSchedule withId(String id) {
         this.id = id;
         return this;
@@ -62,6 +66,7 @@ public class UpdateScheduleSchedule {
      */
     @JsonProperty("name")
     public String name;
+
     public UpdateScheduleSchedule withName(String name) {
         this.name = name;
         return this;
@@ -72,6 +77,7 @@ public class UpdateScheduleSchedule {
      */
     @JsonProperty("parameters")
     public java.util.Map<String, Object> parameters;
+
     public UpdateScheduleSchedule withParameters(java.util.Map<String, Object> parameters) {
         this.parameters = parameters;
         return this;
@@ -82,6 +88,7 @@ public class UpdateScheduleSchedule {
      */
     @JsonProperty("project-slug")
     public String projectSlug;
+
     public UpdateScheduleSchedule withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;
@@ -92,6 +99,7 @@ public class UpdateScheduleSchedule {
      */
     @JsonProperty("timetable")
     public Object timetable;
+
     public UpdateScheduleSchedule withTimetable(Object timetable) {
         this.timetable = timetable;
         return this;
@@ -104,6 +112,7 @@ public class UpdateScheduleSchedule {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("updated-at")
     public OffsetDateTime updatedAt;
+
     public UpdateScheduleSchedule withUpdatedAt(OffsetDateTime updatedAt) {
         this.updatedAt = updatedAt;
         return this;

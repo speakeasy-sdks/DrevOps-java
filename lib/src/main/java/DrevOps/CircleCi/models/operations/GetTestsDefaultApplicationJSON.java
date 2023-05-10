@@ -15,6 +15,7 @@ public class GetTestsDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public GetTestsDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

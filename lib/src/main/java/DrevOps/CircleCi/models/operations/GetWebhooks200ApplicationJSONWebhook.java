@@ -19,6 +19,7 @@ public class GetWebhooks200ApplicationJSONWebhook {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created-at")
     public OffsetDateTime createdAt;
+
     public GetWebhooks200ApplicationJSONWebhook withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -29,6 +30,7 @@ public class GetWebhooks200ApplicationJSONWebhook {
      */
     @JsonProperty("events")
     public GetWebhooks200ApplicationJSONWebhookEventsEnum[] events;
+
     public GetWebhooks200ApplicationJSONWebhook withEvents(GetWebhooks200ApplicationJSONWebhookEventsEnum[] events) {
         this.events = events;
         return this;
@@ -39,6 +41,7 @@ public class GetWebhooks200ApplicationJSONWebhook {
      */
     @JsonProperty("id")
     public String id;
+
     public GetWebhooks200ApplicationJSONWebhook withId(String id) {
         this.id = id;
         return this;
@@ -49,6 +52,7 @@ public class GetWebhooks200ApplicationJSONWebhook {
      */
     @JsonProperty("name")
     public String name;
+
     public GetWebhooks200ApplicationJSONWebhook withName(String name) {
         this.name = name;
         return this;
@@ -59,6 +63,7 @@ public class GetWebhooks200ApplicationJSONWebhook {
      */
     @JsonProperty("scope")
     public GetWebhooks200ApplicationJSONWebhookScope scope;
+
     public GetWebhooks200ApplicationJSONWebhook withScope(GetWebhooks200ApplicationJSONWebhookScope scope) {
         this.scope = scope;
         return this;
@@ -69,6 +74,7 @@ public class GetWebhooks200ApplicationJSONWebhook {
      */
     @JsonProperty("signing-secret")
     public String signingSecret;
+
     public GetWebhooks200ApplicationJSONWebhook withSigningSecret(String signingSecret) {
         this.signingSecret = signingSecret;
         return this;
@@ -81,6 +87,7 @@ public class GetWebhooks200ApplicationJSONWebhook {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("updated-at")
     public OffsetDateTime updatedAt;
+
     public GetWebhooks200ApplicationJSONWebhook withUpdatedAt(OffsetDateTime updatedAt) {
         this.updatedAt = updatedAt;
         return this;
@@ -91,6 +98,7 @@ public class GetWebhooks200ApplicationJSONWebhook {
      */
     @JsonProperty("url")
     public String url;
+
     public GetWebhooks200ApplicationJSONWebhook withUrl(String url) {
         this.url = url;
         return this;
@@ -101,6 +109,7 @@ public class GetWebhooks200ApplicationJSONWebhook {
      */
     @JsonProperty("verify-tls")
     public Boolean verifyTls;
+
     public GetWebhooks200ApplicationJSONWebhook withVerifyTls(Boolean verifyTls) {
         this.verifyTls = verifyTls;
         return this;

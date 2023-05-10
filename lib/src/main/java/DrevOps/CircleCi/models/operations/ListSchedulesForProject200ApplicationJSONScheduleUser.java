@@ -15,6 +15,7 @@ public class ListSchedulesForProject200ApplicationJSONScheduleUser {
      */
     @JsonProperty("id")
     public String id;
+
     public ListSchedulesForProject200ApplicationJSONScheduleUser withId(String id) {
         this.id = id;
         return this;
@@ -25,6 +26,7 @@ public class ListSchedulesForProject200ApplicationJSONScheduleUser {
      */
     @JsonProperty("login")
     public String login;
+
     public ListSchedulesForProject200ApplicationJSONScheduleUser withLogin(String login) {
         this.login = login;
         return this;
@@ -35,6 +37,7 @@ public class ListSchedulesForProject200ApplicationJSONScheduleUser {
      */
     @JsonProperty("name")
     public String name;
+
     public ListSchedulesForProject200ApplicationJSONScheduleUser withName(String name) {
         this.name = name;
         return this;

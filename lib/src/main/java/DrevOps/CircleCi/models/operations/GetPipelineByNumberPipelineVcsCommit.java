@@ -15,6 +15,7 @@ public class GetPipelineByNumberPipelineVcsCommit {
      */
     @JsonProperty("body")
     public String body;
+
     public GetPipelineByNumberPipelineVcsCommit withBody(String body) {
         this.body = body;
         return this;
@@ -25,6 +26,7 @@ public class GetPipelineByNumberPipelineVcsCommit {
      */
     @JsonProperty("subject")
     public String subject;
+
     public GetPipelineByNumberPipelineVcsCommit withSubject(String subject) {
         this.subject = subject;
         return this;

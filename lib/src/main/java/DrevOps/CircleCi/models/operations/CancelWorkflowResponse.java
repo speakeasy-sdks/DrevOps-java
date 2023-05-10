@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class CancelWorkflowResponse {
     
     public String contentType;
+
     public CancelWorkflowResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class CancelWorkflowResponse {
      */
     
     public CancelWorkflowMessageResponse messageResponse;
+
     public CancelWorkflowResponse withMessageResponse(CancelWorkflowMessageResponse messageResponse) {
         this.messageResponse = messageResponse;
         return this;
@@ -27,6 +29,7 @@ public class CancelWorkflowResponse {
     
     
     public Integer statusCode;
+
     public CancelWorkflowResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class CancelWorkflowResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public CancelWorkflowResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class CancelWorkflowResponse {
      */
     
     public CancelWorkflowDefaultApplicationJSON cancelWorkflowDefaultApplicationJSONObject;
+
     public CancelWorkflowResponse withCancelWorkflowDefaultApplicationJSONObject(CancelWorkflowDefaultApplicationJSON cancelWorkflowDefaultApplicationJSONObject) {
         this.cancelWorkflowDefaultApplicationJSONObject = cancelWorkflowDefaultApplicationJSONObject;
         return this;

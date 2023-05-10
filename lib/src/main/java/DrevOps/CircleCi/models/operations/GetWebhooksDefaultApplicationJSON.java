@@ -15,6 +15,7 @@ public class GetWebhooksDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public GetWebhooksDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

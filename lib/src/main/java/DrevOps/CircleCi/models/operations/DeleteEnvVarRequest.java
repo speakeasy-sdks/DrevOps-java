@@ -13,6 +13,7 @@ public class DeleteEnvVarRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=name")
     public String name;
+
     public DeleteEnvVarRequest withName(String name) {
         this.name = name;
         return this;
@@ -23,6 +24,7 @@ public class DeleteEnvVarRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public DeleteEnvVarRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;

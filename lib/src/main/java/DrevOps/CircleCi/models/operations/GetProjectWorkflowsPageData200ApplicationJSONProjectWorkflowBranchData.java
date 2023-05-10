@@ -12,6 +12,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchD
      */
     @JsonProperty("branch")
     public String branch;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchData withBranch(String branch) {
         this.branch = branch;
         return this;
@@ -22,6 +23,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchD
      */
     @JsonProperty("metrics")
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchDataMetrics metrics;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchData withMetrics(GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchDataMetrics metrics) {
         this.metrics = metrics;
         return this;
@@ -32,6 +34,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchD
      */
     @JsonProperty("trends")
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchDataTrends trends;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchData withTrends(GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchDataTrends trends) {
         this.trends = trends;
         return this;
@@ -42,6 +45,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchD
      */
     @JsonProperty("workflow_name")
     public String workflowName;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchData withWorkflowName(String workflowName) {
         this.workflowName = workflowName;
         return this;

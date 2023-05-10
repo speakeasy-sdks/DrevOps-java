@@ -15,6 +15,7 @@ public class DeleteWebhookMessageResponse {
      */
     @JsonProperty("message")
     public String message;
+
     public DeleteWebhookMessageResponse withMessage(String message) {
         this.message = message;
         return this;

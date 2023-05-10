@@ -17,6 +17,7 @@ public class CreateScheduleCreateScheduleParametersTimetable2 {
      */
     @JsonProperty("days-of-month")
     public Long[] daysOfMonth;
+
     public CreateScheduleCreateScheduleParametersTimetable2 withDaysOfMonth(Long[] daysOfMonth) {
         this.daysOfMonth = daysOfMonth;
         return this;
@@ -28,6 +29,7 @@ public class CreateScheduleCreateScheduleParametersTimetable2 {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("days-of-week")
     public CreateScheduleCreateScheduleParametersTimetable2DaysOfWeekEnum[] daysOfWeek;
+
     public CreateScheduleCreateScheduleParametersTimetable2 withDaysOfWeek(CreateScheduleCreateScheduleParametersTimetable2DaysOfWeekEnum[] daysOfWeek) {
         this.daysOfWeek = daysOfWeek;
         return this;
@@ -38,6 +40,7 @@ public class CreateScheduleCreateScheduleParametersTimetable2 {
      */
     @JsonProperty("hours-of-day")
     public Long[] hoursOfDay;
+
     public CreateScheduleCreateScheduleParametersTimetable2 withHoursOfDay(Long[] hoursOfDay) {
         this.hoursOfDay = hoursOfDay;
         return this;
@@ -49,6 +52,7 @@ public class CreateScheduleCreateScheduleParametersTimetable2 {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("months")
     public CreateScheduleCreateScheduleParametersTimetable2MonthsEnum[] months;
+
     public CreateScheduleCreateScheduleParametersTimetable2 withMonths(CreateScheduleCreateScheduleParametersTimetable2MonthsEnum[] months) {
         this.months = months;
         return this;
@@ -59,6 +63,7 @@ public class CreateScheduleCreateScheduleParametersTimetable2 {
      */
     @JsonProperty("per-hour")
     public Long perHour;
+
     public CreateScheduleCreateScheduleParametersTimetable2 withPerHour(Long perHour) {
         this.perHour = perHour;
         return this;

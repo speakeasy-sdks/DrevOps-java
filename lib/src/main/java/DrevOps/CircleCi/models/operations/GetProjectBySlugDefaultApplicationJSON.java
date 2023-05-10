@@ -15,6 +15,7 @@ public class GetProjectBySlugDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public GetProjectBySlugDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

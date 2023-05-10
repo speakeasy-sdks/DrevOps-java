@@ -13,6 +13,7 @@ public class GetProjectWorkflowMetricsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=all-branches")
     public Boolean allBranches;
+
     public GetProjectWorkflowMetricsRequest withAllBranches(Boolean allBranches) {
         this.allBranches = allBranches;
         return this;
@@ -23,6 +24,7 @@ public class GetProjectWorkflowMetricsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=branch")
     public String branch;
+
     public GetProjectWorkflowMetricsRequest withBranch(String branch) {
         this.branch = branch;
         return this;
@@ -33,6 +35,7 @@ public class GetProjectWorkflowMetricsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=page-token")
     public String pageToken;
+
     public GetProjectWorkflowMetricsRequest withPageToken(String pageToken) {
         this.pageToken = pageToken;
         return this;
@@ -43,6 +46,7 @@ public class GetProjectWorkflowMetricsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public GetProjectWorkflowMetricsRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;
@@ -53,6 +57,7 @@ public class GetProjectWorkflowMetricsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=reporting-window")
     public GetProjectWorkflowMetricsReportingWindowEnum reportingWindow;
+
     public GetProjectWorkflowMetricsRequest withReportingWindow(GetProjectWorkflowMetricsReportingWindowEnum reportingWindow) {
         this.reportingWindow = reportingWindow;
         return this;

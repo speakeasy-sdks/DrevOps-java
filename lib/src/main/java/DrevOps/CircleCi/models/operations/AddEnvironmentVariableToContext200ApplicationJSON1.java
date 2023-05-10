@@ -17,6 +17,7 @@ public class AddEnvironmentVariableToContext200ApplicationJSON1 {
      */
     @JsonProperty("context_id")
     public String contextId;
+
     public AddEnvironmentVariableToContext200ApplicationJSON1 withContextId(String contextId) {
         this.contextId = contextId;
         return this;
@@ -29,6 +30,7 @@ public class AddEnvironmentVariableToContext200ApplicationJSON1 {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created_at")
     public OffsetDateTime createdAt;
+
     public AddEnvironmentVariableToContext200ApplicationJSON1 withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -41,6 +43,7 @@ public class AddEnvironmentVariableToContext200ApplicationJSON1 {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("updated_at")
     public OffsetDateTime updatedAt;
+
     public AddEnvironmentVariableToContext200ApplicationJSON1 withUpdatedAt(OffsetDateTime updatedAt) {
         this.updatedAt = updatedAt;
         return this;
@@ -51,6 +54,7 @@ public class AddEnvironmentVariableToContext200ApplicationJSON1 {
      */
     @JsonProperty("variable")
     public String variable;
+
     public AddEnvironmentVariableToContext200ApplicationJSON1 withVariable(String variable) {
         this.variable = variable;
         return this;

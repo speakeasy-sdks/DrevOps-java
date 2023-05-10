@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class GetProjectBySlugProjectVcsInfo {
     @JsonProperty("default_branch")
     public String defaultBranch;
+
     public GetProjectBySlugProjectVcsInfo withDefaultBranch(String defaultBranch) {
         this.defaultBranch = defaultBranch;
         return this;
@@ -22,6 +23,7 @@ public class GetProjectBySlugProjectVcsInfo {
      */
     @JsonProperty("provider")
     public GetProjectBySlugProjectVcsInfoProviderEnum provider;
+
     public GetProjectBySlugProjectVcsInfo withProvider(GetProjectBySlugProjectVcsInfoProviderEnum provider) {
         this.provider = provider;
         return this;
@@ -32,6 +34,7 @@ public class GetProjectBySlugProjectVcsInfo {
      */
     @JsonProperty("vcs_url")
     public String vcsUrl;
+
     public GetProjectBySlugProjectVcsInfo withVcsUrl(String vcsUrl) {
         this.vcsUrl = vcsUrl;
         return this;

@@ -15,6 +15,7 @@ public class GetJobDetailsJobDetailsPipeline {
      */
     @JsonProperty("id")
     public String id;
+
     public GetJobDetailsJobDetailsPipeline withId(String id) {
         this.id = id;
         return this;

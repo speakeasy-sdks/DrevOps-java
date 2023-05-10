@@ -19,6 +19,7 @@ public class GetJobTimeseries200ApplicationJSONItems {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("max_ended_at")
     public OffsetDateTime maxEndedAt;
+
     public GetJobTimeseries200ApplicationJSONItems withMaxEndedAt(OffsetDateTime maxEndedAt) {
         this.maxEndedAt = maxEndedAt;
         return this;
@@ -29,6 +30,7 @@ public class GetJobTimeseries200ApplicationJSONItems {
      */
     @JsonProperty("metrics")
     public GetJobTimeseries200ApplicationJSONItemsMetrics metrics;
+
     public GetJobTimeseries200ApplicationJSONItems withMetrics(GetJobTimeseries200ApplicationJSONItemsMetrics metrics) {
         this.metrics = metrics;
         return this;
@@ -41,6 +43,7 @@ public class GetJobTimeseries200ApplicationJSONItems {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("min_started_at")
     public OffsetDateTime minStartedAt;
+
     public GetJobTimeseries200ApplicationJSONItems withMinStartedAt(OffsetDateTime minStartedAt) {
         this.minStartedAt = minStartedAt;
         return this;
@@ -51,6 +54,7 @@ public class GetJobTimeseries200ApplicationJSONItems {
      */
     @JsonProperty("name")
     public String name;
+
     public GetJobTimeseries200ApplicationJSONItems withName(String name) {
         this.name = name;
         return this;
@@ -63,6 +67,7 @@ public class GetJobTimeseries200ApplicationJSONItems {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("timestamp")
     public OffsetDateTime timestamp;
+
     public GetJobTimeseries200ApplicationJSONItems withTimestamp(OffsetDateTime timestamp) {
         this.timestamp = timestamp;
         return this;

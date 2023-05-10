@@ -13,6 +13,7 @@ public class DeleteContextRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=context-id")
     public String contextId;
+
     public DeleteContextRequest withContextId(String contextId) {
         this.contextId = contextId;
         return this;

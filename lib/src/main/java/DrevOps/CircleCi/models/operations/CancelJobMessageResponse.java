@@ -15,6 +15,7 @@ public class CancelJobMessageResponse {
      */
     @JsonProperty("message")
     public String message;
+
     public CancelJobMessageResponse withMessage(String message) {
         this.message = message;
         return this;

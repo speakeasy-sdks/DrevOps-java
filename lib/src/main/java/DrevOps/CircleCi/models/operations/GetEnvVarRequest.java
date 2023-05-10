@@ -13,6 +13,7 @@ public class GetEnvVarRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=name")
     public String name;
+
     public GetEnvVarRequest withName(String name) {
         this.name = name;
         return this;
@@ -23,6 +24,7 @@ public class GetEnvVarRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public GetEnvVarRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;

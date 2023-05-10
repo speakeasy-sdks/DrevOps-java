@@ -20,6 +20,7 @@ public class GetWorkflowSummary200ApplicationJSONMetrics {
      */
     @JsonProperty("duration_metrics")
     public GetWorkflowSummary200ApplicationJSONMetricsDurationMetrics durationMetrics;
+
     public GetWorkflowSummary200ApplicationJSONMetrics withDurationMetrics(GetWorkflowSummary200ApplicationJSONMetricsDurationMetrics durationMetrics) {
         this.durationMetrics = durationMetrics;
         return this;
@@ -30,6 +31,7 @@ public class GetWorkflowSummary200ApplicationJSONMetrics {
      */
     @JsonProperty("failed_runs")
     public Long failedRuns;
+
     public GetWorkflowSummary200ApplicationJSONMetrics withFailedRuns(Long failedRuns) {
         this.failedRuns = failedRuns;
         return this;
@@ -40,6 +42,7 @@ public class GetWorkflowSummary200ApplicationJSONMetrics {
      */
     @JsonProperty("mttr")
     public Long mttr;
+
     public GetWorkflowSummary200ApplicationJSONMetrics withMttr(Long mttr) {
         this.mttr = mttr;
         return this;
@@ -47,6 +50,7 @@ public class GetWorkflowSummary200ApplicationJSONMetrics {
     
     @JsonProperty("success_rate")
     public Float successRate;
+
     public GetWorkflowSummary200ApplicationJSONMetrics withSuccessRate(Float successRate) {
         this.successRate = successRate;
         return this;
@@ -57,6 +61,7 @@ public class GetWorkflowSummary200ApplicationJSONMetrics {
      */
     @JsonProperty("successful_runs")
     public Long successfulRuns;
+
     public GetWorkflowSummary200ApplicationJSONMetrics withSuccessfulRuns(Long successfulRuns) {
         this.successfulRuns = successfulRuns;
         return this;
@@ -67,6 +72,7 @@ public class GetWorkflowSummary200ApplicationJSONMetrics {
      */
     @JsonProperty("throughput")
     public Float throughput;
+
     public GetWorkflowSummary200ApplicationJSONMetrics withThroughput(Float throughput) {
         this.throughput = throughput;
         return this;
@@ -77,6 +83,7 @@ public class GetWorkflowSummary200ApplicationJSONMetrics {
      */
     @JsonProperty("total_credits_used")
     public Long totalCreditsUsed;
+
     public GetWorkflowSummary200ApplicationJSONMetrics withTotalCreditsUsed(Long totalCreditsUsed) {
         this.totalCreditsUsed = totalCreditsUsed;
         return this;
@@ -87,6 +94,7 @@ public class GetWorkflowSummary200ApplicationJSONMetrics {
      */
     @JsonProperty("total_runs")
     public Long totalRuns;
+
     public GetWorkflowSummary200ApplicationJSONMetrics withTotalRuns(Long totalRuns) {
         this.totalRuns = totalRuns;
         return this;
@@ -99,6 +107,7 @@ public class GetWorkflowSummary200ApplicationJSONMetrics {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("window_end")
     public OffsetDateTime windowEnd;
+
     public GetWorkflowSummary200ApplicationJSONMetrics withWindowEnd(OffsetDateTime windowEnd) {
         this.windowEnd = windowEnd;
         return this;
@@ -111,6 +120,7 @@ public class GetWorkflowSummary200ApplicationJSONMetrics {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("window_start")
     public OffsetDateTime windowStart;
+
     public GetWorkflowSummary200ApplicationJSONMetrics withWindowStart(OffsetDateTime windowStart) {
         this.windowStart = windowStart;
         return this;

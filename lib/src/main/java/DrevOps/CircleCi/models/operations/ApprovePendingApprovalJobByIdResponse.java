@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class ApprovePendingApprovalJobByIdResponse {
     
     public String contentType;
+
     public ApprovePendingApprovalJobByIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class ApprovePendingApprovalJobByIdResponse {
      */
     
     public ApprovePendingApprovalJobByIdMessageResponse messageResponse;
+
     public ApprovePendingApprovalJobByIdResponse withMessageResponse(ApprovePendingApprovalJobByIdMessageResponse messageResponse) {
         this.messageResponse = messageResponse;
         return this;
@@ -27,6 +29,7 @@ public class ApprovePendingApprovalJobByIdResponse {
     
     
     public Integer statusCode;
+
     public ApprovePendingApprovalJobByIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class ApprovePendingApprovalJobByIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public ApprovePendingApprovalJobByIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class ApprovePendingApprovalJobByIdResponse {
      */
     
     public ApprovePendingApprovalJobByIdDefaultApplicationJSON approvePendingApprovalJobByIdDefaultApplicationJSONObject;
+
     public ApprovePendingApprovalJobByIdResponse withApprovePendingApprovalJobByIdDefaultApplicationJSONObject(ApprovePendingApprovalJobByIdDefaultApplicationJSON approvePendingApprovalJobByIdDefaultApplicationJSONObject) {
         this.approvePendingApprovalJobByIdDefaultApplicationJSONObject = approvePendingApprovalJobByIdDefaultApplicationJSONObject;
         return this;

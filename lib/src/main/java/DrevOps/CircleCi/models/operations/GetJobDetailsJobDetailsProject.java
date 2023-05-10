@@ -15,6 +15,7 @@ public class GetJobDetailsJobDetailsProject {
      */
     @JsonProperty("external_url")
     public String externalUrl;
+
     public GetJobDetailsJobDetailsProject withExternalUrl(String externalUrl) {
         this.externalUrl = externalUrl;
         return this;
@@ -22,6 +23,7 @@ public class GetJobDetailsJobDetailsProject {
     
     @JsonProperty("id")
     public String id;
+
     public GetJobDetailsJobDetailsProject withId(String id) {
         this.id = id;
         return this;
@@ -32,6 +34,7 @@ public class GetJobDetailsJobDetailsProject {
      */
     @JsonProperty("name")
     public String name;
+
     public GetJobDetailsJobDetailsProject withName(String name) {
         this.name = name;
         return this;
@@ -42,6 +45,7 @@ public class GetJobDetailsJobDetailsProject {
      */
     @JsonProperty("slug")
     public String slug;
+
     public GetJobDetailsJobDetailsProject withSlug(String slug) {
         this.slug = slug;
         return this;

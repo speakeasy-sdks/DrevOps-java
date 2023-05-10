@@ -18,6 +18,7 @@ public class UpdateWebhookRequestBody {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("events")
     public UpdateWebhookRequestBodyEventsEnum[] events;
+
     public UpdateWebhookRequestBody withEvents(UpdateWebhookRequestBodyEventsEnum[] events) {
         this.events = events;
         return this;
@@ -29,6 +30,7 @@ public class UpdateWebhookRequestBody {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("name")
     public String name;
+
     public UpdateWebhookRequestBody withName(String name) {
         this.name = name;
         return this;
@@ -40,6 +42,7 @@ public class UpdateWebhookRequestBody {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("signing-secret")
     public String signingSecret;
+
     public UpdateWebhookRequestBody withSigningSecret(String signingSecret) {
         this.signingSecret = signingSecret;
         return this;
@@ -51,6 +54,7 @@ public class UpdateWebhookRequestBody {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("url")
     public String url;
+
     public UpdateWebhookRequestBody withUrl(String url) {
         this.url = url;
         return this;
@@ -62,6 +66,7 @@ public class UpdateWebhookRequestBody {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("verify-tls")
     public Boolean verifyTls;
+
     public UpdateWebhookRequestBody withVerifyTls(Boolean verifyTls) {
         this.verifyTls = verifyTls;
         return this;

@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class CreateEnvVarResponse {
     
     public String contentType;
+
     public CreateEnvVarResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class CreateEnvVarResponse {
      */
     
     public CreateEnvVarEnvironmentVariablePair environmentVariablePair;
+
     public CreateEnvVarResponse withEnvironmentVariablePair(CreateEnvVarEnvironmentVariablePair environmentVariablePair) {
         this.environmentVariablePair = environmentVariablePair;
         return this;
@@ -27,6 +29,7 @@ public class CreateEnvVarResponse {
     
     
     public Integer statusCode;
+
     public CreateEnvVarResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class CreateEnvVarResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public CreateEnvVarResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class CreateEnvVarResponse {
      */
     
     public CreateEnvVarDefaultApplicationJSON createEnvVarDefaultApplicationJSONObject;
+
     public CreateEnvVarResponse withCreateEnvVarDefaultApplicationJSONObject(CreateEnvVarDefaultApplicationJSON createEnvVarDefaultApplicationJSONObject) {
         this.createEnvVarDefaultApplicationJSONObject = createEnvVarDefaultApplicationJSONObject;
         return this;

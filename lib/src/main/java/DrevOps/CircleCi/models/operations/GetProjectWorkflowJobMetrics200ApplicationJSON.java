@@ -15,6 +15,7 @@ public class GetProjectWorkflowJobMetrics200ApplicationJSON {
      */
     @JsonProperty("items")
     public GetProjectWorkflowJobMetrics200ApplicationJSONItems[] items;
+
     public GetProjectWorkflowJobMetrics200ApplicationJSON withItems(GetProjectWorkflowJobMetrics200ApplicationJSONItems[] items) {
         this.items = items;
         return this;
@@ -25,6 +26,7 @@ public class GetProjectWorkflowJobMetrics200ApplicationJSON {
      */
     @JsonProperty("next_page_token")
     public String nextPageToken;
+
     public GetProjectWorkflowJobMetrics200ApplicationJSON withNextPageToken(String nextPageToken) {
         this.nextPageToken = nextPageToken;
         return this;

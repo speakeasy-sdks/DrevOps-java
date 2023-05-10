@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class GetWebhooks200ApplicationJSON {
     @JsonProperty("items")
     public GetWebhooks200ApplicationJSONWebhook[] items;
+
     public GetWebhooks200ApplicationJSON withItems(GetWebhooks200ApplicationJSONWebhook[] items) {
         this.items = items;
         return this;
@@ -22,6 +23,7 @@ public class GetWebhooks200ApplicationJSON {
      */
     @JsonProperty("next_page_token")
     public String nextPageToken;
+
     public GetWebhooks200ApplicationJSON withNextPageToken(String nextPageToken) {
         this.nextPageToken = nextPageToken;
         return this;

@@ -12,6 +12,7 @@ public class GetOrgSummaryData200ApplicationJSONOrgProjectData {
      */
     @JsonProperty("metrics")
     public GetOrgSummaryData200ApplicationJSONOrgProjectDataMetrics metrics;
+
     public GetOrgSummaryData200ApplicationJSONOrgProjectData withMetrics(GetOrgSummaryData200ApplicationJSONOrgProjectDataMetrics metrics) {
         this.metrics = metrics;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgSummaryData200ApplicationJSONOrgProjectData {
      */
     @JsonProperty("project_name")
     public String projectName;
+
     public GetOrgSummaryData200ApplicationJSONOrgProjectData withProjectName(String projectName) {
         this.projectName = projectName;
         return this;
@@ -32,6 +34,7 @@ public class GetOrgSummaryData200ApplicationJSONOrgProjectData {
      */
     @JsonProperty("trends")
     public GetOrgSummaryData200ApplicationJSONOrgProjectDataTrends trends;
+
     public GetOrgSummaryData200ApplicationJSONOrgProjectData withTrends(GetOrgSummaryData200ApplicationJSONOrgProjectDataTrends trends) {
         this.trends = trends;
         return this;

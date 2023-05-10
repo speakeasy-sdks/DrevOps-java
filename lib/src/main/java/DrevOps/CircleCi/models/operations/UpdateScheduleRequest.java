@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class UpdateScheduleRequest {
     @SpeakeasyMetadata("request:mediaType=application/json")
     public UpdateScheduleUpdateScheduleParameters requestBody;
+
     public UpdateScheduleRequest withRequestBody(UpdateScheduleUpdateScheduleParameters requestBody) {
         this.requestBody = requestBody;
         return this;
@@ -20,6 +21,7 @@ public class UpdateScheduleRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=schedule-id")
     public String scheduleId;
+
     public UpdateScheduleRequest withScheduleId(String scheduleId) {
         this.scheduleId = scheduleId;
         return this;

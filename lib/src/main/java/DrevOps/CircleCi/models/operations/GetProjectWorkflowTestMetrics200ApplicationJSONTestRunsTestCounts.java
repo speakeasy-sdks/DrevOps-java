@@ -15,6 +15,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONTestRunsTestCounts {
      */
     @JsonProperty("error")
     public Long error;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONTestRunsTestCounts withError(Long error) {
         this.error = error;
         return this;
@@ -25,6 +26,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONTestRunsTestCounts {
      */
     @JsonProperty("failure")
     public Long failure;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONTestRunsTestCounts withFailure(Long failure) {
         this.failure = failure;
         return this;
@@ -35,6 +37,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONTestRunsTestCounts {
      */
     @JsonProperty("skipped")
     public Long skipped;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONTestRunsTestCounts withSkipped(Long skipped) {
         this.skipped = skipped;
         return this;
@@ -45,6 +48,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONTestRunsTestCounts {
      */
     @JsonProperty("success")
     public Long success;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONTestRunsTestCounts withSuccess(Long success) {
         this.success = success;
         return this;
@@ -55,6 +59,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONTestRunsTestCounts {
      */
     @JsonProperty("total")
     public Long total;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONTestRunsTestCounts withTotal(Long total) {
         this.total = total;
         return this;

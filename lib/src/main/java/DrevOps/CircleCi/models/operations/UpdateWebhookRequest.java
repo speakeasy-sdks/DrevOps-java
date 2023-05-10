@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class UpdateWebhookRequest {
     @SpeakeasyMetadata("request:mediaType=application/json")
     public UpdateWebhookRequestBody requestBody;
+
     public UpdateWebhookRequest withRequestBody(UpdateWebhookRequestBody requestBody) {
         this.requestBody = requestBody;
         return this;
@@ -20,6 +21,7 @@ public class UpdateWebhookRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=webhook-id")
     public String webhookId;
+
     public UpdateWebhookRequest withWebhookId(String webhookId) {
         this.webhookId = webhookId;
         return this;

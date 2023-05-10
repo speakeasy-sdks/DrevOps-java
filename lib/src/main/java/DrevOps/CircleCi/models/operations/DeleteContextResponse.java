@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class DeleteContextResponse {
     
     public String contentType;
+
     public DeleteContextResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class DeleteContextResponse {
      */
     
     public DeleteContextMessageResponse messageResponse;
+
     public DeleteContextResponse withMessageResponse(DeleteContextMessageResponse messageResponse) {
         this.messageResponse = messageResponse;
         return this;
@@ -27,6 +29,7 @@ public class DeleteContextResponse {
     
     
     public Integer statusCode;
+
     public DeleteContextResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class DeleteContextResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public DeleteContextResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class DeleteContextResponse {
      */
     
     public DeleteContextDefaultApplicationJSON deleteContextDefaultApplicationJSONObject;
+
     public DeleteContextResponse withDeleteContextDefaultApplicationJSONObject(DeleteContextDefaultApplicationJSON deleteContextDefaultApplicationJSONObject) {
         this.deleteContextDefaultApplicationJSONObject = deleteContextDefaultApplicationJSONObject;
         return this;

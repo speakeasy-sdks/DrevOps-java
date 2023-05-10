@@ -15,6 +15,7 @@ public class GetOrgSummaryData200ApplicationJSONOrgData {
      */
     @JsonProperty("metrics")
     public GetOrgSummaryData200ApplicationJSONOrgDataMetrics metrics;
+
     public GetOrgSummaryData200ApplicationJSONOrgData withMetrics(GetOrgSummaryData200ApplicationJSONOrgDataMetrics metrics) {
         this.metrics = metrics;
         return this;
@@ -25,6 +26,7 @@ public class GetOrgSummaryData200ApplicationJSONOrgData {
      */
     @JsonProperty("trends")
     public GetOrgSummaryData200ApplicationJSONOrgDataTrends trends;
+
     public GetOrgSummaryData200ApplicationJSONOrgData withTrends(GetOrgSummaryData200ApplicationJSONOrgDataTrends trends) {
         this.trends = trends;
         return this;

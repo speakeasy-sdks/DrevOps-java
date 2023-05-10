@@ -12,6 +12,7 @@ public class GetTestsTestsResponseItems {
      */
     @JsonProperty("classname")
     public String classname;
+
     public GetTestsTestsResponseItems withClassname(String classname) {
         this.classname = classname;
         return this;
@@ -22,6 +23,7 @@ public class GetTestsTestsResponseItems {
      */
     @JsonProperty("file")
     public String file;
+
     public GetTestsTestsResponseItems withFile(String file) {
         this.file = file;
         return this;
@@ -32,6 +34,7 @@ public class GetTestsTestsResponseItems {
      */
     @JsonProperty("message")
     public String message;
+
     public GetTestsTestsResponseItems withMessage(String message) {
         this.message = message;
         return this;
@@ -42,6 +45,7 @@ public class GetTestsTestsResponseItems {
      */
     @JsonProperty("name")
     public String name;
+
     public GetTestsTestsResponseItems withName(String name) {
         this.name = name;
         return this;
@@ -52,6 +56,7 @@ public class GetTestsTestsResponseItems {
      */
     @JsonProperty("result")
     public String result;
+
     public GetTestsTestsResponseItems withResult(String result) {
         this.result = result;
         return this;
@@ -62,6 +67,7 @@ public class GetTestsTestsResponseItems {
      */
     @JsonProperty("run_time")
     public Double runTime;
+
     public GetTestsTestsResponseItems withRunTime(Double runTime) {
         this.runTime = runTime;
         return this;
@@ -72,6 +78,7 @@ public class GetTestsTestsResponseItems {
      */
     @JsonProperty("source")
     public String source;
+
     public GetTestsTestsResponseItems withSource(String source) {
         this.source = source;
         return this;

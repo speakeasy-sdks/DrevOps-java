@@ -15,6 +15,7 @@ public class ListPipelinesPipelineListResponsePipelineVcsCommit {
      */
     @JsonProperty("body")
     public String body;
+
     public ListPipelinesPipelineListResponsePipelineVcsCommit withBody(String body) {
         this.body = body;
         return this;
@@ -25,6 +26,7 @@ public class ListPipelinesPipelineListResponsePipelineVcsCommit {
      */
     @JsonProperty("subject")
     public String subject;
+
     public ListPipelinesPipelineListResponsePipelineVcsCommit withSubject(String subject) {
         this.subject = subject;
         return this;

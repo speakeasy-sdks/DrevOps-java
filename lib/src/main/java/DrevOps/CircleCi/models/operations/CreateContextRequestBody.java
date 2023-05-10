@@ -12,6 +12,7 @@ public class CreateContextRequestBody {
      */
     @JsonProperty("name")
     public String name;
+
     public CreateContextRequestBody withName(String name) {
         this.name = name;
         return this;
@@ -19,6 +20,7 @@ public class CreateContextRequestBody {
     
     @JsonProperty("owner")
     public Object owner;
+
     public CreateContextRequestBody withOwner(Object owner) {
         this.owner = owner;
         return this;

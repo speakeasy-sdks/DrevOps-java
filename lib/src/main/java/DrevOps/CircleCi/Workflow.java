@@ -31,6 +31,13 @@ public class Workflow {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Approve a job
+     * Approves a pending approval job in a workflow.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.ApprovePendingApprovalJobByIdResponse approvePendingApprovalJobById(DrevOps.CircleCi.models.operations.ApprovePendingApprovalJobByIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ApprovePendingApprovalJobByIdRequest.class, baseUrl, "/workflow/{id}/approve/{approval_request_id}", request, null);
@@ -70,6 +77,13 @@ public class Workflow {
         return res;
     }
 
+    /**
+     * Cancel a workflow
+     * Cancels a running workflow.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.CancelWorkflowResponse cancelWorkflow(DrevOps.CircleCi.models.operations.CancelWorkflowRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.CancelWorkflowRequest.class, baseUrl, "/workflow/{id}/cancel", request, null);
@@ -109,6 +123,13 @@ public class Workflow {
         return res;
     }
 
+    /**
+     * Get a workflow
+     * Returns summary fields of a workflow by ID.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.GetWorkflowByIdResponse getWorkflowById(DrevOps.CircleCi.models.operations.GetWorkflowByIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetWorkflowByIdRequest.class, baseUrl, "/workflow/{id}", request, null);
@@ -148,6 +169,13 @@ public class Workflow {
         return res;
     }
 
+    /**
+     * Get a workflow's jobs
+     * Returns a sequence of jobs for a workflow.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.ListWorkflowJobsResponse listWorkflowJobs(DrevOps.CircleCi.models.operations.ListWorkflowJobsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ListWorkflowJobsRequest.class, baseUrl, "/workflow/{id}/job", request, null);
@@ -187,6 +215,13 @@ public class Workflow {
         return res;
     }
 
+    /**
+     * Rerun a workflow
+     * Reruns a workflow.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.RerunWorkflowResponse rerunWorkflow(DrevOps.CircleCi.models.operations.RerunWorkflowRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.RerunWorkflowRequest.class, baseUrl, "/workflow/{id}/rerun", request, null);

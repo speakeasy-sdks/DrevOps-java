@@ -14,6 +14,7 @@ public class GetJobTimeseriesRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=branch")
     public String branch;
+
     public GetJobTimeseriesRequest withBranch(String branch) {
         this.branch = branch;
         return this;
@@ -24,6 +25,7 @@ public class GetJobTimeseriesRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=end-date")
     public OffsetDateTime endDate;
+
     public GetJobTimeseriesRequest withEndDate(OffsetDateTime endDate) {
         this.endDate = endDate;
         return this;
@@ -34,6 +36,7 @@ public class GetJobTimeseriesRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=granularity")
     public GetJobTimeseriesGranularityEnum granularity;
+
     public GetJobTimeseriesRequest withGranularity(GetJobTimeseriesGranularityEnum granularity) {
         this.granularity = granularity;
         return this;
@@ -44,6 +47,7 @@ public class GetJobTimeseriesRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public GetJobTimeseriesRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;
@@ -54,6 +58,7 @@ public class GetJobTimeseriesRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=start-date")
     public OffsetDateTime startDate;
+
     public GetJobTimeseriesRequest withStartDate(OffsetDateTime startDate) {
         this.startDate = startDate;
         return this;
@@ -64,6 +69,7 @@ public class GetJobTimeseriesRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=workflow-name")
     public String workflowName;
+
     public GetJobTimeseriesRequest withWorkflowName(String workflowName) {
         this.workflowName = workflowName;
         return this;

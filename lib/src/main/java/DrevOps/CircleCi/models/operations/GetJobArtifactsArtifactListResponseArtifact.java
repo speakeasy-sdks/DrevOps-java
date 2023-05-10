@@ -15,6 +15,7 @@ public class GetJobArtifactsArtifactListResponseArtifact {
      */
     @JsonProperty("node_index")
     public Long nodeIndex;
+
     public GetJobArtifactsArtifactListResponseArtifact withNodeIndex(Long nodeIndex) {
         this.nodeIndex = nodeIndex;
         return this;
@@ -25,6 +26,7 @@ public class GetJobArtifactsArtifactListResponseArtifact {
      */
     @JsonProperty("path")
     public String path;
+
     public GetJobArtifactsArtifactListResponseArtifact withPath(String path) {
         this.path = path;
         return this;
@@ -35,6 +37,7 @@ public class GetJobArtifactsArtifactListResponseArtifact {
      */
     @JsonProperty("url")
     public String url;
+
     public GetJobArtifactsArtifactListResponseArtifact withUrl(String url) {
         this.url = url;
         return this;

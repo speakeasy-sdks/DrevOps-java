@@ -13,6 +13,7 @@ public class GetScheduleByIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=schedule-id")
     public String scheduleId;
+
     public GetScheduleByIdRequest withScheduleId(String scheduleId) {
         this.scheduleId = scheduleId;
         return this;

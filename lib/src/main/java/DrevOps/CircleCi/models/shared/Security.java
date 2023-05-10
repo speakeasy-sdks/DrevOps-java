@@ -9,6 +9,7 @@ import DrevOps.CircleCi.utils.SpeakeasyMetadata;
 public class Security {
     @SpeakeasyMetadata("security:scheme=true,type=apiKey,subtype=header,name=Circle-Token")
     public String apiKeyHeader;
+
     public Security withApiKeyHeader(String apiKeyHeader) {
         this.apiKeyHeader = apiKeyHeader;
         return this;
@@ -16,6 +17,7 @@ public class Security {
     
     @SpeakeasyMetadata("security:scheme=true,type=apiKey,subtype=query,name=circle-token")
     public String apiKeyQuery;
+
     public Security withApiKeyQuery(String apiKeyQuery) {
         this.apiKeyQuery = apiKeyQuery;
         return this;
@@ -23,6 +25,7 @@ public class Security {
     
     @SpeakeasyMetadata("security:scheme=true,type=http,subtype=basic")
     public SchemeBasicAuth basicAuth;
+
     public Security withBasicAuth(SchemeBasicAuth basicAuth) {
         this.basicAuth = basicAuth;
         return this;

@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class ListSchedulesForProject200ApplicationJSON {
     @JsonProperty("items")
     public ListSchedulesForProject200ApplicationJSONSchedule[] items;
+
     public ListSchedulesForProject200ApplicationJSON withItems(ListSchedulesForProject200ApplicationJSONSchedule[] items) {
         this.items = items;
         return this;
@@ -22,6 +23,7 @@ public class ListSchedulesForProject200ApplicationJSON {
      */
     @JsonProperty("next_page_token")
     public String nextPageToken;
+
     public ListSchedulesForProject200ApplicationJSON withNextPageToken(String nextPageToken) {
         this.nextPageToken = nextPageToken;
         return this;

@@ -13,6 +13,7 @@ public class ListEnvironmentVariablesFromContextRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=context-id")
     public String contextId;
+
     public ListEnvironmentVariablesFromContextRequest withContextId(String contextId) {
         this.contextId = contextId;
         return this;
@@ -23,6 +24,7 @@ public class ListEnvironmentVariablesFromContextRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=page-token")
     public String pageToken;
+
     public ListEnvironmentVariablesFromContextRequest withPageToken(String pageToken) {
         this.pageToken = pageToken;
         return this;

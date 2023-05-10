@@ -13,6 +13,7 @@ public class GetContextRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=context-id")
     public String contextId;
+
     public GetContextRequest withContextId(String contextId) {
         this.contextId = contextId;
         return this;

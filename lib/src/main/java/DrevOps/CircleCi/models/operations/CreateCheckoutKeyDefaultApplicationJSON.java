@@ -15,6 +15,7 @@ public class CreateCheckoutKeyDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public CreateCheckoutKeyDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

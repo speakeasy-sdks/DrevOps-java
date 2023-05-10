@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class DeleteWebhookResponse {
     
     public String contentType;
+
     public DeleteWebhookResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class DeleteWebhookResponse {
      */
     
     public DeleteWebhookMessageResponse messageResponse;
+
     public DeleteWebhookResponse withMessageResponse(DeleteWebhookMessageResponse messageResponse) {
         this.messageResponse = messageResponse;
         return this;
@@ -27,6 +29,7 @@ public class DeleteWebhookResponse {
     
     
     public Integer statusCode;
+
     public DeleteWebhookResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class DeleteWebhookResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public DeleteWebhookResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class DeleteWebhookResponse {
      */
     
     public DeleteWebhookDefaultApplicationJSON deleteWebhookDefaultApplicationJSONObject;
+
     public DeleteWebhookResponse withDeleteWebhookDefaultApplicationJSONObject(DeleteWebhookDefaultApplicationJSON deleteWebhookDefaultApplicationJSONObject) {
         this.deleteWebhookDefaultApplicationJSONObject = deleteWebhookDefaultApplicationJSONObject;
         return this;

@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class ListContexts200ApplicationJSON {
     @JsonProperty("items")
     public ListContexts200ApplicationJSONContext[] items;
+
     public ListContexts200ApplicationJSON withItems(ListContexts200ApplicationJSONContext[] items) {
         this.items = items;
         return this;
@@ -22,6 +23,7 @@ public class ListContexts200ApplicationJSON {
      */
     @JsonProperty("next_page_token")
     public String nextPageToken;
+
     public ListContexts200ApplicationJSON withNextPageToken(String nextPageToken) {
         this.nextPageToken = nextPageToken;
         return this;

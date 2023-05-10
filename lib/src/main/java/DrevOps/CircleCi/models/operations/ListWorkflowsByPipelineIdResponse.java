@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class ListWorkflowsByPipelineIdResponse {
     
     public String contentType;
+
     public ListWorkflowsByPipelineIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class ListWorkflowsByPipelineIdResponse {
     
     
     public Integer statusCode;
+
     public ListWorkflowsByPipelineIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class ListWorkflowsByPipelineIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public ListWorkflowsByPipelineIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -34,6 +37,7 @@ public class ListWorkflowsByPipelineIdResponse {
      */
     
     public ListWorkflowsByPipelineIdWorkflowListResponse workflowListResponse;
+
     public ListWorkflowsByPipelineIdResponse withWorkflowListResponse(ListWorkflowsByPipelineIdWorkflowListResponse workflowListResponse) {
         this.workflowListResponse = workflowListResponse;
         return this;
@@ -44,6 +48,7 @@ public class ListWorkflowsByPipelineIdResponse {
      */
     
     public ListWorkflowsByPipelineIdDefaultApplicationJSON listWorkflowsByPipelineIdDefaultApplicationJSONObject;
+
     public ListWorkflowsByPipelineIdResponse withListWorkflowsByPipelineIdDefaultApplicationJSONObject(ListWorkflowsByPipelineIdDefaultApplicationJSON listWorkflowsByPipelineIdDefaultApplicationJSONObject) {
         this.listWorkflowsByPipelineIdDefaultApplicationJSONObject = listWorkflowsByPipelineIdDefaultApplicationJSONObject;
         return this;

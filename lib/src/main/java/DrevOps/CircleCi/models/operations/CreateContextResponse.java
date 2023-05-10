@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class CreateContextResponse {
     
     public String contentType;
+
     public CreateContextResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class CreateContextResponse {
      */
     
     public CreateContextContext context;
+
     public CreateContextResponse withContext(CreateContextContext context) {
         this.context = context;
         return this;
@@ -27,6 +29,7 @@ public class CreateContextResponse {
     
     
     public Integer statusCode;
+
     public CreateContextResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class CreateContextResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public CreateContextResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class CreateContextResponse {
      */
     
     public CreateContextDefaultApplicationJSON createContextDefaultApplicationJSONObject;
+
     public CreateContextResponse withCreateContextDefaultApplicationJSONObject(CreateContextDefaultApplicationJSON createContextDefaultApplicationJSONObject) {
         this.createContextDefaultApplicationJSONObject = createContextDefaultApplicationJSONObject;
         return this;

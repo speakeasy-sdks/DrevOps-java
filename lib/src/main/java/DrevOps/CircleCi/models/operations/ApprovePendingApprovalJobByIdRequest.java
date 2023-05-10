@@ -13,6 +13,7 @@ public class ApprovePendingApprovalJobByIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=approval_request_id")
     public String approvalRequestId;
+
     public ApprovePendingApprovalJobByIdRequest withApprovalRequestId(String approvalRequestId) {
         this.approvalRequestId = approvalRequestId;
         return this;
@@ -23,6 +24,7 @@ public class ApprovePendingApprovalJobByIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=id")
     public String id;
+
     public ApprovePendingApprovalJobByIdRequest withId(String id) {
         this.id = id;
         return this;

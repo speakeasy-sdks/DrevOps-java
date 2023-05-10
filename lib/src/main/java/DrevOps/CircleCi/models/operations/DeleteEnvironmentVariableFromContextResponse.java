@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class DeleteEnvironmentVariableFromContextResponse {
     
     public String contentType;
+
     public DeleteEnvironmentVariableFromContextResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class DeleteEnvironmentVariableFromContextResponse {
      */
     
     public DeleteEnvironmentVariableFromContextMessageResponse messageResponse;
+
     public DeleteEnvironmentVariableFromContextResponse withMessageResponse(DeleteEnvironmentVariableFromContextMessageResponse messageResponse) {
         this.messageResponse = messageResponse;
         return this;
@@ -27,6 +29,7 @@ public class DeleteEnvironmentVariableFromContextResponse {
     
     
     public Integer statusCode;
+
     public DeleteEnvironmentVariableFromContextResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class DeleteEnvironmentVariableFromContextResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public DeleteEnvironmentVariableFromContextResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class DeleteEnvironmentVariableFromContextResponse {
      */
     
     public DeleteEnvironmentVariableFromContextDefaultApplicationJSON deleteEnvironmentVariableFromContextDefaultApplicationJSONObject;
+
     public DeleteEnvironmentVariableFromContextResponse withDeleteEnvironmentVariableFromContextDefaultApplicationJSONObject(DeleteEnvironmentVariableFromContextDefaultApplicationJSON deleteEnvironmentVariableFromContextDefaultApplicationJSONObject) {
         this.deleteEnvironmentVariableFromContextDefaultApplicationJSONObject = deleteEnvironmentVariableFromContextDefaultApplicationJSONObject;
         return this;

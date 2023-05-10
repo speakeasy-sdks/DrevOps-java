@@ -20,6 +20,7 @@ public class ListSchedulesForProject200ApplicationJSONSchedule {
      */
     @JsonProperty("actor")
     public ListSchedulesForProject200ApplicationJSONScheduleUser actor;
+
     public ListSchedulesForProject200ApplicationJSONSchedule withActor(ListSchedulesForProject200ApplicationJSONScheduleUser actor) {
         this.actor = actor;
         return this;
@@ -32,6 +33,7 @@ public class ListSchedulesForProject200ApplicationJSONSchedule {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created-at")
     public OffsetDateTime createdAt;
+
     public ListSchedulesForProject200ApplicationJSONSchedule withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -42,6 +44,7 @@ public class ListSchedulesForProject200ApplicationJSONSchedule {
      */
     @JsonProperty("description")
     public String description;
+
     public ListSchedulesForProject200ApplicationJSONSchedule withDescription(String description) {
         this.description = description;
         return this;
@@ -52,6 +55,7 @@ public class ListSchedulesForProject200ApplicationJSONSchedule {
      */
     @JsonProperty("id")
     public String id;
+
     public ListSchedulesForProject200ApplicationJSONSchedule withId(String id) {
         this.id = id;
         return this;
@@ -62,6 +66,7 @@ public class ListSchedulesForProject200ApplicationJSONSchedule {
      */
     @JsonProperty("name")
     public String name;
+
     public ListSchedulesForProject200ApplicationJSONSchedule withName(String name) {
         this.name = name;
         return this;
@@ -72,6 +77,7 @@ public class ListSchedulesForProject200ApplicationJSONSchedule {
      */
     @JsonProperty("parameters")
     public java.util.Map<String, Object> parameters;
+
     public ListSchedulesForProject200ApplicationJSONSchedule withParameters(java.util.Map<String, Object> parameters) {
         this.parameters = parameters;
         return this;
@@ -82,6 +88,7 @@ public class ListSchedulesForProject200ApplicationJSONSchedule {
      */
     @JsonProperty("project-slug")
     public String projectSlug;
+
     public ListSchedulesForProject200ApplicationJSONSchedule withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;
@@ -92,6 +99,7 @@ public class ListSchedulesForProject200ApplicationJSONSchedule {
      */
     @JsonProperty("timetable")
     public Object timetable;
+
     public ListSchedulesForProject200ApplicationJSONSchedule withTimetable(Object timetable) {
         this.timetable = timetable;
         return this;
@@ -104,6 +112,7 @@ public class ListSchedulesForProject200ApplicationJSONSchedule {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("updated-at")
     public OffsetDateTime updatedAt;
+
     public ListSchedulesForProject200ApplicationJSONSchedule withUpdatedAt(OffsetDateTime updatedAt) {
         this.updatedAt = updatedAt;
         return this;

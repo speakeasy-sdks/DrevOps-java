@@ -13,6 +13,7 @@ public class GetOrgSummaryDataRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=org-slug")
     public String orgSlug;
+
     public GetOrgSummaryDataRequest withOrgSlug(String orgSlug) {
         this.orgSlug = orgSlug;
         return this;
@@ -23,6 +24,7 @@ public class GetOrgSummaryDataRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=project-names")
     public java.util.Map<String, Object> projectNames;
+
     public GetOrgSummaryDataRequest withProjectNames(java.util.Map<String, Object> projectNames) {
         this.projectNames = projectNames;
         return this;
@@ -33,6 +35,7 @@ public class GetOrgSummaryDataRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=reporting-window")
     public GetOrgSummaryDataReportingWindowEnum reportingWindow;
+
     public GetOrgSummaryDataRequest withReportingWindow(GetOrgSummaryDataReportingWindowEnum reportingWindow) {
         this.reportingWindow = reportingWindow;
         return this;

@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class ListWorkflowJobsResponse {
     
     public String contentType;
+
     public ListWorkflowJobsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class ListWorkflowJobsResponse {
     
     
     public Integer statusCode;
+
     public ListWorkflowJobsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class ListWorkflowJobsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public ListWorkflowJobsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -34,6 +37,7 @@ public class ListWorkflowJobsResponse {
      */
     
     public ListWorkflowJobsWorkflowJobListResponse workflowJobListResponse;
+
     public ListWorkflowJobsResponse withWorkflowJobListResponse(ListWorkflowJobsWorkflowJobListResponse workflowJobListResponse) {
         this.workflowJobListResponse = workflowJobListResponse;
         return this;
@@ -44,6 +48,7 @@ public class ListWorkflowJobsResponse {
      */
     
     public ListWorkflowJobsDefaultApplicationJSON listWorkflowJobsDefaultApplicationJSONObject;
+
     public ListWorkflowJobsResponse withListWorkflowJobsDefaultApplicationJSONObject(ListWorkflowJobsDefaultApplicationJSON listWorkflowJobsDefaultApplicationJSONObject) {
         this.listWorkflowJobsDefaultApplicationJSONObject = listWorkflowJobsDefaultApplicationJSONObject;
         return this;

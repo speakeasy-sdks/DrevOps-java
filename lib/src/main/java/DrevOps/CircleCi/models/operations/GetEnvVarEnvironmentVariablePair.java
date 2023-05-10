@@ -15,6 +15,7 @@ public class GetEnvVarEnvironmentVariablePair {
      */
     @JsonProperty("name")
     public String name;
+
     public GetEnvVarEnvironmentVariablePair withName(String name) {
         this.name = name;
         return this;
@@ -25,6 +26,7 @@ public class GetEnvVarEnvironmentVariablePair {
      */
     @JsonProperty("value")
     public String value;
+
     public GetEnvVarEnvironmentVariablePair withValue(String value) {
         this.value = value;
         return this;

@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class ListSchedulesForProjectResponse {
     
     public String contentType;
+
     public ListSchedulesForProjectResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class ListSchedulesForProjectResponse {
     
     
     public Integer statusCode;
+
     public ListSchedulesForProjectResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class ListSchedulesForProjectResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public ListSchedulesForProjectResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -34,6 +37,7 @@ public class ListSchedulesForProjectResponse {
      */
     
     public ListSchedulesForProject200ApplicationJSON listSchedulesForProject200ApplicationJSONObject;
+
     public ListSchedulesForProjectResponse withListSchedulesForProject200ApplicationJSONObject(ListSchedulesForProject200ApplicationJSON listSchedulesForProject200ApplicationJSONObject) {
         this.listSchedulesForProject200ApplicationJSONObject = listSchedulesForProject200ApplicationJSONObject;
         return this;
@@ -44,6 +48,7 @@ public class ListSchedulesForProjectResponse {
      */
     
     public ListSchedulesForProjectDefaultApplicationJSON listSchedulesForProjectDefaultApplicationJSONObject;
+
     public ListSchedulesForProjectResponse withListSchedulesForProjectDefaultApplicationJSONObject(ListSchedulesForProjectDefaultApplicationJSON listSchedulesForProjectDefaultApplicationJSONObject) {
         this.listSchedulesForProjectDefaultApplicationJSONObject = listSchedulesForProjectDefaultApplicationJSONObject;
         return this;

@@ -18,6 +18,7 @@ public class GetPipelineByNumberPipelineVcs {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("branch")
     public String branch;
+
     public GetPipelineByNumberPipelineVcs withBranch(String branch) {
         this.branch = branch;
         return this;
@@ -29,6 +30,7 @@ public class GetPipelineByNumberPipelineVcs {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("commit")
     public GetPipelineByNumberPipelineVcsCommit commit;
+
     public GetPipelineByNumberPipelineVcs withCommit(GetPipelineByNumberPipelineVcsCommit commit) {
         this.commit = commit;
         return this;
@@ -39,6 +41,7 @@ public class GetPipelineByNumberPipelineVcs {
      */
     @JsonProperty("origin_repository_url")
     public String originRepositoryUrl;
+
     public GetPipelineByNumberPipelineVcs withOriginRepositoryUrl(String originRepositoryUrl) {
         this.originRepositoryUrl = originRepositoryUrl;
         return this;
@@ -49,6 +52,7 @@ public class GetPipelineByNumberPipelineVcs {
      */
     @JsonProperty("provider_name")
     public String providerName;
+
     public GetPipelineByNumberPipelineVcs withProviderName(String providerName) {
         this.providerName = providerName;
         return this;
@@ -60,6 +64,7 @@ public class GetPipelineByNumberPipelineVcs {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("review_id")
     public String reviewId;
+
     public GetPipelineByNumberPipelineVcs withReviewId(String reviewId) {
         this.reviewId = reviewId;
         return this;
@@ -71,6 +76,7 @@ public class GetPipelineByNumberPipelineVcs {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("review_url")
     public String reviewUrl;
+
     public GetPipelineByNumberPipelineVcs withReviewUrl(String reviewUrl) {
         this.reviewUrl = reviewUrl;
         return this;
@@ -81,6 +87,7 @@ public class GetPipelineByNumberPipelineVcs {
      */
     @JsonProperty("revision")
     public String revision;
+
     public GetPipelineByNumberPipelineVcs withRevision(String revision) {
         this.revision = revision;
         return this;
@@ -92,6 +99,7 @@ public class GetPipelineByNumberPipelineVcs {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tag")
     public String tag;
+
     public GetPipelineByNumberPipelineVcs withTag(String tag) {
         this.tag = tag;
         return this;
@@ -102,6 +110,7 @@ public class GetPipelineByNumberPipelineVcs {
      */
     @JsonProperty("target_repository_url")
     public String targetRepositoryUrl;
+
     public GetPipelineByNumberPipelineVcs withTargetRepositoryUrl(String targetRepositoryUrl) {
         this.targetRepositoryUrl = targetRepositoryUrl;
         return this;

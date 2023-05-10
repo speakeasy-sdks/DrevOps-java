@@ -17,6 +17,7 @@ public class GetProjectWorkflowMetrics200ApplicationJSONItems {
      */
     @JsonProperty("metrics")
     public GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics metrics;
+
     public GetProjectWorkflowMetrics200ApplicationJSONItems withMetrics(GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics metrics) {
         this.metrics = metrics;
         return this;
@@ -27,6 +28,7 @@ public class GetProjectWorkflowMetrics200ApplicationJSONItems {
      */
     @JsonProperty("name")
     public String name;
+
     public GetProjectWorkflowMetrics200ApplicationJSONItems withName(String name) {
         this.name = name;
         return this;
@@ -39,6 +41,7 @@ public class GetProjectWorkflowMetrics200ApplicationJSONItems {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("window_end")
     public OffsetDateTime windowEnd;
+
     public GetProjectWorkflowMetrics200ApplicationJSONItems withWindowEnd(OffsetDateTime windowEnd) {
         this.windowEnd = windowEnd;
         return this;
@@ -51,6 +54,7 @@ public class GetProjectWorkflowMetrics200ApplicationJSONItems {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("window_start")
     public OffsetDateTime windowStart;
+
     public GetProjectWorkflowMetrics200ApplicationJSONItems withWindowStart(OffsetDateTime windowStart) {
         this.windowStart = windowStart;
         return this;

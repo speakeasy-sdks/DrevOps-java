@@ -19,6 +19,7 @@ public class ListCheckoutKeysCheckoutKeyListResponseCheckoutKey {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created-at")
     public OffsetDateTime createdAt;
+
     public ListCheckoutKeysCheckoutKeyListResponseCheckoutKey withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -29,6 +30,7 @@ public class ListCheckoutKeysCheckoutKeyListResponseCheckoutKey {
      */
     @JsonProperty("fingerprint")
     public String fingerprint;
+
     public ListCheckoutKeysCheckoutKeyListResponseCheckoutKey withFingerprint(String fingerprint) {
         this.fingerprint = fingerprint;
         return this;
@@ -39,6 +41,7 @@ public class ListCheckoutKeysCheckoutKeyListResponseCheckoutKey {
      */
     @JsonProperty("preferred")
     public Boolean preferred;
+
     public ListCheckoutKeysCheckoutKeyListResponseCheckoutKey withPreferred(Boolean preferred) {
         this.preferred = preferred;
         return this;
@@ -49,6 +52,7 @@ public class ListCheckoutKeysCheckoutKeyListResponseCheckoutKey {
      */
     @JsonProperty("public-key")
     public String publicKey;
+
     public ListCheckoutKeysCheckoutKeyListResponseCheckoutKey withPublicKey(String publicKey) {
         this.publicKey = publicKey;
         return this;
@@ -59,6 +63,7 @@ public class ListCheckoutKeysCheckoutKeyListResponseCheckoutKey {
      */
     @JsonProperty("type")
     public ListCheckoutKeysCheckoutKeyListResponseCheckoutKeyCheckoutKeyTypeEnum type;
+
     public ListCheckoutKeysCheckoutKeyListResponseCheckoutKey withType(ListCheckoutKeysCheckoutKeyListResponseCheckoutKeyCheckoutKeyTypeEnum type) {
         this.type = type;
         return this;

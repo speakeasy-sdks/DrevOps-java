@@ -13,6 +13,7 @@ public class GetProjectWorkflowsPageDataRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=branches")
     public java.util.Map<String, Object> branches;
+
     public GetProjectWorkflowsPageDataRequest withBranches(java.util.Map<String, Object> branches) {
         this.branches = branches;
         return this;
@@ -23,6 +24,7 @@ public class GetProjectWorkflowsPageDataRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public GetProjectWorkflowsPageDataRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;
@@ -33,6 +35,7 @@ public class GetProjectWorkflowsPageDataRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=reporting-window")
     public GetProjectWorkflowsPageDataReportingWindowEnum reportingWindow;
+
     public GetProjectWorkflowsPageDataRequest withReportingWindow(GetProjectWorkflowsPageDataReportingWindowEnum reportingWindow) {
         this.reportingWindow = reportingWindow;
         return this;
@@ -43,6 +46,7 @@ public class GetProjectWorkflowsPageDataRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=workflow-names")
     public java.util.Map<String, Object> workflowNames;
+
     public GetProjectWorkflowsPageDataRequest withWorkflowNames(java.util.Map<String, Object> workflowNames) {
         this.workflowNames = workflowNames;
         return this;

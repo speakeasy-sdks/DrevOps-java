@@ -22,6 +22,7 @@ public class TriggerPipelinePipelineCreation {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created_at")
     public OffsetDateTime createdAt;
+
     public TriggerPipelinePipelineCreation withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -32,6 +33,7 @@ public class TriggerPipelinePipelineCreation {
      */
     @JsonProperty("id")
     public String id;
+
     public TriggerPipelinePipelineCreation withId(String id) {
         this.id = id;
         return this;
@@ -42,6 +44,7 @@ public class TriggerPipelinePipelineCreation {
      */
     @JsonProperty("number")
     public Long number;
+
     public TriggerPipelinePipelineCreation withNumber(Long number) {
         this.number = number;
         return this;
@@ -52,6 +55,7 @@ public class TriggerPipelinePipelineCreation {
      */
     @JsonProperty("state")
     public TriggerPipelinePipelineCreationStateEnum state;
+
     public TriggerPipelinePipelineCreation withState(TriggerPipelinePipelineCreationStateEnum state) {
         this.state = state;
         return this;

@@ -15,6 +15,7 @@ public class GetJobDetailsJobDetailsOrganization {
      */
     @JsonProperty("name")
     public String name;
+
     public GetJobDetailsJobDetailsOrganization withName(String name) {
         this.name = name;
         return this;

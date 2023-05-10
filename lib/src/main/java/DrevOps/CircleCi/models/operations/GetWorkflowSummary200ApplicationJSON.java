@@ -15,6 +15,7 @@ public class GetWorkflowSummary200ApplicationJSON {
      */
     @JsonProperty("metrics")
     public GetWorkflowSummary200ApplicationJSONMetrics metrics;
+
     public GetWorkflowSummary200ApplicationJSON withMetrics(GetWorkflowSummary200ApplicationJSONMetrics metrics) {
         this.metrics = metrics;
         return this;
@@ -25,6 +26,7 @@ public class GetWorkflowSummary200ApplicationJSON {
      */
     @JsonProperty("trends")
     public GetWorkflowSummary200ApplicationJSONTrends trends;
+
     public GetWorkflowSummary200ApplicationJSON withTrends(GetWorkflowSummary200ApplicationJSONTrends trends) {
         this.trends = trends;
         return this;
@@ -35,6 +37,7 @@ public class GetWorkflowSummary200ApplicationJSON {
      */
     @JsonProperty("workflow_names")
     public String[] workflowNames;
+
     public GetWorkflowSummary200ApplicationJSON withWorkflowNames(String[] workflowNames) {
         this.workflowNames = workflowNames;
         return this;

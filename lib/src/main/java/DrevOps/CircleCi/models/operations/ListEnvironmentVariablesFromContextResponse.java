@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class ListEnvironmentVariablesFromContextResponse {
     
     public String contentType;
+
     public ListEnvironmentVariablesFromContextResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class ListEnvironmentVariablesFromContextResponse {
     
     
     public Integer statusCode;
+
     public ListEnvironmentVariablesFromContextResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class ListEnvironmentVariablesFromContextResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public ListEnvironmentVariablesFromContextResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -34,6 +37,7 @@ public class ListEnvironmentVariablesFromContextResponse {
      */
     
     public ListEnvironmentVariablesFromContext200ApplicationJSON listEnvironmentVariablesFromContext200ApplicationJSONObject;
+
     public ListEnvironmentVariablesFromContextResponse withListEnvironmentVariablesFromContext200ApplicationJSONObject(ListEnvironmentVariablesFromContext200ApplicationJSON listEnvironmentVariablesFromContext200ApplicationJSONObject) {
         this.listEnvironmentVariablesFromContext200ApplicationJSONObject = listEnvironmentVariablesFromContext200ApplicationJSONObject;
         return this;
@@ -44,6 +48,7 @@ public class ListEnvironmentVariablesFromContextResponse {
      */
     
     public ListEnvironmentVariablesFromContextDefaultApplicationJSON listEnvironmentVariablesFromContextDefaultApplicationJSONObject;
+
     public ListEnvironmentVariablesFromContextResponse withListEnvironmentVariablesFromContextDefaultApplicationJSONObject(ListEnvironmentVariablesFromContextDefaultApplicationJSON listEnvironmentVariablesFromContextDefaultApplicationJSONObject) {
         this.listEnvironmentVariablesFromContextDefaultApplicationJSONObject = listEnvironmentVariablesFromContextDefaultApplicationJSONObject;
         return this;

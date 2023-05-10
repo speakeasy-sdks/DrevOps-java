@@ -15,6 +15,7 @@ public class GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics {
      */
     @JsonProperty("duration_metrics")
     public GetProjectWorkflowMetrics200ApplicationJSONItemsMetricsDurationMetrics durationMetrics;
+
     public GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics withDurationMetrics(GetProjectWorkflowMetrics200ApplicationJSONItemsMetricsDurationMetrics durationMetrics) {
         this.durationMetrics = durationMetrics;
         return this;
@@ -25,6 +26,7 @@ public class GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics {
      */
     @JsonProperty("failed_runs")
     public Long failedRuns;
+
     public GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics withFailedRuns(Long failedRuns) {
         this.failedRuns = failedRuns;
         return this;
@@ -35,6 +37,7 @@ public class GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics {
      */
     @JsonProperty("mttr")
     public Long mttr;
+
     public GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics withMttr(Long mttr) {
         this.mttr = mttr;
         return this;
@@ -42,6 +45,7 @@ public class GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics {
     
     @JsonProperty("success_rate")
     public Float successRate;
+
     public GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics withSuccessRate(Float successRate) {
         this.successRate = successRate;
         return this;
@@ -52,6 +56,7 @@ public class GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics {
      */
     @JsonProperty("successful_runs")
     public Long successfulRuns;
+
     public GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics withSuccessfulRuns(Long successfulRuns) {
         this.successfulRuns = successfulRuns;
         return this;
@@ -62,6 +67,7 @@ public class GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics {
      */
     @JsonProperty("throughput")
     public Float throughput;
+
     public GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics withThroughput(Float throughput) {
         this.throughput = throughput;
         return this;
@@ -72,6 +78,7 @@ public class GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics {
      */
     @JsonProperty("total_credits_used")
     public Long totalCreditsUsed;
+
     public GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics withTotalCreditsUsed(Long totalCreditsUsed) {
         this.totalCreditsUsed = totalCreditsUsed;
         return this;
@@ -82,6 +89,7 @@ public class GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics {
      */
     @JsonProperty("total_recoveries")
     public Long totalRecoveries;
+
     public GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics withTotalRecoveries(Long totalRecoveries) {
         this.totalRecoveries = totalRecoveries;
         return this;
@@ -92,6 +100,7 @@ public class GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics {
      */
     @JsonProperty("total_runs")
     public Long totalRuns;
+
     public GetProjectWorkflowMetrics200ApplicationJSONItemsMetrics withTotalRuns(Long totalRuns) {
         this.totalRuns = totalRuns;
         return this;

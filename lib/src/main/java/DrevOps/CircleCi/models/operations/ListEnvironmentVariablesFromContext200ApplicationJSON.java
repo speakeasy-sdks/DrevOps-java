@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class ListEnvironmentVariablesFromContext200ApplicationJSON {
     @JsonProperty("items")
     public ListEnvironmentVariablesFromContext200ApplicationJSONItems[] items;
+
     public ListEnvironmentVariablesFromContext200ApplicationJSON withItems(ListEnvironmentVariablesFromContext200ApplicationJSONItems[] items) {
         this.items = items;
         return this;
@@ -22,6 +23,7 @@ public class ListEnvironmentVariablesFromContext200ApplicationJSON {
      */
     @JsonProperty("next_page_token")
     public String nextPageToken;
+
     public ListEnvironmentVariablesFromContext200ApplicationJSON withNextPageToken(String nextPageToken) {
         this.nextPageToken = nextPageToken;
         return this;

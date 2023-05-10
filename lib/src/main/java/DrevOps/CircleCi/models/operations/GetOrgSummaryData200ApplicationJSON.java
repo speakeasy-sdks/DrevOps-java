@@ -15,6 +15,7 @@ public class GetOrgSummaryData200ApplicationJSON {
      */
     @JsonProperty("all_projects")
     public String[] allProjects;
+
     public GetOrgSummaryData200ApplicationJSON withAllProjects(String[] allProjects) {
         this.allProjects = allProjects;
         return this;
@@ -25,6 +26,7 @@ public class GetOrgSummaryData200ApplicationJSON {
      */
     @JsonProperty("org_data")
     public GetOrgSummaryData200ApplicationJSONOrgData orgData;
+
     public GetOrgSummaryData200ApplicationJSON withOrgData(GetOrgSummaryData200ApplicationJSONOrgData orgData) {
         this.orgData = orgData;
         return this;
@@ -35,6 +37,7 @@ public class GetOrgSummaryData200ApplicationJSON {
      */
     @JsonProperty("org_project_data")
     public GetOrgSummaryData200ApplicationJSONOrgProjectData[] orgProjectData;
+
     public GetOrgSummaryData200ApplicationJSON withOrgProjectData(GetOrgSummaryData200ApplicationJSONOrgProjectData[] orgProjectData) {
         this.orgProjectData = orgProjectData;
         return this;

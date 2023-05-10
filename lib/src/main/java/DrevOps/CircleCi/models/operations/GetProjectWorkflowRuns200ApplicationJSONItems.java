@@ -17,6 +17,7 @@ public class GetProjectWorkflowRuns200ApplicationJSONItems {
      */
     @JsonProperty("branch")
     public String branch;
+
     public GetProjectWorkflowRuns200ApplicationJSONItems withBranch(String branch) {
         this.branch = branch;
         return this;
@@ -29,6 +30,7 @@ public class GetProjectWorkflowRuns200ApplicationJSONItems {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created_at")
     public OffsetDateTime createdAt;
+
     public GetProjectWorkflowRuns200ApplicationJSONItems withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -39,6 +41,7 @@ public class GetProjectWorkflowRuns200ApplicationJSONItems {
      */
     @JsonProperty("credits_used")
     public Long creditsUsed;
+
     public GetProjectWorkflowRuns200ApplicationJSONItems withCreditsUsed(Long creditsUsed) {
         this.creditsUsed = creditsUsed;
         return this;
@@ -49,6 +52,7 @@ public class GetProjectWorkflowRuns200ApplicationJSONItems {
      */
     @JsonProperty("duration")
     public Long duration;
+
     public GetProjectWorkflowRuns200ApplicationJSONItems withDuration(Long duration) {
         this.duration = duration;
         return this;
@@ -59,6 +63,7 @@ public class GetProjectWorkflowRuns200ApplicationJSONItems {
      */
     @JsonProperty("id")
     public String id;
+
     public GetProjectWorkflowRuns200ApplicationJSONItems withId(String id) {
         this.id = id;
         return this;
@@ -69,6 +74,7 @@ public class GetProjectWorkflowRuns200ApplicationJSONItems {
      */
     @JsonProperty("status")
     public GetProjectWorkflowRuns200ApplicationJSONItemsStatusEnum status;
+
     public GetProjectWorkflowRuns200ApplicationJSONItems withStatus(GetProjectWorkflowRuns200ApplicationJSONItemsStatusEnum status) {
         this.status = status;
         return this;
@@ -81,6 +87,7 @@ public class GetProjectWorkflowRuns200ApplicationJSONItems {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("stopped_at")
     public OffsetDateTime stoppedAt;
+
     public GetProjectWorkflowRuns200ApplicationJSONItems withStoppedAt(OffsetDateTime stoppedAt) {
         this.stoppedAt = stoppedAt;
         return this;

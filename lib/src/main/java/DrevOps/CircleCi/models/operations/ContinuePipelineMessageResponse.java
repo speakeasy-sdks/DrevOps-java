@@ -15,6 +15,7 @@ public class ContinuePipelineMessageResponse {
      */
     @JsonProperty("message")
     public String message;
+
     public ContinuePipelineMessageResponse withMessage(String message) {
         this.message = message;
         return this;

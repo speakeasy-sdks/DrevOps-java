@@ -12,6 +12,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests {
      */
     @JsonProperty("classname")
     public String classname;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests withClassname(String classname) {
         this.classname = classname;
         return this;
@@ -22,6 +23,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests {
      */
     @JsonProperty("failed_runs")
     public Long failedRuns;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests withFailedRuns(Long failedRuns) {
         this.failedRuns = failedRuns;
         return this;
@@ -32,6 +34,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests {
      */
     @JsonProperty("file")
     public String file;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests withFile(String file) {
         this.file = file;
         return this;
@@ -42,6 +45,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests {
      */
     @JsonProperty("flaky")
     public Boolean flaky;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests withFlaky(Boolean flaky) {
         this.flaky = flaky;
         return this;
@@ -52,6 +56,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests {
      */
     @JsonProperty("job_name")
     public String jobName;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests withJobName(String jobName) {
         this.jobName = jobName;
         return this;
@@ -62,6 +67,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests {
      */
     @JsonProperty("p95_duration")
     public Double p95Duration;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests withP95Duration(Double p95Duration) {
         this.p95Duration = p95Duration;
         return this;
@@ -72,6 +78,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests {
      */
     @JsonProperty("source")
     public String source;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests withSource(String source) {
         this.source = source;
         return this;
@@ -82,6 +89,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests {
      */
     @JsonProperty("test_name")
     public String testName;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests withTestName(String testName) {
         this.testName = testName;
         return this;
@@ -92,6 +100,7 @@ public class GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests {
      */
     @JsonProperty("total_runs")
     public Long totalRuns;
+
     public GetProjectWorkflowTestMetrics200ApplicationJSONSlowestTests withTotalRuns(Long totalRuns) {
         this.totalRuns = totalRuns;
         return this;

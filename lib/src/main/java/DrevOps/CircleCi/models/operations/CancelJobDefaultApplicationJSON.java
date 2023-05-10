@@ -15,6 +15,7 @@ public class CancelJobDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public CancelJobDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

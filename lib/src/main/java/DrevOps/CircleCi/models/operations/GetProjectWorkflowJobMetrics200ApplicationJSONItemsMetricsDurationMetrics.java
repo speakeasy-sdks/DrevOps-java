@@ -15,6 +15,7 @@ public class GetProjectWorkflowJobMetrics200ApplicationJSONItemsMetricsDurationM
      */
     @JsonProperty("max")
     public Long max;
+
     public GetProjectWorkflowJobMetrics200ApplicationJSONItemsMetricsDurationMetrics withMax(Long max) {
         this.max = max;
         return this;
@@ -25,6 +26,7 @@ public class GetProjectWorkflowJobMetrics200ApplicationJSONItemsMetricsDurationM
      */
     @JsonProperty("mean")
     public Long mean;
+
     public GetProjectWorkflowJobMetrics200ApplicationJSONItemsMetricsDurationMetrics withMean(Long mean) {
         this.mean = mean;
         return this;
@@ -35,6 +37,7 @@ public class GetProjectWorkflowJobMetrics200ApplicationJSONItemsMetricsDurationM
      */
     @JsonProperty("median")
     public Long median;
+
     public GetProjectWorkflowJobMetrics200ApplicationJSONItemsMetricsDurationMetrics withMedian(Long median) {
         this.median = median;
         return this;
@@ -45,6 +48,7 @@ public class GetProjectWorkflowJobMetrics200ApplicationJSONItemsMetricsDurationM
      */
     @JsonProperty("min")
     public Long min;
+
     public GetProjectWorkflowJobMetrics200ApplicationJSONItemsMetricsDurationMetrics withMin(Long min) {
         this.min = min;
         return this;
@@ -55,6 +59,7 @@ public class GetProjectWorkflowJobMetrics200ApplicationJSONItemsMetricsDurationM
      */
     @JsonProperty("p95")
     public Long p95;
+
     public GetProjectWorkflowJobMetrics200ApplicationJSONItemsMetricsDurationMetrics withP95(Long p95) {
         this.p95 = p95;
         return this;
@@ -65,6 +70,7 @@ public class GetProjectWorkflowJobMetrics200ApplicationJSONItemsMetricsDurationM
      */
     @JsonProperty("standard_deviation")
     public Float standardDeviation;
+
     public GetProjectWorkflowJobMetrics200ApplicationJSONItemsMetricsDurationMetrics withStandardDeviation(Float standardDeviation) {
         this.standardDeviation = standardDeviation;
         return this;

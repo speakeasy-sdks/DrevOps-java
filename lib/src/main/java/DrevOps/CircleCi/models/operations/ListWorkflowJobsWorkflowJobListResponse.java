@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class ListWorkflowJobsWorkflowJobListResponse {
     @JsonProperty("items")
     public ListWorkflowJobsWorkflowJobListResponseJob[] items;
+
     public ListWorkflowJobsWorkflowJobListResponse withItems(ListWorkflowJobsWorkflowJobListResponseJob[] items) {
         this.items = items;
         return this;
@@ -22,6 +23,7 @@ public class ListWorkflowJobsWorkflowJobListResponse {
      */
     @JsonProperty("next_page_token")
     public String nextPageToken;
+
     public ListWorkflowJobsWorkflowJobListResponse withNextPageToken(String nextPageToken) {
         this.nextPageToken = nextPageToken;
         return this;

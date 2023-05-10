@@ -15,6 +15,7 @@ public class ListPipelinesPipelineListResponsePipelineErrors {
      */
     @JsonProperty("message")
     public String message;
+
     public ListPipelinesPipelineListResponsePipelineErrors withMessage(String message) {
         this.message = message;
         return this;
@@ -25,6 +26,7 @@ public class ListPipelinesPipelineListResponsePipelineErrors {
      */
     @JsonProperty("type")
     public ListPipelinesPipelineListResponsePipelineErrorsTypeEnum type;
+
     public ListPipelinesPipelineListResponsePipelineErrors withType(ListPipelinesPipelineListResponsePipelineErrorsTypeEnum type) {
         this.type = type;
         return this;

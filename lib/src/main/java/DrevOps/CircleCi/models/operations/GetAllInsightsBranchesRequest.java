@@ -13,6 +13,7 @@ public class GetAllInsightsBranchesRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public GetAllInsightsBranchesRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;
@@ -23,6 +24,7 @@ public class GetAllInsightsBranchesRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=workflow-name")
     public String workflowName;
+
     public GetAllInsightsBranchesRequest withWorkflowName(String workflowName) {
         this.workflowName = workflowName;
         return this;

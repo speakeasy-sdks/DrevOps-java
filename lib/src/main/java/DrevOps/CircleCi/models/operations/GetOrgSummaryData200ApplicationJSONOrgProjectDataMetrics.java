@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class GetOrgSummaryData200ApplicationJSONOrgProjectDataMetrics {
     @JsonProperty("success_rate")
     public Float successRate;
+
     public GetOrgSummaryData200ApplicationJSONOrgProjectDataMetrics withSuccessRate(Float successRate) {
         this.successRate = successRate;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgSummaryData200ApplicationJSONOrgProjectDataMetrics {
      */
     @JsonProperty("total_credits_used")
     public Long totalCreditsUsed;
+
     public GetOrgSummaryData200ApplicationJSONOrgProjectDataMetrics withTotalCreditsUsed(Long totalCreditsUsed) {
         this.totalCreditsUsed = totalCreditsUsed;
         return this;
@@ -32,6 +34,7 @@ public class GetOrgSummaryData200ApplicationJSONOrgProjectDataMetrics {
      */
     @JsonProperty("total_duration_secs")
     public Long totalDurationSecs;
+
     public GetOrgSummaryData200ApplicationJSONOrgProjectDataMetrics withTotalDurationSecs(Long totalDurationSecs) {
         this.totalDurationSecs = totalDurationSecs;
         return this;
@@ -42,6 +45,7 @@ public class GetOrgSummaryData200ApplicationJSONOrgProjectDataMetrics {
      */
     @JsonProperty("total_runs")
     public Long totalRuns;
+
     public GetOrgSummaryData200ApplicationJSONOrgProjectDataMetrics withTotalRuns(Long totalRuns) {
         this.totalRuns = totalRuns;
         return this;

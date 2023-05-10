@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetProjectWorkflowTestMetricsResponse {
     
     public String contentType;
+
     public GetProjectWorkflowTestMetricsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class GetProjectWorkflowTestMetricsResponse {
     
     
     public Integer statusCode;
+
     public GetProjectWorkflowTestMetricsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class GetProjectWorkflowTestMetricsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetProjectWorkflowTestMetricsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -34,6 +37,7 @@ public class GetProjectWorkflowTestMetricsResponse {
      */
     
     public GetProjectWorkflowTestMetrics200ApplicationJSON getProjectWorkflowTestMetrics200ApplicationJSONObject;
+
     public GetProjectWorkflowTestMetricsResponse withGetProjectWorkflowTestMetrics200ApplicationJSONObject(GetProjectWorkflowTestMetrics200ApplicationJSON getProjectWorkflowTestMetrics200ApplicationJSONObject) {
         this.getProjectWorkflowTestMetrics200ApplicationJSONObject = getProjectWorkflowTestMetrics200ApplicationJSONObject;
         return this;
@@ -44,6 +48,7 @@ public class GetProjectWorkflowTestMetricsResponse {
      */
     
     public GetProjectWorkflowTestMetricsDefaultApplicationJSON getProjectWorkflowTestMetricsDefaultApplicationJSONObject;
+
     public GetProjectWorkflowTestMetricsResponse withGetProjectWorkflowTestMetricsDefaultApplicationJSONObject(GetProjectWorkflowTestMetricsDefaultApplicationJSON getProjectWorkflowTestMetricsDefaultApplicationJSONObject) {
         this.getProjectWorkflowTestMetricsDefaultApplicationJSONObject = getProjectWorkflowTestMetricsDefaultApplicationJSONObject;
         return this;

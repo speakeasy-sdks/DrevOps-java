@@ -14,6 +14,7 @@ public class CreateContextRequestBodyOwner1 {
      */
     @JsonProperty("id")
     public String id;
+
     public CreateContextRequestBodyOwner1 withId(String id) {
         this.id = id;
         return this;
@@ -25,6 +26,7 @@ public class CreateContextRequestBodyOwner1 {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("type")
     public CreateContextRequestBodyOwner1TypeEnum type;
+
     public CreateContextRequestBodyOwner1 withType(CreateContextRequestBodyOwner1TypeEnum type) {
         this.type = type;
         return this;

@@ -13,6 +13,7 @@ public class GetCheckoutKeyRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=fingerprint")
     public String fingerprint;
+
     public GetCheckoutKeyRequest withFingerprint(String fingerprint) {
         this.fingerprint = fingerprint;
         return this;
@@ -23,6 +24,7 @@ public class GetCheckoutKeyRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public GetCheckoutKeyRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;

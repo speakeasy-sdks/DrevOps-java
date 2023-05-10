@@ -13,6 +13,7 @@ public class ListWorkflowJobsRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=id")
     public String id;
+
     public ListWorkflowJobsRequest withId(String id) {
         this.id = id;
         return this;

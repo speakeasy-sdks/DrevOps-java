@@ -15,6 +15,7 @@ public class DeleteScheduleByIdMessageResponse {
      */
     @JsonProperty("message")
     public String message;
+
     public DeleteScheduleByIdMessageResponse withMessage(String message) {
         this.message = message;
         return this;

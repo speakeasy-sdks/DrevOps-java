@@ -14,6 +14,7 @@ public class ContinuePipelineRequestBody {
      */
     @JsonProperty("configuration")
     public String configuration;
+
     public ContinuePipelineRequestBody withConfiguration(String configuration) {
         this.configuration = configuration;
         return this;
@@ -24,6 +25,7 @@ public class ContinuePipelineRequestBody {
      */
     @JsonProperty("continuation-key")
     public String continuationKey;
+
     public ContinuePipelineRequestBody withContinuationKey(String continuationKey) {
         this.continuationKey = continuationKey;
         return this;
@@ -35,6 +37,7 @@ public class ContinuePipelineRequestBody {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("parameters")
     public java.util.Map<String, Object> parameters;
+
     public ContinuePipelineRequestBody withParameters(java.util.Map<String, Object> parameters) {
         this.parameters = parameters;
         return this;

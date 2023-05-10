@@ -15,6 +15,7 @@ public class ListWorkflowsByPipelineIdDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public ListWorkflowsByPipelineIdDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

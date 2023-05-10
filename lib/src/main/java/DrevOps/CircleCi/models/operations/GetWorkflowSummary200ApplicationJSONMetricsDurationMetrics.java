@@ -15,6 +15,7 @@ public class GetWorkflowSummary200ApplicationJSONMetricsDurationMetrics {
      */
     @JsonProperty("max")
     public Long max;
+
     public GetWorkflowSummary200ApplicationJSONMetricsDurationMetrics withMax(Long max) {
         this.max = max;
         return this;
@@ -25,6 +26,7 @@ public class GetWorkflowSummary200ApplicationJSONMetricsDurationMetrics {
      */
     @JsonProperty("mean")
     public Long mean;
+
     public GetWorkflowSummary200ApplicationJSONMetricsDurationMetrics withMean(Long mean) {
         this.mean = mean;
         return this;
@@ -35,6 +37,7 @@ public class GetWorkflowSummary200ApplicationJSONMetricsDurationMetrics {
      */
     @JsonProperty("median")
     public Long median;
+
     public GetWorkflowSummary200ApplicationJSONMetricsDurationMetrics withMedian(Long median) {
         this.median = median;
         return this;
@@ -45,6 +48,7 @@ public class GetWorkflowSummary200ApplicationJSONMetricsDurationMetrics {
      */
     @JsonProperty("min")
     public Long min;
+
     public GetWorkflowSummary200ApplicationJSONMetricsDurationMetrics withMin(Long min) {
         this.min = min;
         return this;
@@ -55,6 +59,7 @@ public class GetWorkflowSummary200ApplicationJSONMetricsDurationMetrics {
      */
     @JsonProperty("p95")
     public Long p95;
+
     public GetWorkflowSummary200ApplicationJSONMetricsDurationMetrics withP95(Long p95) {
         this.p95 = p95;
         return this;
@@ -65,6 +70,7 @@ public class GetWorkflowSummary200ApplicationJSONMetricsDurationMetrics {
      */
     @JsonProperty("standard_deviation")
     public Float standardDeviation;
+
     public GetWorkflowSummary200ApplicationJSONMetricsDurationMetrics withStandardDeviation(Float standardDeviation) {
         this.standardDeviation = standardDeviation;
         return this;

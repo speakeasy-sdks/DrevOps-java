@@ -20,6 +20,7 @@ public class GetPipelineByIdPipelineTrigger {
      */
     @JsonProperty("actor")
     public GetPipelineByIdPipelineTriggerActor actor;
+
     public GetPipelineByIdPipelineTrigger withActor(GetPipelineByIdPipelineTriggerActor actor) {
         this.actor = actor;
         return this;
@@ -32,6 +33,7 @@ public class GetPipelineByIdPipelineTrigger {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("received_at")
     public OffsetDateTime receivedAt;
+
     public GetPipelineByIdPipelineTrigger withReceivedAt(OffsetDateTime receivedAt) {
         this.receivedAt = receivedAt;
         return this;
@@ -42,6 +44,7 @@ public class GetPipelineByIdPipelineTrigger {
      */
     @JsonProperty("type")
     public GetPipelineByIdPipelineTriggerTypeEnum type;
+
     public GetPipelineByIdPipelineTrigger withType(GetPipelineByIdPipelineTriggerTypeEnum type) {
         this.type = type;
         return this;

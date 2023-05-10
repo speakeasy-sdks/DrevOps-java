@@ -13,6 +13,7 @@ public class CancelWorkflowRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=id")
     public String id;
+
     public CancelWorkflowRequest withId(String id) {
         this.id = id;
         return this;

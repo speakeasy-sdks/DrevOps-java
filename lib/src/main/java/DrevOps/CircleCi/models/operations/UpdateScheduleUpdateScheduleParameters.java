@@ -18,6 +18,7 @@ public class UpdateScheduleUpdateScheduleParameters {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("attribution-actor")
     public UpdateScheduleUpdateScheduleParametersAttributionActorEnum attributionActor;
+
     public UpdateScheduleUpdateScheduleParameters withAttributionActor(UpdateScheduleUpdateScheduleParametersAttributionActorEnum attributionActor) {
         this.attributionActor = attributionActor;
         return this;
@@ -29,6 +30,7 @@ public class UpdateScheduleUpdateScheduleParameters {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("description")
     public String description;
+
     public UpdateScheduleUpdateScheduleParameters withDescription(String description) {
         this.description = description;
         return this;
@@ -40,6 +42,7 @@ public class UpdateScheduleUpdateScheduleParameters {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("name")
     public String name;
+
     public UpdateScheduleUpdateScheduleParameters withName(String name) {
         this.name = name;
         return this;
@@ -51,6 +54,7 @@ public class UpdateScheduleUpdateScheduleParameters {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("parameters")
     public java.util.Map<String, Object> parameters;
+
     public UpdateScheduleUpdateScheduleParameters withParameters(java.util.Map<String, Object> parameters) {
         this.parameters = parameters;
         return this;
@@ -62,6 +66,7 @@ public class UpdateScheduleUpdateScheduleParameters {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("timetable")
     public UpdateScheduleUpdateScheduleParametersTimetable timetable;
+
     public UpdateScheduleUpdateScheduleParameters withTimetable(UpdateScheduleUpdateScheduleParametersTimetable timetable) {
         this.timetable = timetable;
         return this;

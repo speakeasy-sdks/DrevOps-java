@@ -15,6 +15,7 @@ public class ListPipelinesForProjectPipelineListResponsePipelineTriggerActor {
      */
     @JsonProperty("avatar_url")
     public String avatarUrl;
+
     public ListPipelinesForProjectPipelineListResponsePipelineTriggerActor withAvatarUrl(String avatarUrl) {
         this.avatarUrl = avatarUrl;
         return this;
@@ -25,6 +26,7 @@ public class ListPipelinesForProjectPipelineListResponsePipelineTriggerActor {
      */
     @JsonProperty("login")
     public String login;
+
     public ListPipelinesForProjectPipelineListResponsePipelineTriggerActor withLogin(String login) {
         this.login = login;
         return this;

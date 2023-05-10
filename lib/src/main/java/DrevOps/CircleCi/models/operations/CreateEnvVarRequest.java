@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class CreateEnvVarRequest {
     @SpeakeasyMetadata("request:mediaType=application/json")
     public CreateEnvVarEnvironmentVariablePair requestBody;
+
     public CreateEnvVarRequest withRequestBody(CreateEnvVarEnvironmentVariablePair requestBody) {
         this.requestBody = requestBody;
         return this;
@@ -20,6 +21,7 @@ public class CreateEnvVarRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public CreateEnvVarRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;

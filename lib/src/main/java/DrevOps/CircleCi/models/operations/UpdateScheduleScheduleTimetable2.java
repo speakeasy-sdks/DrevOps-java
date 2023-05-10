@@ -17,6 +17,7 @@ public class UpdateScheduleScheduleTimetable2 {
      */
     @JsonProperty("days-of-month")
     public Long[] daysOfMonth;
+
     public UpdateScheduleScheduleTimetable2 withDaysOfMonth(Long[] daysOfMonth) {
         this.daysOfMonth = daysOfMonth;
         return this;
@@ -28,6 +29,7 @@ public class UpdateScheduleScheduleTimetable2 {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("days-of-week")
     public UpdateScheduleScheduleTimetable2DaysOfWeekEnum[] daysOfWeek;
+
     public UpdateScheduleScheduleTimetable2 withDaysOfWeek(UpdateScheduleScheduleTimetable2DaysOfWeekEnum[] daysOfWeek) {
         this.daysOfWeek = daysOfWeek;
         return this;
@@ -38,6 +40,7 @@ public class UpdateScheduleScheduleTimetable2 {
      */
     @JsonProperty("hours-of-day")
     public Long[] hoursOfDay;
+
     public UpdateScheduleScheduleTimetable2 withHoursOfDay(Long[] hoursOfDay) {
         this.hoursOfDay = hoursOfDay;
         return this;
@@ -49,6 +52,7 @@ public class UpdateScheduleScheduleTimetable2 {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("months")
     public UpdateScheduleScheduleTimetable2MonthsEnum[] months;
+
     public UpdateScheduleScheduleTimetable2 withMonths(UpdateScheduleScheduleTimetable2MonthsEnum[] months) {
         this.months = months;
         return this;
@@ -59,6 +63,7 @@ public class UpdateScheduleScheduleTimetable2 {
      */
     @JsonProperty("per-hour")
     public Long perHour;
+
     public UpdateScheduleScheduleTimetable2 withPerHour(Long perHour) {
         this.perHour = perHour;
         return this;

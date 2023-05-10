@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class RerunWorkflowResponse {
     
     public String contentType;
+
     public RerunWorkflowResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class RerunWorkflowResponse {
     
     
     public Integer statusCode;
+
     public RerunWorkflowResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class RerunWorkflowResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public RerunWorkflowResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -34,6 +37,7 @@ public class RerunWorkflowResponse {
      */
     
     public RerunWorkflow202ApplicationJSON rerunWorkflow202ApplicationJSONObject;
+
     public RerunWorkflowResponse withRerunWorkflow202ApplicationJSONObject(RerunWorkflow202ApplicationJSON rerunWorkflow202ApplicationJSONObject) {
         this.rerunWorkflow202ApplicationJSONObject = rerunWorkflow202ApplicationJSONObject;
         return this;
@@ -44,6 +48,7 @@ public class RerunWorkflowResponse {
      */
     
     public RerunWorkflowDefaultApplicationJSON rerunWorkflowDefaultApplicationJSONObject;
+
     public RerunWorkflowResponse withRerunWorkflowDefaultApplicationJSONObject(RerunWorkflowDefaultApplicationJSON rerunWorkflowDefaultApplicationJSONObject) {
         this.rerunWorkflowDefaultApplicationJSONObject = rerunWorkflowDefaultApplicationJSONObject;
         return this;

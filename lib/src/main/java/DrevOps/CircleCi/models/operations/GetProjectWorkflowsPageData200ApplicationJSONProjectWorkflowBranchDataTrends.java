@@ -15,6 +15,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchD
      */
     @JsonProperty("p95_duration_secs")
     public Float p95DurationSecs;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchDataTrends withP95DurationSecs(Float p95DurationSecs) {
         this.p95DurationSecs = p95DurationSecs;
         return this;
@@ -25,6 +26,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchD
      */
     @JsonProperty("success_rate")
     public Float successRate;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchDataTrends withSuccessRate(Float successRate) {
         this.successRate = successRate;
         return this;
@@ -35,6 +37,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchD
      */
     @JsonProperty("total_credits_used")
     public Float totalCreditsUsed;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchDataTrends withTotalCreditsUsed(Float totalCreditsUsed) {
         this.totalCreditsUsed = totalCreditsUsed;
         return this;
@@ -45,6 +48,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchD
      */
     @JsonProperty("total_runs")
     public Float totalRuns;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectWorkflowBranchDataTrends withTotalRuns(Float totalRuns) {
         this.totalRuns = totalRuns;
         return this;

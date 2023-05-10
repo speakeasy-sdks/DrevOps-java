@@ -15,6 +15,7 @@ public class GetProjectWorkflowTestMetricsDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public GetProjectWorkflowTestMetricsDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

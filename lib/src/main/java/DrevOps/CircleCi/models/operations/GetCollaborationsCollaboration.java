@@ -12,6 +12,7 @@ public class GetCollaborationsCollaboration {
      */
     @JsonProperty("avatar_url")
     public String avatarUrl;
+
     public GetCollaborationsCollaboration withAvatarUrl(String avatarUrl) {
         this.avatarUrl = avatarUrl;
         return this;
@@ -22,6 +23,7 @@ public class GetCollaborationsCollaboration {
      */
     @JsonProperty("id")
     public String id;
+
     public GetCollaborationsCollaboration withId(String id) {
         this.id = id;
         return this;
@@ -32,6 +34,7 @@ public class GetCollaborationsCollaboration {
      */
     @JsonProperty("name")
     public String name;
+
     public GetCollaborationsCollaboration withName(String name) {
         this.name = name;
         return this;
@@ -42,6 +45,7 @@ public class GetCollaborationsCollaboration {
      */
     @JsonProperty("slug")
     public String slug;
+
     public GetCollaborationsCollaboration withSlug(String slug) {
         this.slug = slug;
         return this;
@@ -52,6 +56,7 @@ public class GetCollaborationsCollaboration {
      */
     @JsonProperty("vcs-type")
     public String vcsType;
+
     public GetCollaborationsCollaboration withVcsType(String vcsType) {
         this.vcsType = vcsType;
         return this;

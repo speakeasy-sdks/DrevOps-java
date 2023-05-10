@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class GetOrgSummaryData200ApplicationJSONOrgDataMetrics {
     @JsonProperty("success_rate")
     public Float successRate;
+
     public GetOrgSummaryData200ApplicationJSONOrgDataMetrics withSuccessRate(Float successRate) {
         this.successRate = successRate;
         return this;
@@ -22,6 +23,7 @@ public class GetOrgSummaryData200ApplicationJSONOrgDataMetrics {
      */
     @JsonProperty("throughput")
     public Float throughput;
+
     public GetOrgSummaryData200ApplicationJSONOrgDataMetrics withThroughput(Float throughput) {
         this.throughput = throughput;
         return this;
@@ -32,6 +34,7 @@ public class GetOrgSummaryData200ApplicationJSONOrgDataMetrics {
      */
     @JsonProperty("total_credits_used")
     public Long totalCreditsUsed;
+
     public GetOrgSummaryData200ApplicationJSONOrgDataMetrics withTotalCreditsUsed(Long totalCreditsUsed) {
         this.totalCreditsUsed = totalCreditsUsed;
         return this;
@@ -42,6 +45,7 @@ public class GetOrgSummaryData200ApplicationJSONOrgDataMetrics {
      */
     @JsonProperty("total_duration_secs")
     public Long totalDurationSecs;
+
     public GetOrgSummaryData200ApplicationJSONOrgDataMetrics withTotalDurationSecs(Long totalDurationSecs) {
         this.totalDurationSecs = totalDurationSecs;
         return this;
@@ -52,6 +56,7 @@ public class GetOrgSummaryData200ApplicationJSONOrgDataMetrics {
      */
     @JsonProperty("total_runs")
     public Long totalRuns;
+
     public GetOrgSummaryData200ApplicationJSONOrgDataMetrics withTotalRuns(Long totalRuns) {
         this.totalRuns = totalRuns;
         return this;

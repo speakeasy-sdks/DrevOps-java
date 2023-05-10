@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class DeleteScheduleByIdResponse {
     
     public String contentType;
+
     public DeleteScheduleByIdResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class DeleteScheduleByIdResponse {
      */
     
     public DeleteScheduleByIdMessageResponse messageResponse;
+
     public DeleteScheduleByIdResponse withMessageResponse(DeleteScheduleByIdMessageResponse messageResponse) {
         this.messageResponse = messageResponse;
         return this;
@@ -27,6 +29,7 @@ public class DeleteScheduleByIdResponse {
     
     
     public Integer statusCode;
+
     public DeleteScheduleByIdResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class DeleteScheduleByIdResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public DeleteScheduleByIdResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class DeleteScheduleByIdResponse {
      */
     
     public DeleteScheduleByIdDefaultApplicationJSON deleteScheduleByIdDefaultApplicationJSONObject;
+
     public DeleteScheduleByIdResponse withDeleteScheduleByIdDefaultApplicationJSONObject(DeleteScheduleByIdDefaultApplicationJSON deleteScheduleByIdDefaultApplicationJSONObject) {
         this.deleteScheduleByIdDefaultApplicationJSONObject = deleteScheduleByIdDefaultApplicationJSONObject;
         return this;

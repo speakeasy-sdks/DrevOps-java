@@ -18,6 +18,7 @@ public class RerunWorkflowRerunWorkflowParameters {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("enable_ssh")
     public Boolean enableSsh;
+
     public RerunWorkflowRerunWorkflowParameters withEnableSsh(Boolean enableSsh) {
         this.enableSsh = enableSsh;
         return this;
@@ -29,6 +30,7 @@ public class RerunWorkflowRerunWorkflowParameters {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("from_failed")
     public Boolean fromFailed;
+
     public RerunWorkflowRerunWorkflowParameters withFromFailed(Boolean fromFailed) {
         this.fromFailed = fromFailed;
         return this;
@@ -40,6 +42,7 @@ public class RerunWorkflowRerunWorkflowParameters {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("jobs")
     public String[] jobs;
+
     public RerunWorkflowRerunWorkflowParameters withJobs(String[] jobs) {
         this.jobs = jobs;
         return this;
@@ -51,6 +54,7 @@ public class RerunWorkflowRerunWorkflowParameters {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("sparse_tree")
     public Boolean sparseTree;
+
     public RerunWorkflowRerunWorkflowParameters withSparseTree(Boolean sparseTree) {
         this.sparseTree = sparseTree;
         return this;

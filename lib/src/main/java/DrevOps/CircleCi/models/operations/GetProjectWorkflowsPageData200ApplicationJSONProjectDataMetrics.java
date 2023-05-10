@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class GetProjectWorkflowsPageData200ApplicationJSONProjectDataMetrics {
     @JsonProperty("success_rate")
     public Float successRate;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectDataMetrics withSuccessRate(Float successRate) {
         this.successRate = successRate;
         return this;
@@ -22,6 +23,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectDataMetrics {
      */
     @JsonProperty("throughput")
     public Float throughput;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectDataMetrics withThroughput(Float throughput) {
         this.throughput = throughput;
         return this;
@@ -32,6 +34,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectDataMetrics {
      */
     @JsonProperty("total_credits_used")
     public Long totalCreditsUsed;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectDataMetrics withTotalCreditsUsed(Long totalCreditsUsed) {
         this.totalCreditsUsed = totalCreditsUsed;
         return this;
@@ -42,6 +45,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectDataMetrics {
      */
     @JsonProperty("total_duration_secs")
     public Long totalDurationSecs;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectDataMetrics withTotalDurationSecs(Long totalDurationSecs) {
         this.totalDurationSecs = totalDurationSecs;
         return this;
@@ -52,6 +56,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectDataMetrics {
      */
     @JsonProperty("total_runs")
     public Long totalRuns;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectDataMetrics withTotalRuns(Long totalRuns) {
         this.totalRuns = totalRuns;
         return this;

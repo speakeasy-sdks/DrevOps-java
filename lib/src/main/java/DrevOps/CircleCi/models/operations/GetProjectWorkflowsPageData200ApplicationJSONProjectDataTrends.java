@@ -15,6 +15,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectDataTrends {
      */
     @JsonProperty("success_rate")
     public Float successRate;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectDataTrends withSuccessRate(Float successRate) {
         this.successRate = successRate;
         return this;
@@ -25,6 +26,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectDataTrends {
      */
     @JsonProperty("throughput")
     public Float throughput;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectDataTrends withThroughput(Float throughput) {
         this.throughput = throughput;
         return this;
@@ -35,6 +37,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectDataTrends {
      */
     @JsonProperty("total_credits_used")
     public Float totalCreditsUsed;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectDataTrends withTotalCreditsUsed(Float totalCreditsUsed) {
         this.totalCreditsUsed = totalCreditsUsed;
         return this;
@@ -45,6 +48,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectDataTrends {
      */
     @JsonProperty("total_duration_secs")
     public Float totalDurationSecs;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectDataTrends withTotalDurationSecs(Float totalDurationSecs) {
         this.totalDurationSecs = totalDurationSecs;
         return this;
@@ -55,6 +59,7 @@ public class GetProjectWorkflowsPageData200ApplicationJSONProjectDataTrends {
      */
     @JsonProperty("total_runs")
     public Float totalRuns;
+
     public GetProjectWorkflowsPageData200ApplicationJSONProjectDataTrends withTotalRuns(Float totalRuns) {
         this.totalRuns = totalRuns;
         return this;

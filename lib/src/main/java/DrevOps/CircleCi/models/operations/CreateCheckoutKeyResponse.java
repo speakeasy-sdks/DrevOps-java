@@ -13,6 +13,7 @@ public class CreateCheckoutKeyResponse {
      */
     
     public CreateCheckoutKeyCheckoutKey checkoutKey;
+
     public CreateCheckoutKeyResponse withCheckoutKey(CreateCheckoutKeyCheckoutKey checkoutKey) {
         this.checkoutKey = checkoutKey;
         return this;
@@ -20,6 +21,7 @@ public class CreateCheckoutKeyResponse {
     
     
     public String contentType;
+
     public CreateCheckoutKeyResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -27,6 +29,7 @@ public class CreateCheckoutKeyResponse {
     
     
     public Integer statusCode;
+
     public CreateCheckoutKeyResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -34,6 +37,7 @@ public class CreateCheckoutKeyResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public CreateCheckoutKeyResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -44,6 +48,7 @@ public class CreateCheckoutKeyResponse {
      */
     
     public CreateCheckoutKeyDefaultApplicationJSON createCheckoutKeyDefaultApplicationJSONObject;
+
     public CreateCheckoutKeyResponse withCreateCheckoutKeyDefaultApplicationJSONObject(CreateCheckoutKeyDefaultApplicationJSON createCheckoutKeyDefaultApplicationJSONObject) {
         this.createCheckoutKeyDefaultApplicationJSONObject = createCheckoutKeyDefaultApplicationJSONObject;
         return this;

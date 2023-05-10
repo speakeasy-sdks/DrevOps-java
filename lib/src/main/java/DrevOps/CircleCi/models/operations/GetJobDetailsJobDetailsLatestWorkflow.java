@@ -15,6 +15,7 @@ public class GetJobDetailsJobDetailsLatestWorkflow {
      */
     @JsonProperty("id")
     public String id;
+
     public GetJobDetailsJobDetailsLatestWorkflow withId(String id) {
         this.id = id;
         return this;
@@ -25,6 +26,7 @@ public class GetJobDetailsJobDetailsLatestWorkflow {
      */
     @JsonProperty("name")
     public String name;
+
     public GetJobDetailsJobDetailsLatestWorkflow withName(String name) {
         this.name = name;
         return this;

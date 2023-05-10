@@ -13,6 +13,7 @@ public class GetWebhooksRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=scope-id")
     public String scopeId;
+
     public GetWebhooksRequest withScopeId(String scopeId) {
         this.scopeId = scopeId;
         return this;
@@ -23,6 +24,7 @@ public class GetWebhooksRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=scope-type")
     public GetWebhooksScopeTypeEnum scopeType;
+
     public GetWebhooksRequest withScopeType(GetWebhooksScopeTypeEnum scopeType) {
         this.scopeType = scopeType;
         return this;

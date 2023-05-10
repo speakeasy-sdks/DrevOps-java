@@ -15,6 +15,7 @@ public class GetPipelineByNumberPipelineTriggerActor {
      */
     @JsonProperty("avatar_url")
     public String avatarUrl;
+
     public GetPipelineByNumberPipelineTriggerActor withAvatarUrl(String avatarUrl) {
         this.avatarUrl = avatarUrl;
         return this;
@@ -25,6 +26,7 @@ public class GetPipelineByNumberPipelineTriggerActor {
      */
     @JsonProperty("login")
     public String login;
+
     public GetPipelineByNumberPipelineTriggerActor withLogin(String login) {
         this.login = login;
         return this;

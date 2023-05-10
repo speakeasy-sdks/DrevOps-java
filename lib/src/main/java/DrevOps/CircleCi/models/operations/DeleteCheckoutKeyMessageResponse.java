@@ -15,6 +15,7 @@ public class DeleteCheckoutKeyMessageResponse {
      */
     @JsonProperty("message")
     public String message;
+
     public DeleteCheckoutKeyMessageResponse withMessage(String message) {
         this.message = message;
         return this;

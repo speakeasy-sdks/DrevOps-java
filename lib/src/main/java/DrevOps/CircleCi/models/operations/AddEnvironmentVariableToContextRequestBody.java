@@ -12,6 +12,7 @@ public class AddEnvironmentVariableToContextRequestBody {
      */
     @JsonProperty("value")
     public String value;
+
     public AddEnvironmentVariableToContextRequestBody withValue(String value) {
         this.value = value;
         return this;

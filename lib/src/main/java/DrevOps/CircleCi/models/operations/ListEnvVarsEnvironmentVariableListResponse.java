@@ -12,6 +12,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class ListEnvVarsEnvironmentVariableListResponse {
     @JsonProperty("items")
     public ListEnvVarsEnvironmentVariableListResponseEnvironmentVariablePair[] items;
+
     public ListEnvVarsEnvironmentVariableListResponse withItems(ListEnvVarsEnvironmentVariableListResponseEnvironmentVariablePair[] items) {
         this.items = items;
         return this;
@@ -22,6 +23,7 @@ public class ListEnvVarsEnvironmentVariableListResponse {
      */
     @JsonProperty("next_page_token")
     public String nextPageToken;
+
     public ListEnvVarsEnvironmentVariableListResponse withNextPageToken(String nextPageToken) {
         this.nextPageToken = nextPageToken;
         return this;

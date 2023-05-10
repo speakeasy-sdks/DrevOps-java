@@ -15,6 +15,7 @@ public class CreateWebhookWebhookScope {
      */
     @JsonProperty("id")
     public String id;
+
     public CreateWebhookWebhookScope withId(String id) {
         this.id = id;
         return this;
@@ -25,6 +26,7 @@ public class CreateWebhookWebhookScope {
      */
     @JsonProperty("type")
     public String type;
+
     public CreateWebhookWebhookScope withType(String type) {
         this.type = type;
         return this;

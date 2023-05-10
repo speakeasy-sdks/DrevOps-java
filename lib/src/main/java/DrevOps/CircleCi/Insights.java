@@ -30,6 +30,13 @@ public class Insights {
 		this._genVersion = genVersion;
 	}
 
+    /**
+     * Get all branches for a project
+     * Get a list of all branches for a specified project. The list will only contain branches currently available within Insights. The maximum number of branches returned by this endpoint is 5,000.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.GetAllInsightsBranchesResponse getAllInsightsBranches(DrevOps.CircleCi.models.operations.GetAllInsightsBranchesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetAllInsightsBranchesRequest.class, baseUrl, "/insights/{project-slug}/branches", request, null);
@@ -75,6 +82,14 @@ public class Insights {
         return res;
     }
 
+    /**
+     * Get flaky tests for a project
+     * Get a list of flaky tests for a given project. Flaky tests are branch agnostic. 
+     *              A flaky test is a test that passed and failed in the same commit.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.GetFlakyTestsResponse getFlakyTests(DrevOps.CircleCi.models.operations.GetFlakyTestsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetFlakyTestsRequest.class, baseUrl, "/insights/{project-slug}/flaky-tests", request, null);
@@ -114,6 +129,13 @@ public class Insights {
         return res;
     }
 
+    /**
+     * Job timeseries data
+     * Get timeseries data for all jobs within a workflow.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.GetJobTimeseriesResponse getJobTimeseries(DrevOps.CircleCi.models.operations.GetJobTimeseriesRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetJobTimeseriesRequest.class, baseUrl, "/insights/time-series/{project-slug}/workflows/{workflow-name}/jobs", request, null);
@@ -159,6 +181,14 @@ public class Insights {
         return res;
     }
 
+    /**
+     * Get summary metrics with trends for the entire org, and for each project.
+     * Gets aggregated summary metrics with trends for the entire org. 
+     *               Also gets aggregated metrics and trends for each project belonging to the org.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.GetOrgSummaryDataResponse getOrgSummaryData(DrevOps.CircleCi.models.operations.GetOrgSummaryDataRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetOrgSummaryDataRequest.class, baseUrl, "/insights/{org-slug}/summary", request, null);
@@ -204,6 +234,13 @@ public class Insights {
         return res;
     }
 
+    /**
+     * Get summary metrics for a project workflow's jobs.
+     * Get summary metrics for a project workflow's jobs. Job runs going back at most 90 days are included in the aggregation window. Metrics are refreshed daily, and thus may not include executions from the last 24 hours. Please note that Insights is not a financial reporting tool and should not be used for precise credit reporting.  Credit reporting from Insights does not use the same source of truth as the billing information that is found in the Plan Overview page in the CircleCI UI, nor does the underlying data have the same data accuracy guarantees as the billing information in the CircleCI UI.  This may lead to discrepancies between credits reported from Insights and the billing information in the Plan Overview page of the CircleCI UI.  For precise credit reporting, always use the Plan Overview page in the CircleCI UI.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.GetProjectWorkflowJobMetricsResponse getProjectWorkflowJobMetrics(DrevOps.CircleCi.models.operations.GetProjectWorkflowJobMetricsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetProjectWorkflowJobMetricsRequest.class, baseUrl, "/insights/{project-slug}/workflows/{workflow-name}/jobs", request, null);
@@ -249,6 +286,13 @@ public class Insights {
         return res;
     }
 
+    /**
+     * Get summary metrics for a project's workflows
+     * Get summary metrics for a project's workflows.  Workflow runs going back at most 90 days are included in the aggregation window. Metrics are refreshed daily, and thus may not include executions from the last 24 hours.  Please note that Insights is not a financial reporting tool and should not be used for precise credit reporting.  Credit reporting from Insights does not use the same source of truth as the billing information that is found in the Plan Overview page in the CircleCI UI, nor does the underlying data have the same data accuracy guarantees as the billing information in the CircleCI UI.  This may lead to discrepancies between credits reported from Insights and the billing information in the Plan Overview page of the CircleCI UI.  For precise credit reporting, always use the Plan Overview page in the CircleCI UI.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.GetProjectWorkflowMetricsResponse getProjectWorkflowMetrics(DrevOps.CircleCi.models.operations.GetProjectWorkflowMetricsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetProjectWorkflowMetricsRequest.class, baseUrl, "/insights/{project-slug}/workflows", request, null);
@@ -294,6 +338,13 @@ public class Insights {
         return res;
     }
 
+    /**
+     * Get recent runs of a workflow
+     * Get recent runs of a workflow. Runs going back at most 90 days are returned. Please note that Insights is not a financial reporting tool and should not be used for precise credit reporting.  Credit reporting from Insights does not use the same source of truth as the billing information that is found in the Plan Overview page in the CircleCI UI, nor does the underlying data have the same data accuracy guarantees as the billing information in the CircleCI UI.  This may lead to discrepancies between credits reported from Insights and the billing information in the Plan Overview page of the CircleCI UI.  For precise credit reporting, always use the Plan Overview page in the CircleCI UI.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.GetProjectWorkflowRunsResponse getProjectWorkflowRuns(DrevOps.CircleCi.models.operations.GetProjectWorkflowRunsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetProjectWorkflowRunsRequest.class, baseUrl, "/insights/{project-slug}/workflows/{workflow-name}", request, null);
@@ -339,6 +390,13 @@ public class Insights {
         return res;
     }
 
+    /**
+     * Get test metrics for a project's workflows
+     * Get test metrics for a project's workflows. Currently tests metrics are calculated based on 10 most recent workflow runs.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.GetProjectWorkflowTestMetricsResponse getProjectWorkflowTestMetrics(DrevOps.CircleCi.models.operations.GetProjectWorkflowTestMetricsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetProjectWorkflowTestMetricsRequest.class, baseUrl, "/insights/{project-slug}/workflows/{workflow-name}/test-metrics", request, null);
@@ -384,6 +442,16 @@ public class Insights {
         return res;
     }
 
+    /**
+     * Get summary metrics and trends for a project across it's workflows and branches
+     * Get summary metrics and trends for a project at workflow and branch level. 
+     *              Workflow runs going back at most 90 days are included in the aggregation window. 
+     *              Trends are only supported upto last 30 days. 
+     *              Please note that Insights is not a financial reporting tool and should not be used for precise credit reporting.  Credit reporting from Insights does not use the same source of truth as the billing information that is found in the Plan Overview page in the CircleCI UI, nor does the underlying data have the same data accuracy guarantees as the billing information in the CircleCI UI.  This may lead to discrepancies between credits reported from Insights and the billing information in the Plan Overview page of the CircleCI UI.  For precise credit reporting, always use the Plan Overview page in the CircleCI UI.
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.GetProjectWorkflowsPageDataResponse getProjectWorkflowsPageData(DrevOps.CircleCi.models.operations.GetProjectWorkflowsPageDataRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetProjectWorkflowsPageDataRequest.class, baseUrl, "/insights/pages/{project-slug}/summary", request, null);
@@ -429,6 +497,13 @@ public class Insights {
         return res;
     }
 
+    /**
+     * Get metrics and trends for workflows
+     * Get the metrics and trends for a particular workflow on a single branch or all branches
+     * @param request the request object containing all of the parameters for the API call
+     * @return the response from the API call
+     * @throws Exception if the API call fails
+     */
     public DrevOps.CircleCi.models.operations.GetWorkflowSummaryResponse getWorkflowSummary(DrevOps.CircleCi.models.operations.GetWorkflowSummaryRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetWorkflowSummaryRequest.class, baseUrl, "/insights/{project-slug}/workflows/{workflow-name}/summary", request, null);

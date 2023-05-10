@@ -15,6 +15,7 @@ public class GetWorkflowSummaryDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public GetWorkflowSummaryDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

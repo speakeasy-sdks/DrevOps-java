@@ -18,6 +18,7 @@ public class ListPipelinesForProjectPipelineListResponsePipelineVcs {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("branch")
     public String branch;
+
     public ListPipelinesForProjectPipelineListResponsePipelineVcs withBranch(String branch) {
         this.branch = branch;
         return this;
@@ -29,6 +30,7 @@ public class ListPipelinesForProjectPipelineListResponsePipelineVcs {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("commit")
     public ListPipelinesForProjectPipelineListResponsePipelineVcsCommit commit;
+
     public ListPipelinesForProjectPipelineListResponsePipelineVcs withCommit(ListPipelinesForProjectPipelineListResponsePipelineVcsCommit commit) {
         this.commit = commit;
         return this;
@@ -39,6 +41,7 @@ public class ListPipelinesForProjectPipelineListResponsePipelineVcs {
      */
     @JsonProperty("origin_repository_url")
     public String originRepositoryUrl;
+
     public ListPipelinesForProjectPipelineListResponsePipelineVcs withOriginRepositoryUrl(String originRepositoryUrl) {
         this.originRepositoryUrl = originRepositoryUrl;
         return this;
@@ -49,6 +52,7 @@ public class ListPipelinesForProjectPipelineListResponsePipelineVcs {
      */
     @JsonProperty("provider_name")
     public String providerName;
+
     public ListPipelinesForProjectPipelineListResponsePipelineVcs withProviderName(String providerName) {
         this.providerName = providerName;
         return this;
@@ -60,6 +64,7 @@ public class ListPipelinesForProjectPipelineListResponsePipelineVcs {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("review_id")
     public String reviewId;
+
     public ListPipelinesForProjectPipelineListResponsePipelineVcs withReviewId(String reviewId) {
         this.reviewId = reviewId;
         return this;
@@ -71,6 +76,7 @@ public class ListPipelinesForProjectPipelineListResponsePipelineVcs {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("review_url")
     public String reviewUrl;
+
     public ListPipelinesForProjectPipelineListResponsePipelineVcs withReviewUrl(String reviewUrl) {
         this.reviewUrl = reviewUrl;
         return this;
@@ -81,6 +87,7 @@ public class ListPipelinesForProjectPipelineListResponsePipelineVcs {
      */
     @JsonProperty("revision")
     public String revision;
+
     public ListPipelinesForProjectPipelineListResponsePipelineVcs withRevision(String revision) {
         this.revision = revision;
         return this;
@@ -92,6 +99,7 @@ public class ListPipelinesForProjectPipelineListResponsePipelineVcs {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tag")
     public String tag;
+
     public ListPipelinesForProjectPipelineListResponsePipelineVcs withTag(String tag) {
         this.tag = tag;
         return this;
@@ -102,6 +110,7 @@ public class ListPipelinesForProjectPipelineListResponsePipelineVcs {
      */
     @JsonProperty("target_repository_url")
     public String targetRepositoryUrl;
+
     public ListPipelinesForProjectPipelineListResponsePipelineVcs withTargetRepositoryUrl(String targetRepositoryUrl) {
         this.targetRepositoryUrl = targetRepositoryUrl;
         return this;

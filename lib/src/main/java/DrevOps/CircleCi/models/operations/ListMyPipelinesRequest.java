@@ -13,6 +13,7 @@ public class ListMyPipelinesRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=page-token")
     public String pageToken;
+
     public ListMyPipelinesRequest withPageToken(String pageToken) {
         this.pageToken = pageToken;
         return this;
@@ -23,6 +24,7 @@ public class ListMyPipelinesRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=project-slug")
     public String projectSlug;
+
     public ListMyPipelinesRequest withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;

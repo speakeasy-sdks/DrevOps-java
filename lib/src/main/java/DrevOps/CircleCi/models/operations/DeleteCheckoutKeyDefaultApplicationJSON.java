@@ -15,6 +15,7 @@ public class DeleteCheckoutKeyDefaultApplicationJSON {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("message")
     public String message;
+
     public DeleteCheckoutKeyDefaultApplicationJSON withMessage(String message) {
         this.message = message;
         return this;

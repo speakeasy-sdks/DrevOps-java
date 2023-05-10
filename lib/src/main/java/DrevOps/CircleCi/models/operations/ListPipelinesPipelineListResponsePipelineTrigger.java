@@ -20,6 +20,7 @@ public class ListPipelinesPipelineListResponsePipelineTrigger {
      */
     @JsonProperty("actor")
     public ListPipelinesPipelineListResponsePipelineTriggerActor actor;
+
     public ListPipelinesPipelineListResponsePipelineTrigger withActor(ListPipelinesPipelineListResponsePipelineTriggerActor actor) {
         this.actor = actor;
         return this;
@@ -32,6 +33,7 @@ public class ListPipelinesPipelineListResponsePipelineTrigger {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("received_at")
     public OffsetDateTime receivedAt;
+
     public ListPipelinesPipelineListResponsePipelineTrigger withReceivedAt(OffsetDateTime receivedAt) {
         this.receivedAt = receivedAt;
         return this;
@@ -42,6 +44,7 @@ public class ListPipelinesPipelineListResponsePipelineTrigger {
      */
     @JsonProperty("type")
     public ListPipelinesPipelineListResponsePipelineTriggerTypeEnum type;
+
     public ListPipelinesPipelineListResponsePipelineTrigger withType(ListPipelinesPipelineListResponsePipelineTriggerTypeEnum type) {
         this.type = type;
         return this;

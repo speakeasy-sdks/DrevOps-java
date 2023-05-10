@@ -15,6 +15,7 @@ public class GetOrgSummaryData200ApplicationJSONOrgProjectDataTrends {
      */
     @JsonProperty("success_rate")
     public Float successRate;
+
     public GetOrgSummaryData200ApplicationJSONOrgProjectDataTrends withSuccessRate(Float successRate) {
         this.successRate = successRate;
         return this;
@@ -25,6 +26,7 @@ public class GetOrgSummaryData200ApplicationJSONOrgProjectDataTrends {
      */
     @JsonProperty("total_credits_used")
     public Float totalCreditsUsed;
+
     public GetOrgSummaryData200ApplicationJSONOrgProjectDataTrends withTotalCreditsUsed(Float totalCreditsUsed) {
         this.totalCreditsUsed = totalCreditsUsed;
         return this;
@@ -35,6 +37,7 @@ public class GetOrgSummaryData200ApplicationJSONOrgProjectDataTrends {
      */
     @JsonProperty("total_duration_secs")
     public Float totalDurationSecs;
+
     public GetOrgSummaryData200ApplicationJSONOrgProjectDataTrends withTotalDurationSecs(Float totalDurationSecs) {
         this.totalDurationSecs = totalDurationSecs;
         return this;
@@ -45,6 +48,7 @@ public class GetOrgSummaryData200ApplicationJSONOrgProjectDataTrends {
      */
     @JsonProperty("total_runs")
     public Float totalRuns;
+
     public GetOrgSummaryData200ApplicationJSONOrgProjectDataTrends withTotalRuns(Float totalRuns) {
         this.totalRuns = totalRuns;
         return this;

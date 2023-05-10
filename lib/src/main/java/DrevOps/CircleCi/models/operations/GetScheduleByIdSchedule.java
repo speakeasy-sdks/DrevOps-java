@@ -20,6 +20,7 @@ public class GetScheduleByIdSchedule {
      */
     @JsonProperty("actor")
     public GetScheduleByIdScheduleUser actor;
+
     public GetScheduleByIdSchedule withActor(GetScheduleByIdScheduleUser actor) {
         this.actor = actor;
         return this;
@@ -32,6 +33,7 @@ public class GetScheduleByIdSchedule {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("created-at")
     public OffsetDateTime createdAt;
+
     public GetScheduleByIdSchedule withCreatedAt(OffsetDateTime createdAt) {
         this.createdAt = createdAt;
         return this;
@@ -42,6 +44,7 @@ public class GetScheduleByIdSchedule {
      */
     @JsonProperty("description")
     public String description;
+
     public GetScheduleByIdSchedule withDescription(String description) {
         this.description = description;
         return this;
@@ -52,6 +55,7 @@ public class GetScheduleByIdSchedule {
      */
     @JsonProperty("id")
     public String id;
+
     public GetScheduleByIdSchedule withId(String id) {
         this.id = id;
         return this;
@@ -62,6 +66,7 @@ public class GetScheduleByIdSchedule {
      */
     @JsonProperty("name")
     public String name;
+
     public GetScheduleByIdSchedule withName(String name) {
         this.name = name;
         return this;
@@ -72,6 +77,7 @@ public class GetScheduleByIdSchedule {
      */
     @JsonProperty("parameters")
     public java.util.Map<String, Object> parameters;
+
     public GetScheduleByIdSchedule withParameters(java.util.Map<String, Object> parameters) {
         this.parameters = parameters;
         return this;
@@ -82,6 +88,7 @@ public class GetScheduleByIdSchedule {
      */
     @JsonProperty("project-slug")
     public String projectSlug;
+
     public GetScheduleByIdSchedule withProjectSlug(String projectSlug) {
         this.projectSlug = projectSlug;
         return this;
@@ -92,6 +99,7 @@ public class GetScheduleByIdSchedule {
      */
     @JsonProperty("timetable")
     public Object timetable;
+
     public GetScheduleByIdSchedule withTimetable(Object timetable) {
         this.timetable = timetable;
         return this;
@@ -104,6 +112,7 @@ public class GetScheduleByIdSchedule {
     @JsonDeserialize(using = DateTimeDeserializer.class)
     @JsonProperty("updated-at")
     public OffsetDateTime updatedAt;
+
     public GetScheduleByIdSchedule withUpdatedAt(OffsetDateTime updatedAt) {
         this.updatedAt = updatedAt;
         return this;

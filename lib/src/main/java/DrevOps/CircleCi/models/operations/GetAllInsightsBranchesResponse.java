@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class GetAllInsightsBranchesResponse {
     
     public String contentType;
+
     public GetAllInsightsBranchesResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -17,6 +18,7 @@ public class GetAllInsightsBranchesResponse {
     
     
     public Integer statusCode;
+
     public GetAllInsightsBranchesResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -24,6 +26,7 @@ public class GetAllInsightsBranchesResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public GetAllInsightsBranchesResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
@@ -34,6 +37,7 @@ public class GetAllInsightsBranchesResponse {
      */
     
     public Object getAllInsightsBranches200ApplicationJSONAny;
+
     public GetAllInsightsBranchesResponse withGetAllInsightsBranches200ApplicationJSONAny(Object getAllInsightsBranches200ApplicationJSONAny) {
         this.getAllInsightsBranches200ApplicationJSONAny = getAllInsightsBranches200ApplicationJSONAny;
         return this;
@@ -44,6 +48,7 @@ public class GetAllInsightsBranchesResponse {
      */
     
     public GetAllInsightsBranchesDefaultApplicationJSON getAllInsightsBranchesDefaultApplicationJSONObject;
+
     public GetAllInsightsBranchesResponse withGetAllInsightsBranchesDefaultApplicationJSONObject(GetAllInsightsBranchesDefaultApplicationJSON getAllInsightsBranchesDefaultApplicationJSONObject) {
         this.getAllInsightsBranchesDefaultApplicationJSONObject = getAllInsightsBranchesDefaultApplicationJSONObject;
         return this;

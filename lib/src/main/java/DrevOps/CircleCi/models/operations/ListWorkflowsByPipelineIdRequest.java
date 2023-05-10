@@ -13,6 +13,7 @@ public class ListWorkflowsByPipelineIdRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=page-token")
     public String pageToken;
+
     public ListWorkflowsByPipelineIdRequest withPageToken(String pageToken) {
         this.pageToken = pageToken;
         return this;
@@ -23,6 +24,7 @@ public class ListWorkflowsByPipelineIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=pipeline-id")
     public String pipelineId;
+
     public ListWorkflowsByPipelineIdRequest withPipelineId(String pipelineId) {
         this.pipelineId = pipelineId;
         return this;
