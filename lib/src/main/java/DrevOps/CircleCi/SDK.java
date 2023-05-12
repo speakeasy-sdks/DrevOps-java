@@ -37,8 +37,8 @@ public class SDK {
 	private DrevOps.CircleCi.models.shared.Security _security;
 	private String _serverUrl;
 	private String _language = "java";
-	private String _sdkVersion = "1.2.3";
-	private String _genVersion = "2.26.3";
+	private String _sdkVersion = "1.2.4";
+	private String _genVersion = "2.26.4";
 	/**
 	 * The Builder class allows the configuration of a new instance of the SDK.
 	 */
