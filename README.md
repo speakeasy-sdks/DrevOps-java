@@ -6,7 +6,7 @@
 ### Gradle
 
 ```groovy
-implementation 'DrevOps.CircleCi:CircleCi:1.2.4'
+implementation 'DrevOps.CircleCi:CircleCi:1.3.0'
 ```
 <!-- End SDK Installation -->
 
