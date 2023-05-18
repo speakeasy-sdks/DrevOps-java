@@ -45,6 +45,7 @@ public class Insights {
         req.setMethod("GET");
         req.setURL(url);
         
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetAllInsightsBranchesRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -98,6 +99,7 @@ public class Insights {
         req.setMethod("GET");
         req.setURL(url);
         
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._securityClient;
         
@@ -144,6 +146,7 @@ public class Insights {
         req.setMethod("GET");
         req.setURL(url);
         
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetJobTimeseriesRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -197,6 +200,7 @@ public class Insights {
         req.setMethod("GET");
         req.setURL(url);
         
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetOrgSummaryDataRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -249,6 +253,7 @@ public class Insights {
         req.setMethod("GET");
         req.setURL(url);
         
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetProjectWorkflowJobMetricsRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -301,6 +306,7 @@ public class Insights {
         req.setMethod("GET");
         req.setURL(url);
         
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetProjectWorkflowMetricsRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -353,6 +359,7 @@ public class Insights {
         req.setMethod("GET");
         req.setURL(url);
         
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetProjectWorkflowRunsRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -405,6 +412,7 @@ public class Insights {
         req.setMethod("GET");
         req.setURL(url);
         
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetProjectWorkflowTestMetricsRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -460,6 +468,7 @@ public class Insights {
         req.setMethod("GET");
         req.setURL(url);
         
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetProjectWorkflowsPageDataRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -512,6 +521,7 @@ public class Insights {
         req.setMethod("GET");
         req.setURL(url);
         
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetWorkflowSummaryRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
