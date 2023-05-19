@@ -78,9 +78,9 @@ public class GetPipelineByNumberPipeline {
      * The current state of the pipeline.
      */
     @JsonProperty("state")
-    public GetPipelineByNumberPipelineStateEnum state;
+    public GetPipelineByNumberPipelineState state;
 
-    public GetPipelineByNumberPipeline withState(GetPipelineByNumberPipelineStateEnum state) {
+    public GetPipelineByNumberPipeline withState(GetPipelineByNumberPipelineState state) {
         this.state = state;
         return this;
     }
@@ -131,7 +131,7 @@ public class GetPipelineByNumberPipeline {
         return this;
     }
     
-    public GetPipelineByNumberPipeline(@JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("errors") GetPipelineByNumberPipelineErrors[] errors, @JsonProperty("id") String id, @JsonProperty("number") Long number, @JsonProperty("project_slug") String projectSlug, @JsonProperty("state") GetPipelineByNumberPipelineStateEnum state, @JsonProperty("trigger") GetPipelineByNumberPipelineTrigger trigger) {
+    public GetPipelineByNumberPipeline(@JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("errors") GetPipelineByNumberPipelineErrors[] errors, @JsonProperty("id") String id, @JsonProperty("number") Long number, @JsonProperty("project_slug") String projectSlug, @JsonProperty("state") GetPipelineByNumberPipelineState state, @JsonProperty("trigger") GetPipelineByNumberPipelineTrigger trigger) {
         this.createdAt = createdAt;
         this.errors = errors;
         this.id = id;

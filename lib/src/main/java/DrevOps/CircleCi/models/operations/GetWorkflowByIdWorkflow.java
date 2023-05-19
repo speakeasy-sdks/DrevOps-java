@@ -115,9 +115,9 @@ public class GetWorkflowByIdWorkflow {
      * The current status of the workflow.
      */
     @JsonProperty("status")
-    public GetWorkflowByIdWorkflowStatusEnum status;
+    public GetWorkflowByIdWorkflowStatus status;
 
-    public GetWorkflowByIdWorkflow withStatus(GetWorkflowByIdWorkflowStatusEnum status) {
+    public GetWorkflowByIdWorkflow withStatus(GetWorkflowByIdWorkflowStatus status) {
         this.status = status;
         return this;
     }
@@ -140,14 +140,14 @@ public class GetWorkflowByIdWorkflow {
      */
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tag")
-    public GetWorkflowByIdWorkflowTagEnum tag;
+    public GetWorkflowByIdWorkflowTag tag;
 
-    public GetWorkflowByIdWorkflow withTag(GetWorkflowByIdWorkflowTagEnum tag) {
+    public GetWorkflowByIdWorkflow withTag(GetWorkflowByIdWorkflowTag tag) {
         this.tag = tag;
         return this;
     }
     
-    public GetWorkflowByIdWorkflow(@JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("id") String id, @JsonProperty("name") String name, @JsonProperty("pipeline_id") String pipelineId, @JsonProperty("pipeline_number") Long pipelineNumber, @JsonProperty("project_slug") String projectSlug, @JsonProperty("started_by") String startedBy, @JsonProperty("status") GetWorkflowByIdWorkflowStatusEnum status, @JsonProperty("stopped_at") OffsetDateTime stoppedAt) {
+    public GetWorkflowByIdWorkflow(@JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("id") String id, @JsonProperty("name") String name, @JsonProperty("pipeline_id") String pipelineId, @JsonProperty("pipeline_number") Long pipelineNumber, @JsonProperty("project_slug") String projectSlug, @JsonProperty("started_by") String startedBy, @JsonProperty("status") GetWorkflowByIdWorkflowStatus status, @JsonProperty("stopped_at") OffsetDateTime stoppedAt) {
         this.createdAt = createdAt;
         this.id = id;
         this.name = name;

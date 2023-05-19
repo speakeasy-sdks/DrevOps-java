@@ -28,9 +28,9 @@ public class CreateScheduleScheduleTimetable1 {
      * Days in a week in which the schedule triggers.
      */
     @JsonProperty("days-of-week")
-    public CreateScheduleScheduleTimetable1DaysOfWeekEnum[] daysOfWeek;
+    public CreateScheduleScheduleTimetable1DaysOfWeek[] daysOfWeek;
 
-    public CreateScheduleScheduleTimetable1 withDaysOfWeek(CreateScheduleScheduleTimetable1DaysOfWeekEnum[] daysOfWeek) {
+    public CreateScheduleScheduleTimetable1 withDaysOfWeek(CreateScheduleScheduleTimetable1DaysOfWeek[] daysOfWeek) {
         this.daysOfWeek = daysOfWeek;
         return this;
     }
@@ -51,9 +51,9 @@ public class CreateScheduleScheduleTimetable1 {
      */
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("months")
-    public CreateScheduleScheduleTimetable1MonthsEnum[] months;
+    public CreateScheduleScheduleTimetable1Months[] months;
 
-    public CreateScheduleScheduleTimetable1 withMonths(CreateScheduleScheduleTimetable1MonthsEnum[] months) {
+    public CreateScheduleScheduleTimetable1 withMonths(CreateScheduleScheduleTimetable1Months[] months) {
         this.months = months;
         return this;
     }
@@ -69,7 +69,7 @@ public class CreateScheduleScheduleTimetable1 {
         return this;
     }
     
-    public CreateScheduleScheduleTimetable1(@JsonProperty("days-of-week") CreateScheduleScheduleTimetable1DaysOfWeekEnum[] daysOfWeek, @JsonProperty("hours-of-day") Long[] hoursOfDay, @JsonProperty("per-hour") Long perHour) {
+    public CreateScheduleScheduleTimetable1(@JsonProperty("days-of-week") CreateScheduleScheduleTimetable1DaysOfWeek[] daysOfWeek, @JsonProperty("hours-of-day") Long[] hoursOfDay, @JsonProperty("per-hour") Long perHour) {
         this.daysOfWeek = daysOfWeek;
         this.hoursOfDay = hoursOfDay;
         this.perHour = perHour;

@@ -19,9 +19,9 @@ package hello.world;
 
 import DrevOps.CircleCi.SDK;
 import DrevOps.CircleCi.models.operations.CreateWebhookRequestBody;
-import DrevOps.CircleCi.models.operations.CreateWebhookRequestBodyEventsEnum;
+import DrevOps.CircleCi.models.operations.CreateWebhookRequestBodyEvents;
 import DrevOps.CircleCi.models.operations.CreateWebhookRequestBodyScope;
-import DrevOps.CircleCi.models.operations.CreateWebhookRequestBodyScopeTypeEnum;
+import DrevOps.CircleCi.models.operations.CreateWebhookRequestBodyScopeType;
 import DrevOps.CircleCi.models.operations.CreateWebhookResponse;
 import DrevOps.CircleCi.models.shared.Security;
 
@@ -34,10 +34,10 @@ public class Application {
                 }})
                 .build();
 
-            CreateWebhookRequestBody req = new CreateWebhookRequestBody(                new DrevOps.CircleCi.models.operations.CreateWebhookRequestBodyEventsEnum[]{{
-                                add(CreateWebhookRequestBodyEventsEnum.WORKFLOW_COMPLETED),
-                                add(CreateWebhookRequestBodyEventsEnum.WORKFLOW_COMPLETED),
-                            }}, "ab",                 new CreateWebhookRequestBodyScope("904e523c-7e0b-4c71-b8e4-796f2a70c688", CreateWebhookRequestBodyScopeTypeEnum.PROJECT);, "consequuntur", "deleniti", false);            
+            CreateWebhookRequestBody req = new CreateWebhookRequestBody(                new DrevOps.CircleCi.models.operations.CreateWebhookRequestBodyEvents[]{{
+                                add(CreateWebhookRequestBodyEvents.WORKFLOW_COMPLETED),
+                                add(CreateWebhookRequestBodyEvents.WORKFLOW_COMPLETED),
+                            }}, "ab",                 new CreateWebhookRequestBodyScope("904e523c-7e0b-4c71-b8e4-796f2a70c688", CreateWebhookRequestBodyScopeType.PROJECT);, "consequuntur", "deleniti", false);            
 
             CreateWebhookResponse res = sdk.webhook.createWebhook(req);
 
@@ -137,7 +137,7 @@ package hello.world;
 import DrevOps.CircleCi.SDK;
 import DrevOps.CircleCi.models.operations.GetWebhooksRequest;
 import DrevOps.CircleCi.models.operations.GetWebhooksResponse;
-import DrevOps.CircleCi.models.operations.GetWebhooksScopeTypeEnum;
+import DrevOps.CircleCi.models.operations.GetWebhooksScopeType;
 import DrevOps.CircleCi.models.shared.Security;
 
 public class Application {
@@ -149,7 +149,7 @@ public class Application {
                 }})
                 .build();
 
-            GetWebhooksRequest req = new GetWebhooksRequest("fd121aa6-f1e6-474b-9b04-f15756082d68", GetWebhooksScopeTypeEnum.PROJECT);            
+            GetWebhooksRequest req = new GetWebhooksRequest("fd121aa6-f1e6-474b-9b04-f15756082d68", GetWebhooksScopeType.PROJECT);            
 
             GetWebhooksResponse res = sdk.webhook.getWebhooks(req);
 
@@ -175,7 +175,7 @@ package hello.world;
 import DrevOps.CircleCi.SDK;
 import DrevOps.CircleCi.models.operations.UpdateWebhookRequest;
 import DrevOps.CircleCi.models.operations.UpdateWebhookRequestBody;
-import DrevOps.CircleCi.models.operations.UpdateWebhookRequestBodyEventsEnum;
+import DrevOps.CircleCi.models.operations.UpdateWebhookRequestBodyEvents;
 import DrevOps.CircleCi.models.operations.UpdateWebhookResponse;
 import DrevOps.CircleCi.models.shared.Security;
 
@@ -190,9 +190,9 @@ public class Application {
 
             UpdateWebhookRequest req = new UpdateWebhookRequest("ea19f1d1-7051-4339-9080-86a1840394c2") {{
                 requestBody = new UpdateWebhookRequestBody() {{
-                    events = new DrevOps.CircleCi.models.operations.UpdateWebhookRequestBodyEventsEnum[]{{
-                        add(UpdateWebhookRequestBodyEventsEnum.WORKFLOW_COMPLETED),
-                        add(UpdateWebhookRequestBodyEventsEnum.WORKFLOW_COMPLETED),
+                    events = new DrevOps.CircleCi.models.operations.UpdateWebhookRequestBodyEvents[]{{
+                        add(UpdateWebhookRequestBodyEvents.WORKFLOW_COMPLETED),
+                        add(UpdateWebhookRequestBodyEvents.WORKFLOW_COMPLETED),
                     }};
                     name = "Elisa Mosciski";
                     signingSecret = "voluptas";

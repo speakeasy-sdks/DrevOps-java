@@ -192,9 +192,9 @@ public class GetJobDetailsJobDetails {
      * The current status of the job.
      */
     @JsonProperty("status")
-    public GetJobDetailsJobDetailsStatusEnum status;
+    public GetJobDetailsJobDetailsStatus status;
 
-    public GetJobDetailsJobDetails withStatus(GetJobDetailsJobDetailsStatusEnum status) {
+    public GetJobDetailsJobDetails withStatus(GetJobDetailsJobDetailsStatus status) {
         this.status = status;
         return this;
     }
@@ -224,7 +224,7 @@ public class GetJobDetailsJobDetails {
         return this;
     }
     
-    public GetJobDetailsJobDetails(@JsonProperty("contexts") GetJobDetailsJobDetailsContexts[] contexts, @JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("duration") Long duration, @JsonProperty("executor") GetJobDetailsJobDetailsExecutor executor, @JsonProperty("latest_workflow") GetJobDetailsJobDetailsLatestWorkflow latestWorkflow, @JsonProperty("messages") GetJobDetailsJobDetailsMessages[] messages, @JsonProperty("name") String name, @JsonProperty("number") Long number, @JsonProperty("organization") GetJobDetailsJobDetailsOrganization organization, @JsonProperty("parallel_runs") GetJobDetailsJobDetailsParallelRuns[] parallelRuns, @JsonProperty("parallelism") Long parallelism, @JsonProperty("pipeline") GetJobDetailsJobDetailsPipeline pipeline, @JsonProperty("project") GetJobDetailsJobDetailsProject project, @JsonProperty("queued_at") OffsetDateTime queuedAt, @JsonProperty("started_at") OffsetDateTime startedAt, @JsonProperty("status") GetJobDetailsJobDetailsStatusEnum status, @JsonProperty("web_url") String webUrl) {
+    public GetJobDetailsJobDetails(@JsonProperty("contexts") GetJobDetailsJobDetailsContexts[] contexts, @JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("duration") Long duration, @JsonProperty("executor") GetJobDetailsJobDetailsExecutor executor, @JsonProperty("latest_workflow") GetJobDetailsJobDetailsLatestWorkflow latestWorkflow, @JsonProperty("messages") GetJobDetailsJobDetailsMessages[] messages, @JsonProperty("name") String name, @JsonProperty("number") Long number, @JsonProperty("organization") GetJobDetailsJobDetailsOrganization organization, @JsonProperty("parallel_runs") GetJobDetailsJobDetailsParallelRuns[] parallelRuns, @JsonProperty("parallelism") Long parallelism, @JsonProperty("pipeline") GetJobDetailsJobDetailsPipeline pipeline, @JsonProperty("project") GetJobDetailsJobDetailsProject project, @JsonProperty("queued_at") OffsetDateTime queuedAt, @JsonProperty("started_at") OffsetDateTime startedAt, @JsonProperty("status") GetJobDetailsJobDetailsStatus status, @JsonProperty("web_url") String webUrl) {
         this.contexts = contexts;
         this.createdAt = createdAt;
         this.duration = duration;

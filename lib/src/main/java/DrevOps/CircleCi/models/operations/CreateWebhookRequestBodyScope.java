@@ -25,14 +25,14 @@ public class CreateWebhookRequestBodyScope {
      * Type of the scope being used
      */
     @JsonProperty("type")
-    public CreateWebhookRequestBodyScopeTypeEnum type;
+    public CreateWebhookRequestBodyScopeType type;
 
-    public CreateWebhookRequestBodyScope withType(CreateWebhookRequestBodyScopeTypeEnum type) {
+    public CreateWebhookRequestBodyScope withType(CreateWebhookRequestBodyScopeType type) {
         this.type = type;
         return this;
     }
     
-    public CreateWebhookRequestBodyScope(@JsonProperty("id") String id, @JsonProperty("type") CreateWebhookRequestBodyScopeTypeEnum type) {
+    public CreateWebhookRequestBodyScope(@JsonProperty("id") String id, @JsonProperty("type") CreateWebhookRequestBodyScopeType type) {
         this.id = id;
         this.type = type;
   }

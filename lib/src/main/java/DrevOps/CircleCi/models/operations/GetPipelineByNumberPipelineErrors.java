@@ -25,14 +25,14 @@ public class GetPipelineByNumberPipelineErrors {
      * The type of error.
      */
     @JsonProperty("type")
-    public GetPipelineByNumberPipelineErrorsTypeEnum type;
+    public GetPipelineByNumberPipelineErrorsType type;
 
-    public GetPipelineByNumberPipelineErrors withType(GetPipelineByNumberPipelineErrorsTypeEnum type) {
+    public GetPipelineByNumberPipelineErrors withType(GetPipelineByNumberPipelineErrorsType type) {
         this.type = type;
         return this;
     }
     
-    public GetPipelineByNumberPipelineErrors(@JsonProperty("message") String message, @JsonProperty("type") GetPipelineByNumberPipelineErrorsTypeEnum type) {
+    public GetPipelineByNumberPipelineErrors(@JsonProperty("message") String message, @JsonProperty("type") GetPipelineByNumberPipelineErrorsType type) {
         this.message = message;
         this.type = type;
   }

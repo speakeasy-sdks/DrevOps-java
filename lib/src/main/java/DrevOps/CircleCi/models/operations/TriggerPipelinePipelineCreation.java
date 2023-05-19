@@ -54,14 +54,14 @@ public class TriggerPipelinePipelineCreation {
      * The current state of the pipeline.
      */
     @JsonProperty("state")
-    public TriggerPipelinePipelineCreationStateEnum state;
+    public TriggerPipelinePipelineCreationState state;
 
-    public TriggerPipelinePipelineCreation withState(TriggerPipelinePipelineCreationStateEnum state) {
+    public TriggerPipelinePipelineCreation withState(TriggerPipelinePipelineCreationState state) {
         this.state = state;
         return this;
     }
     
-    public TriggerPipelinePipelineCreation(@JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("id") String id, @JsonProperty("number") Long number, @JsonProperty("state") TriggerPipelinePipelineCreationStateEnum state) {
+    public TriggerPipelinePipelineCreation(@JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("id") String id, @JsonProperty("number") Long number, @JsonProperty("state") TriggerPipelinePipelineCreationState state) {
         this.createdAt = createdAt;
         this.id = id;
         this.number = number;

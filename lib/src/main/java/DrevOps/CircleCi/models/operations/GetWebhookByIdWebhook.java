@@ -32,9 +32,9 @@ public class GetWebhookByIdWebhook {
      * Events that will trigger the webhook
      */
     @JsonProperty("events")
-    public GetWebhookByIdWebhookEventsEnum[] events;
+    public GetWebhookByIdWebhookEvents[] events;
 
-    public GetWebhookByIdWebhook withEvents(GetWebhookByIdWebhookEventsEnum[] events) {
+    public GetWebhookByIdWebhook withEvents(GetWebhookByIdWebhookEvents[] events) {
         this.events = events;
         return this;
     }
@@ -118,7 +118,7 @@ public class GetWebhookByIdWebhook {
         return this;
     }
     
-    public GetWebhookByIdWebhook(@JsonProperty("created-at") OffsetDateTime createdAt, @JsonProperty("events") GetWebhookByIdWebhookEventsEnum[] events, @JsonProperty("id") String id, @JsonProperty("name") String name, @JsonProperty("scope") GetWebhookByIdWebhookScope scope, @JsonProperty("signing-secret") String signingSecret, @JsonProperty("updated-at") OffsetDateTime updatedAt, @JsonProperty("url") String url, @JsonProperty("verify-tls") Boolean verifyTls) {
+    public GetWebhookByIdWebhook(@JsonProperty("created-at") OffsetDateTime createdAt, @JsonProperty("events") GetWebhookByIdWebhookEvents[] events, @JsonProperty("id") String id, @JsonProperty("name") String name, @JsonProperty("scope") GetWebhookByIdWebhookScope scope, @JsonProperty("signing-secret") String signingSecret, @JsonProperty("updated-at") OffsetDateTime updatedAt, @JsonProperty("url") String url, @JsonProperty("verify-tls") Boolean verifyTls) {
         this.createdAt = createdAt;
         this.events = events;
         this.id = id;

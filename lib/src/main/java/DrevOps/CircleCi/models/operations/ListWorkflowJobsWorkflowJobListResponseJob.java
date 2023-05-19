@@ -126,9 +126,9 @@ public class ListWorkflowJobsWorkflowJobListResponseJob {
      * The current status of the job.
      */
     @JsonProperty("status")
-    public ListWorkflowJobsWorkflowJobListResponseJobStatusEnum status;
+    public ListWorkflowJobsWorkflowJobListResponseJobStatus status;
 
-    public ListWorkflowJobsWorkflowJobListResponseJob withStatus(ListWorkflowJobsWorkflowJobListResponseJobStatusEnum status) {
+    public ListWorkflowJobsWorkflowJobListResponseJob withStatus(ListWorkflowJobsWorkflowJobListResponseJobStatus status) {
         this.status = status;
         return this;
     }
@@ -151,14 +151,14 @@ public class ListWorkflowJobsWorkflowJobListResponseJob {
      * The type of job.
      */
     @JsonProperty("type")
-    public ListWorkflowJobsWorkflowJobListResponseJobTypeEnum type;
+    public ListWorkflowJobsWorkflowJobListResponseJobType type;
 
-    public ListWorkflowJobsWorkflowJobListResponseJob withType(ListWorkflowJobsWorkflowJobListResponseJobTypeEnum type) {
+    public ListWorkflowJobsWorkflowJobListResponseJob withType(ListWorkflowJobsWorkflowJobListResponseJobType type) {
         this.type = type;
         return this;
     }
     
-    public ListWorkflowJobsWorkflowJobListResponseJob(@JsonProperty("dependencies") String[] dependencies, @JsonProperty("id") String id, @JsonProperty("name") String name, @JsonProperty("project_slug") String projectSlug, @JsonProperty("started_at") OffsetDateTime startedAt, @JsonProperty("status") ListWorkflowJobsWorkflowJobListResponseJobStatusEnum status, @JsonProperty("type") ListWorkflowJobsWorkflowJobListResponseJobTypeEnum type) {
+    public ListWorkflowJobsWorkflowJobListResponseJob(@JsonProperty("dependencies") String[] dependencies, @JsonProperty("id") String id, @JsonProperty("name") String name, @JsonProperty("project_slug") String projectSlug, @JsonProperty("started_at") OffsetDateTime startedAt, @JsonProperty("status") ListWorkflowJobsWorkflowJobListResponseJobStatus status, @JsonProperty("type") ListWorkflowJobsWorkflowJobListResponseJobType type) {
         this.dependencies = dependencies;
         this.id = id;
         this.name = name;

@@ -16,9 +16,9 @@ public class CreateScheduleCreateScheduleParameters {
      * The attribution-actor of the scheduled pipeline.
      */
     @JsonProperty("attribution-actor")
-    public CreateScheduleCreateScheduleParametersAttributionActorEnum attributionActor;
+    public CreateScheduleCreateScheduleParametersAttributionActor attributionActor;
 
-    public CreateScheduleCreateScheduleParameters withAttributionActor(CreateScheduleCreateScheduleParametersAttributionActorEnum attributionActor) {
+    public CreateScheduleCreateScheduleParameters withAttributionActor(CreateScheduleCreateScheduleParametersAttributionActor attributionActor) {
         this.attributionActor = attributionActor;
         return this;
     }
@@ -68,7 +68,7 @@ public class CreateScheduleCreateScheduleParameters {
         return this;
     }
     
-    public CreateScheduleCreateScheduleParameters(@JsonProperty("attribution-actor") CreateScheduleCreateScheduleParametersAttributionActorEnum attributionActor, @JsonProperty("name") String name, @JsonProperty("parameters") java.util.Map<String, Object> parameters, @JsonProperty("timetable") Object timetable) {
+    public CreateScheduleCreateScheduleParameters(@JsonProperty("attribution-actor") CreateScheduleCreateScheduleParametersAttributionActor attributionActor, @JsonProperty("name") String name, @JsonProperty("parameters") java.util.Map<String, Object> parameters, @JsonProperty("timetable") Object timetable) {
         this.attributionActor = attributionActor;
         this.name = name;
         this.parameters = parameters;

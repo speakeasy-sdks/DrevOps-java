@@ -28,9 +28,9 @@ public class CreateScheduleCreateScheduleParametersTimetable1 {
      * Days in a week in which the schedule triggers.
      */
     @JsonProperty("days-of-week")
-    public CreateScheduleCreateScheduleParametersTimetable1DaysOfWeekEnum[] daysOfWeek;
+    public CreateScheduleCreateScheduleParametersTimetable1DaysOfWeek[] daysOfWeek;
 
-    public CreateScheduleCreateScheduleParametersTimetable1 withDaysOfWeek(CreateScheduleCreateScheduleParametersTimetable1DaysOfWeekEnum[] daysOfWeek) {
+    public CreateScheduleCreateScheduleParametersTimetable1 withDaysOfWeek(CreateScheduleCreateScheduleParametersTimetable1DaysOfWeek[] daysOfWeek) {
         this.daysOfWeek = daysOfWeek;
         return this;
     }
@@ -51,9 +51,9 @@ public class CreateScheduleCreateScheduleParametersTimetable1 {
      */
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("months")
-    public CreateScheduleCreateScheduleParametersTimetable1MonthsEnum[] months;
+    public CreateScheduleCreateScheduleParametersTimetable1Months[] months;
 
-    public CreateScheduleCreateScheduleParametersTimetable1 withMonths(CreateScheduleCreateScheduleParametersTimetable1MonthsEnum[] months) {
+    public CreateScheduleCreateScheduleParametersTimetable1 withMonths(CreateScheduleCreateScheduleParametersTimetable1Months[] months) {
         this.months = months;
         return this;
     }
@@ -69,7 +69,7 @@ public class CreateScheduleCreateScheduleParametersTimetable1 {
         return this;
     }
     
-    public CreateScheduleCreateScheduleParametersTimetable1(@JsonProperty("days-of-week") CreateScheduleCreateScheduleParametersTimetable1DaysOfWeekEnum[] daysOfWeek, @JsonProperty("hours-of-day") Long[] hoursOfDay, @JsonProperty("per-hour") Long perHour) {
+    public CreateScheduleCreateScheduleParametersTimetable1(@JsonProperty("days-of-week") CreateScheduleCreateScheduleParametersTimetable1DaysOfWeek[] daysOfWeek, @JsonProperty("hours-of-day") Long[] hoursOfDay, @JsonProperty("per-hour") Long perHour) {
         this.daysOfWeek = daysOfWeek;
         this.hoursOfDay = hoursOfDay;
         this.perHour = perHour;

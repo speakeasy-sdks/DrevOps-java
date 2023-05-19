@@ -14,9 +14,9 @@ public class CreateWebhookRequestBody {
      * Events that will trigger the webhook
      */
     @JsonProperty("events")
-    public CreateWebhookRequestBodyEventsEnum[] events;
+    public CreateWebhookRequestBodyEvents[] events;
 
-    public CreateWebhookRequestBody withEvents(CreateWebhookRequestBodyEventsEnum[] events) {
+    public CreateWebhookRequestBody withEvents(CreateWebhookRequestBodyEvents[] events) {
         this.events = events;
         return this;
     }
@@ -76,7 +76,7 @@ public class CreateWebhookRequestBody {
         return this;
     }
     
-    public CreateWebhookRequestBody(@JsonProperty("events") CreateWebhookRequestBodyEventsEnum[] events, @JsonProperty("name") String name, @JsonProperty("scope") CreateWebhookRequestBodyScope scope, @JsonProperty("signing-secret") String signingSecret, @JsonProperty("url") String url, @JsonProperty("verify-tls") Boolean verifyTls) {
+    public CreateWebhookRequestBody(@JsonProperty("events") CreateWebhookRequestBodyEvents[] events, @JsonProperty("name") String name, @JsonProperty("scope") CreateWebhookRequestBodyScope scope, @JsonProperty("signing-secret") String signingSecret, @JsonProperty("url") String url, @JsonProperty("verify-tls") Boolean verifyTls) {
         this.events = events;
         this.name = name;
         this.scope = scope;

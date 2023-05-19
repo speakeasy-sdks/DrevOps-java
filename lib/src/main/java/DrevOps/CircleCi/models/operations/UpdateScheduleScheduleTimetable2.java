@@ -28,9 +28,9 @@ public class UpdateScheduleScheduleTimetable2 {
      */
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("days-of-week")
-    public UpdateScheduleScheduleTimetable2DaysOfWeekEnum[] daysOfWeek;
+    public UpdateScheduleScheduleTimetable2DaysOfWeek[] daysOfWeek;
 
-    public UpdateScheduleScheduleTimetable2 withDaysOfWeek(UpdateScheduleScheduleTimetable2DaysOfWeekEnum[] daysOfWeek) {
+    public UpdateScheduleScheduleTimetable2 withDaysOfWeek(UpdateScheduleScheduleTimetable2DaysOfWeek[] daysOfWeek) {
         this.daysOfWeek = daysOfWeek;
         return this;
     }
@@ -51,9 +51,9 @@ public class UpdateScheduleScheduleTimetable2 {
      */
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("months")
-    public UpdateScheduleScheduleTimetable2MonthsEnum[] months;
+    public UpdateScheduleScheduleTimetable2Months[] months;
 
-    public UpdateScheduleScheduleTimetable2 withMonths(UpdateScheduleScheduleTimetable2MonthsEnum[] months) {
+    public UpdateScheduleScheduleTimetable2 withMonths(UpdateScheduleScheduleTimetable2Months[] months) {
         this.months = months;
         return this;
     }

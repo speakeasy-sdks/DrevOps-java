@@ -22,9 +22,9 @@ public class GetProjectBySlugProjectVcsInfo {
      * The VCS provider
      */
     @JsonProperty("provider")
-    public GetProjectBySlugProjectVcsInfoProviderEnum provider;
+    public GetProjectBySlugProjectVcsInfoProvider provider;
 
-    public GetProjectBySlugProjectVcsInfo withProvider(GetProjectBySlugProjectVcsInfoProviderEnum provider) {
+    public GetProjectBySlugProjectVcsInfo withProvider(GetProjectBySlugProjectVcsInfoProvider provider) {
         this.provider = provider;
         return this;
     }
@@ -40,7 +40,7 @@ public class GetProjectBySlugProjectVcsInfo {
         return this;
     }
     
-    public GetProjectBySlugProjectVcsInfo(@JsonProperty("default_branch") String defaultBranch, @JsonProperty("provider") GetProjectBySlugProjectVcsInfoProviderEnum provider, @JsonProperty("vcs_url") String vcsUrl) {
+    public GetProjectBySlugProjectVcsInfo(@JsonProperty("default_branch") String defaultBranch, @JsonProperty("provider") GetProjectBySlugProjectVcsInfoProvider provider, @JsonProperty("vcs_url") String vcsUrl) {
         this.defaultBranch = defaultBranch;
         this.provider = provider;
         this.vcsUrl = vcsUrl;

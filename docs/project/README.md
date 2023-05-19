@@ -23,7 +23,7 @@ package hello.world;
 
 import DrevOps.CircleCi.SDK;
 import DrevOps.CircleCi.models.operations.CreateCheckoutKeyCheckoutKeyInput;
-import DrevOps.CircleCi.models.operations.CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputTypeEnum;
+import DrevOps.CircleCi.models.operations.CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputType;
 import DrevOps.CircleCi.models.operations.CreateCheckoutKeyRequest;
 import DrevOps.CircleCi.models.operations.CreateCheckoutKeyResponse;
 import DrevOps.CircleCi.models.shared.Security;
@@ -38,7 +38,7 @@ public class Application {
                 .build();
 
             CreateCheckoutKeyRequest req = new CreateCheckoutKeyRequest("nihil") {{
-                requestBody = new CreateCheckoutKeyCheckoutKeyInput(CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputTypeEnum.DEPLOY_KEY);;
+                requestBody = new CreateCheckoutKeyCheckoutKeyInput(CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputType.DEPLOY_KEY);;
             }};            
 
             CreateCheckoutKeyResponse res = sdk.project.createCheckoutKey(req);

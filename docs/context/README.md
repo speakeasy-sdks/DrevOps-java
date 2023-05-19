@@ -62,9 +62,9 @@ package hello.world;
 import DrevOps.CircleCi.SDK;
 import DrevOps.CircleCi.models.operations.CreateContextRequestBody;
 import DrevOps.CircleCi.models.operations.CreateContextRequestBodyOwner1;
-import DrevOps.CircleCi.models.operations.CreateContextRequestBodyOwner1TypeEnum;
+import DrevOps.CircleCi.models.operations.CreateContextRequestBodyOwner1Type;
 import DrevOps.CircleCi.models.operations.CreateContextRequestBodyOwner2;
-import DrevOps.CircleCi.models.operations.CreateContextRequestBodyOwner2TypeEnum;
+import DrevOps.CircleCi.models.operations.CreateContextRequestBodyOwner2Type;
 import DrevOps.CircleCi.models.operations.CreateContextResponse;
 import DrevOps.CircleCi.models.shared.Security;
 
@@ -79,7 +79,7 @@ public class Application {
 
             CreateContextRequestBody req = new CreateContextRequestBody("esse",                 new CreateContextRequestBodyOwner1("955907af-f1a3-4a2f-a946-7739251aa52c") {{
                                 id = "92059293-96fe-4a75-96eb-10faaa2352c5";
-                                type = CreateContextRequestBodyOwner1TypeEnum.ORGANIZATION;
+                                type = CreateContextRequestBodyOwner1Type.ORGANIZATION;
                             }});            
 
             CreateContextResponse res = sdk.context.createContext(req);
@@ -215,7 +215,7 @@ List all contexts for an owner.
 package hello.world;
 
 import DrevOps.CircleCi.SDK;
-import DrevOps.CircleCi.models.operations.ListContextsOwnerTypeEnum;
+import DrevOps.CircleCi.models.operations.ListContextsOwnerType;
 import DrevOps.CircleCi.models.operations.ListContextsRequest;
 import DrevOps.CircleCi.models.operations.ListContextsResponse;
 import DrevOps.CircleCi.models.shared.Security;
@@ -232,7 +232,7 @@ public class Application {
             ListContextsRequest req = new ListContextsRequest() {{
                 ownerId = "dfb14cd6-6ae3-495e-bb9b-a88f3a669970";
                 ownerSlug = "nihil";
-                ownerType = ListContextsOwnerTypeEnum.ACCOUNT;
+                ownerType = ListContextsOwnerType.ACCOUNT;
                 pageToken = "distinctio";
             }};            
 

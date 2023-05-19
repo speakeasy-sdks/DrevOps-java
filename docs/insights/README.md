@@ -100,7 +100,7 @@ Get timeseries data for all jobs within a workflow.
 package hello.world;
 
 import DrevOps.CircleCi.SDK;
-import DrevOps.CircleCi.models.operations.GetJobTimeseriesGranularityEnum;
+import DrevOps.CircleCi.models.operations.GetJobTimeseriesGranularity;
 import DrevOps.CircleCi.models.operations.GetJobTimeseriesRequest;
 import DrevOps.CircleCi.models.operations.GetJobTimeseriesResponse;
 import DrevOps.CircleCi.models.shared.Security;
@@ -118,7 +118,7 @@ public class Application {
             GetJobTimeseriesRequest req = new GetJobTimeseriesRequest("in", "architecto") {{
                 branch = "architecto";
                 endDate = OffsetDateTime.parse("2021-12-11T05:14:57.773Z");
-                granularity = GetJobTimeseriesGranularityEnum.HOURLY;
+                granularity = GetJobTimeseriesGranularity.HOURLY;
                 startDate = OffsetDateTime.parse("2022-01-01T10:06:00.916Z");
             }};            
 
@@ -145,7 +145,7 @@ Gets aggregated summary metrics with trends for the entire org.
 package hello.world;
 
 import DrevOps.CircleCi.SDK;
-import DrevOps.CircleCi.models.operations.GetOrgSummaryDataReportingWindowEnum;
+import DrevOps.CircleCi.models.operations.GetOrgSummaryDataReportingWindow;
 import DrevOps.CircleCi.models.operations.GetOrgSummaryDataRequest;
 import DrevOps.CircleCi.models.operations.GetOrgSummaryDataResponse;
 import DrevOps.CircleCi.models.shared.Security;
@@ -163,7 +163,7 @@ public class Application {
                 projectNames = new java.util.HashMap<String, Object>() {{
                     put("saepe", "pariatur");
                 }};
-                reportingWindow = GetOrgSummaryDataReportingWindowEnum.LAST7_DAYS;
+                reportingWindow = GetOrgSummaryDataReportingWindow.LAST7_DAYS;
             }};            
 
             GetOrgSummaryDataResponse res = sdk.insights.getOrgSummaryData(req);
@@ -188,7 +188,7 @@ Get summary metrics for a project workflow's jobs. Job runs going back at most 9
 package hello.world;
 
 import DrevOps.CircleCi.SDK;
-import DrevOps.CircleCi.models.operations.GetProjectWorkflowJobMetricsReportingWindowEnum;
+import DrevOps.CircleCi.models.operations.GetProjectWorkflowJobMetricsReportingWindow;
 import DrevOps.CircleCi.models.operations.GetProjectWorkflowJobMetricsRequest;
 import DrevOps.CircleCi.models.operations.GetProjectWorkflowJobMetricsResponse;
 import DrevOps.CircleCi.models.shared.Security;
@@ -206,7 +206,7 @@ public class Application {
                 allBranches = false;
                 branch = "natus";
                 pageToken = "magni";
-                reportingWindow = GetProjectWorkflowJobMetricsReportingWindowEnum.LAST7_DAYS;
+                reportingWindow = GetProjectWorkflowJobMetricsReportingWindow.LAST7_DAYS;
             }};            
 
             GetProjectWorkflowJobMetricsResponse res = sdk.insights.getProjectWorkflowJobMetrics(req);
@@ -231,7 +231,7 @@ Get summary metrics for a project's workflows.  Workflow runs going back at most
 package hello.world;
 
 import DrevOps.CircleCi.SDK;
-import DrevOps.CircleCi.models.operations.GetProjectWorkflowMetricsReportingWindowEnum;
+import DrevOps.CircleCi.models.operations.GetProjectWorkflowMetricsReportingWindow;
 import DrevOps.CircleCi.models.operations.GetProjectWorkflowMetricsRequest;
 import DrevOps.CircleCi.models.operations.GetProjectWorkflowMetricsResponse;
 import DrevOps.CircleCi.models.shared.Security;
@@ -249,7 +249,7 @@ public class Application {
                 allBranches = false;
                 branch = "illum";
                 pageToken = "pariatur";
-                reportingWindow = GetProjectWorkflowMetricsReportingWindowEnum.LAST60_DAYS;
+                reportingWindow = GetProjectWorkflowMetricsReportingWindow.LAST60_DAYS;
             }};            
 
             GetProjectWorkflowMetricsResponse res = sdk.insights.getProjectWorkflowMetrics(req);
@@ -361,7 +361,7 @@ Get summary metrics and trends for a project at workflow and branch level.
 package hello.world;
 
 import DrevOps.CircleCi.SDK;
-import DrevOps.CircleCi.models.operations.GetProjectWorkflowsPageDataReportingWindowEnum;
+import DrevOps.CircleCi.models.operations.GetProjectWorkflowsPageDataReportingWindow;
 import DrevOps.CircleCi.models.operations.GetProjectWorkflowsPageDataRequest;
 import DrevOps.CircleCi.models.operations.GetProjectWorkflowsPageDataResponse;
 import DrevOps.CircleCi.models.shared.Security;
@@ -379,7 +379,7 @@ public class Application {
                 branches = new java.util.HashMap<String, Object>() {{
                     put("pariatur", "nemo");
                 }};
-                reportingWindow = GetProjectWorkflowsPageDataReportingWindowEnum.LAST60_DAYS;
+                reportingWindow = GetProjectWorkflowsPageDataReportingWindow.LAST60_DAYS;
                 workflowNames = new java.util.HashMap<String, Object>() {{
                     put("fugiat", "amet");
                 }};

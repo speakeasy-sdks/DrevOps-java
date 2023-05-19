@@ -35,9 +35,9 @@ public class GetJobTimeseriesRequest {
      * The granularity for which to query timeseries data.
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=granularity")
-    public GetJobTimeseriesGranularityEnum granularity;
+    public GetJobTimeseriesGranularity granularity;
 
-    public GetJobTimeseriesRequest withGranularity(GetJobTimeseriesGranularityEnum granularity) {
+    public GetJobTimeseriesRequest withGranularity(GetJobTimeseriesGranularity granularity) {
         this.granularity = granularity;
         return this;
     }

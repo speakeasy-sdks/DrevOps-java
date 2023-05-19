@@ -43,14 +43,14 @@ public class GetPipelineByNumberPipelineTrigger {
      * The type of trigger.
      */
     @JsonProperty("type")
-    public GetPipelineByNumberPipelineTriggerTypeEnum type;
+    public GetPipelineByNumberPipelineTriggerType type;
 
-    public GetPipelineByNumberPipelineTrigger withType(GetPipelineByNumberPipelineTriggerTypeEnum type) {
+    public GetPipelineByNumberPipelineTrigger withType(GetPipelineByNumberPipelineTriggerType type) {
         this.type = type;
         return this;
     }
     
-    public GetPipelineByNumberPipelineTrigger(@JsonProperty("actor") GetPipelineByNumberPipelineTriggerActor actor, @JsonProperty("received_at") OffsetDateTime receivedAt, @JsonProperty("type") GetPipelineByNumberPipelineTriggerTypeEnum type) {
+    public GetPipelineByNumberPipelineTrigger(@JsonProperty("actor") GetPipelineByNumberPipelineTriggerActor actor, @JsonProperty("received_at") OffsetDateTime receivedAt, @JsonProperty("type") GetPipelineByNumberPipelineTriggerType type) {
         this.actor = actor;
         this.receivedAt = receivedAt;
         this.type = type;

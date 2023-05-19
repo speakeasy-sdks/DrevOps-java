@@ -115,9 +115,9 @@ public class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow {
      * The current status of the workflow.
      */
     @JsonProperty("status")
-    public ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatusEnum status;
+    public ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatus status;
 
-    public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow withStatus(ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatusEnum status) {
+    public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow withStatus(ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatus status) {
         this.status = status;
         return this;
     }
@@ -140,14 +140,14 @@ public class ListWorkflowsByPipelineIdWorkflowListResponseWorkflow {
      */
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tag")
-    public ListWorkflowsByPipelineIdWorkflowListResponseWorkflowTagEnum tag;
+    public ListWorkflowsByPipelineIdWorkflowListResponseWorkflowTag tag;
 
-    public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow withTag(ListWorkflowsByPipelineIdWorkflowListResponseWorkflowTagEnum tag) {
+    public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow withTag(ListWorkflowsByPipelineIdWorkflowListResponseWorkflowTag tag) {
         this.tag = tag;
         return this;
     }
     
-    public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow(@JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("id") String id, @JsonProperty("name") String name, @JsonProperty("pipeline_id") String pipelineId, @JsonProperty("pipeline_number") Long pipelineNumber, @JsonProperty("project_slug") String projectSlug, @JsonProperty("started_by") String startedBy, @JsonProperty("status") ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatusEnum status, @JsonProperty("stopped_at") OffsetDateTime stoppedAt) {
+    public ListWorkflowsByPipelineIdWorkflowListResponseWorkflow(@JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("id") String id, @JsonProperty("name") String name, @JsonProperty("pipeline_id") String pipelineId, @JsonProperty("pipeline_number") Long pipelineNumber, @JsonProperty("project_slug") String projectSlug, @JsonProperty("started_by") String startedBy, @JsonProperty("status") ListWorkflowsByPipelineIdWorkflowListResponseWorkflowStatus status, @JsonProperty("stopped_at") OffsetDateTime stoppedAt) {
         this.createdAt = createdAt;
         this.id = id;
         this.name = name;

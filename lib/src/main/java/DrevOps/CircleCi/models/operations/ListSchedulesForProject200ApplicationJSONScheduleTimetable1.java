@@ -28,9 +28,9 @@ public class ListSchedulesForProject200ApplicationJSONScheduleTimetable1 {
      * Days in a week in which the schedule triggers.
      */
     @JsonProperty("days-of-week")
-    public ListSchedulesForProject200ApplicationJSONScheduleTimetable1DaysOfWeekEnum[] daysOfWeek;
+    public ListSchedulesForProject200ApplicationJSONScheduleTimetable1DaysOfWeek[] daysOfWeek;
 
-    public ListSchedulesForProject200ApplicationJSONScheduleTimetable1 withDaysOfWeek(ListSchedulesForProject200ApplicationJSONScheduleTimetable1DaysOfWeekEnum[] daysOfWeek) {
+    public ListSchedulesForProject200ApplicationJSONScheduleTimetable1 withDaysOfWeek(ListSchedulesForProject200ApplicationJSONScheduleTimetable1DaysOfWeek[] daysOfWeek) {
         this.daysOfWeek = daysOfWeek;
         return this;
     }
@@ -51,9 +51,9 @@ public class ListSchedulesForProject200ApplicationJSONScheduleTimetable1 {
      */
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("months")
-    public ListSchedulesForProject200ApplicationJSONScheduleTimetable1MonthsEnum[] months;
+    public ListSchedulesForProject200ApplicationJSONScheduleTimetable1Months[] months;
 
-    public ListSchedulesForProject200ApplicationJSONScheduleTimetable1 withMonths(ListSchedulesForProject200ApplicationJSONScheduleTimetable1MonthsEnum[] months) {
+    public ListSchedulesForProject200ApplicationJSONScheduleTimetable1 withMonths(ListSchedulesForProject200ApplicationJSONScheduleTimetable1Months[] months) {
         this.months = months;
         return this;
     }
@@ -69,7 +69,7 @@ public class ListSchedulesForProject200ApplicationJSONScheduleTimetable1 {
         return this;
     }
     
-    public ListSchedulesForProject200ApplicationJSONScheduleTimetable1(@JsonProperty("days-of-week") ListSchedulesForProject200ApplicationJSONScheduleTimetable1DaysOfWeekEnum[] daysOfWeek, @JsonProperty("hours-of-day") Long[] hoursOfDay, @JsonProperty("per-hour") Long perHour) {
+    public ListSchedulesForProject200ApplicationJSONScheduleTimetable1(@JsonProperty("days-of-week") ListSchedulesForProject200ApplicationJSONScheduleTimetable1DaysOfWeek[] daysOfWeek, @JsonProperty("hours-of-day") Long[] hoursOfDay, @JsonProperty("per-hour") Long perHour) {
         this.daysOfWeek = daysOfWeek;
         this.hoursOfDay = hoursOfDay;
         this.perHour = perHour;

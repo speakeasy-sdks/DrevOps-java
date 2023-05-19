@@ -17,9 +17,9 @@ public class UpdateScheduleUpdateScheduleParameters {
      */
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("attribution-actor")
-    public UpdateScheduleUpdateScheduleParametersAttributionActorEnum attributionActor;
+    public UpdateScheduleUpdateScheduleParametersAttributionActor attributionActor;
 
-    public UpdateScheduleUpdateScheduleParameters withAttributionActor(UpdateScheduleUpdateScheduleParametersAttributionActorEnum attributionActor) {
+    public UpdateScheduleUpdateScheduleParameters withAttributionActor(UpdateScheduleUpdateScheduleParametersAttributionActor attributionActor) {
         this.attributionActor = attributionActor;
         return this;
     }

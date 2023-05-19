@@ -17,9 +17,9 @@ public class UpdateWebhookRequestBody {
      */
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("events")
-    public UpdateWebhookRequestBodyEventsEnum[] events;
+    public UpdateWebhookRequestBodyEvents[] events;
 
-    public UpdateWebhookRequestBody withEvents(UpdateWebhookRequestBodyEventsEnum[] events) {
+    public UpdateWebhookRequestBody withEvents(UpdateWebhookRequestBodyEvents[] events) {
         this.events = events;
         return this;
     }

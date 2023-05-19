@@ -25,9 +25,9 @@ public class CreateContextRequestBodyOwner2 {
      */
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("type")
-    public CreateContextRequestBodyOwner2TypeEnum type;
+    public CreateContextRequestBodyOwner2Type type;
 
-    public CreateContextRequestBodyOwner2 withType(CreateContextRequestBodyOwner2TypeEnum type) {
+    public CreateContextRequestBodyOwner2 withType(CreateContextRequestBodyOwner2Type type) {
         this.type = type;
         return this;
     }

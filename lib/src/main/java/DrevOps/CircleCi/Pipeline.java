@@ -48,7 +48,8 @@ public class Pipeline {
         req.setURL(url);
         SerializedBody serializedRequestBody = DrevOps.CircleCi.utils.Utils.serializeRequestBody(request, "request", "json");
         req.setBody(serializedRequestBody);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._securityClient;
@@ -95,7 +96,8 @@ public class Pipeline {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._securityClient;
@@ -142,7 +144,8 @@ public class Pipeline {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._securityClient;
@@ -189,7 +192,8 @@ public class Pipeline {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._securityClient;
@@ -236,7 +240,8 @@ public class Pipeline {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.ListMyPipelinesRequest.class, request, null);
         if (queryParams != null) {
@@ -289,7 +294,8 @@ public class Pipeline {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.ListPipelinesRequest.class, request, null);
         if (queryParams != null) {
@@ -342,7 +348,8 @@ public class Pipeline {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.ListPipelinesForProjectRequest.class, request, null);
         if (queryParams != null) {
@@ -395,7 +402,8 @@ public class Pipeline {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.ListWorkflowsByPipelineIdRequest.class, request, null);
         if (queryParams != null) {
@@ -450,7 +458,8 @@ public class Pipeline {
         req.setURL(url);
         SerializedBody serializedRequestBody = DrevOps.CircleCi.utils.Utils.serializeRequestBody(request, "requestBody", "json");
         req.setBody(serializedRequestBody);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._securityClient;

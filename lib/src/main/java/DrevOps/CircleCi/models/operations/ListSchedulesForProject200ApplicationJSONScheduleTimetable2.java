@@ -28,9 +28,9 @@ public class ListSchedulesForProject200ApplicationJSONScheduleTimetable2 {
      */
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("days-of-week")
-    public ListSchedulesForProject200ApplicationJSONScheduleTimetable2DaysOfWeekEnum[] daysOfWeek;
+    public ListSchedulesForProject200ApplicationJSONScheduleTimetable2DaysOfWeek[] daysOfWeek;
 
-    public ListSchedulesForProject200ApplicationJSONScheduleTimetable2 withDaysOfWeek(ListSchedulesForProject200ApplicationJSONScheduleTimetable2DaysOfWeekEnum[] daysOfWeek) {
+    public ListSchedulesForProject200ApplicationJSONScheduleTimetable2 withDaysOfWeek(ListSchedulesForProject200ApplicationJSONScheduleTimetable2DaysOfWeek[] daysOfWeek) {
         this.daysOfWeek = daysOfWeek;
         return this;
     }
@@ -51,9 +51,9 @@ public class ListSchedulesForProject200ApplicationJSONScheduleTimetable2 {
      */
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("months")
-    public ListSchedulesForProject200ApplicationJSONScheduleTimetable2MonthsEnum[] months;
+    public ListSchedulesForProject200ApplicationJSONScheduleTimetable2Months[] months;
 
-    public ListSchedulesForProject200ApplicationJSONScheduleTimetable2 withMonths(ListSchedulesForProject200ApplicationJSONScheduleTimetable2MonthsEnum[] months) {
+    public ListSchedulesForProject200ApplicationJSONScheduleTimetable2 withMonths(ListSchedulesForProject200ApplicationJSONScheduleTimetable2Months[] months) {
         this.months = months;
         return this;
     }

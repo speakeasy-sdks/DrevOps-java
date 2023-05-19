@@ -33,9 +33,9 @@ public class ListContextsRequest {
      * The type of the owner. Defaults to "organization". Accounts are only used as context owners in server.
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=owner-type")
-    public ListContextsOwnerTypeEnum ownerType;
+    public ListContextsOwnerType ownerType;
 
-    public ListContextsRequest withOwnerType(ListContextsOwnerTypeEnum ownerType) {
+    public ListContextsRequest withOwnerType(ListContextsOwnerType ownerType) {
         this.ownerType = ownerType;
         return this;
     }

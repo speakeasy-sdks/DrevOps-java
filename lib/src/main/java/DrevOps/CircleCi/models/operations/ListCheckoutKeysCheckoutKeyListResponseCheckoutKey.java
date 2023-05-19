@@ -62,14 +62,14 @@ public class ListCheckoutKeysCheckoutKeyListResponseCheckoutKey {
      * The type of checkout key. This may be either `deploy-key` or `github-user-key`.
      */
     @JsonProperty("type")
-    public ListCheckoutKeysCheckoutKeyListResponseCheckoutKeyCheckoutKeyTypeEnum type;
+    public ListCheckoutKeysCheckoutKeyListResponseCheckoutKeyCheckoutKeyType type;
 
-    public ListCheckoutKeysCheckoutKeyListResponseCheckoutKey withType(ListCheckoutKeysCheckoutKeyListResponseCheckoutKeyCheckoutKeyTypeEnum type) {
+    public ListCheckoutKeysCheckoutKeyListResponseCheckoutKey withType(ListCheckoutKeysCheckoutKeyListResponseCheckoutKeyCheckoutKeyType type) {
         this.type = type;
         return this;
     }
     
-    public ListCheckoutKeysCheckoutKeyListResponseCheckoutKey(@JsonProperty("created-at") OffsetDateTime createdAt, @JsonProperty("fingerprint") String fingerprint, @JsonProperty("preferred") Boolean preferred, @JsonProperty("public-key") String publicKey, @JsonProperty("type") ListCheckoutKeysCheckoutKeyListResponseCheckoutKeyCheckoutKeyTypeEnum type) {
+    public ListCheckoutKeysCheckoutKeyListResponseCheckoutKey(@JsonProperty("created-at") OffsetDateTime createdAt, @JsonProperty("fingerprint") String fingerprint, @JsonProperty("preferred") Boolean preferred, @JsonProperty("public-key") String publicKey, @JsonProperty("type") ListCheckoutKeysCheckoutKeyListResponseCheckoutKeyCheckoutKeyType type) {
         this.createdAt = createdAt;
         this.fingerprint = fingerprint;
         this.preferred = preferred;

@@ -78,9 +78,9 @@ public class ListPipelinesForProjectPipelineListResponsePipeline {
      * The current state of the pipeline.
      */
     @JsonProperty("state")
-    public ListPipelinesForProjectPipelineListResponsePipelineStateEnum state;
+    public ListPipelinesForProjectPipelineListResponsePipelineState state;
 
-    public ListPipelinesForProjectPipelineListResponsePipeline withState(ListPipelinesForProjectPipelineListResponsePipelineStateEnum state) {
+    public ListPipelinesForProjectPipelineListResponsePipeline withState(ListPipelinesForProjectPipelineListResponsePipelineState state) {
         this.state = state;
         return this;
     }
@@ -131,7 +131,7 @@ public class ListPipelinesForProjectPipelineListResponsePipeline {
         return this;
     }
     
-    public ListPipelinesForProjectPipelineListResponsePipeline(@JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("errors") ListPipelinesForProjectPipelineListResponsePipelineErrors[] errors, @JsonProperty("id") String id, @JsonProperty("number") Long number, @JsonProperty("project_slug") String projectSlug, @JsonProperty("state") ListPipelinesForProjectPipelineListResponsePipelineStateEnum state, @JsonProperty("trigger") ListPipelinesForProjectPipelineListResponsePipelineTrigger trigger) {
+    public ListPipelinesForProjectPipelineListResponsePipeline(@JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("errors") ListPipelinesForProjectPipelineListResponsePipelineErrors[] errors, @JsonProperty("id") String id, @JsonProperty("number") Long number, @JsonProperty("project_slug") String projectSlug, @JsonProperty("state") ListPipelinesForProjectPipelineListResponsePipelineState state, @JsonProperty("trigger") ListPipelinesForProjectPipelineListResponsePipelineTrigger trigger) {
         this.createdAt = createdAt;
         this.errors = errors;
         this.id = id;

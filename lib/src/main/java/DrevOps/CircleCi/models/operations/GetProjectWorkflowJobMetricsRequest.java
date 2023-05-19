@@ -56,9 +56,9 @@ public class GetProjectWorkflowJobMetricsRequest {
      * The time window used to calculate summary metrics.
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=reporting-window")
-    public GetProjectWorkflowJobMetricsReportingWindowEnum reportingWindow;
+    public GetProjectWorkflowJobMetricsReportingWindow reportingWindow;
 
-    public GetProjectWorkflowJobMetricsRequest withReportingWindow(GetProjectWorkflowJobMetricsReportingWindowEnum reportingWindow) {
+    public GetProjectWorkflowJobMetricsRequest withReportingWindow(GetProjectWorkflowJobMetricsReportingWindow reportingWindow) {
         this.reportingWindow = reportingWindow;
         return this;
     }

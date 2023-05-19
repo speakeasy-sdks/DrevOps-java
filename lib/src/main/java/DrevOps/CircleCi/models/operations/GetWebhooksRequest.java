@@ -23,14 +23,14 @@ public class GetWebhooksRequest {
      * Type of the scope being used
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=scope-type")
-    public GetWebhooksScopeTypeEnum scopeType;
+    public GetWebhooksScopeType scopeType;
 
-    public GetWebhooksRequest withScopeType(GetWebhooksScopeTypeEnum scopeType) {
+    public GetWebhooksRequest withScopeType(GetWebhooksScopeType scopeType) {
         this.scopeType = scopeType;
         return this;
     }
     
-    public GetWebhooksRequest(@JsonProperty("scope-id") String scopeId, @JsonProperty("scope-type") GetWebhooksScopeTypeEnum scopeType) {
+    public GetWebhooksRequest(@JsonProperty("scope-id") String scopeId, @JsonProperty("scope-type") GetWebhooksScopeType scopeType) {
         this.scopeId = scopeId;
         this.scopeType = scopeType;
   }

@@ -43,14 +43,14 @@ public class ListPipelinesForProjectPipelineListResponsePipelineTrigger {
      * The type of trigger.
      */
     @JsonProperty("type")
-    public ListPipelinesForProjectPipelineListResponsePipelineTriggerTypeEnum type;
+    public ListPipelinesForProjectPipelineListResponsePipelineTriggerType type;
 
-    public ListPipelinesForProjectPipelineListResponsePipelineTrigger withType(ListPipelinesForProjectPipelineListResponsePipelineTriggerTypeEnum type) {
+    public ListPipelinesForProjectPipelineListResponsePipelineTrigger withType(ListPipelinesForProjectPipelineListResponsePipelineTriggerType type) {
         this.type = type;
         return this;
     }
     
-    public ListPipelinesForProjectPipelineListResponsePipelineTrigger(@JsonProperty("actor") ListPipelinesForProjectPipelineListResponsePipelineTriggerActor actor, @JsonProperty("received_at") OffsetDateTime receivedAt, @JsonProperty("type") ListPipelinesForProjectPipelineListResponsePipelineTriggerTypeEnum type) {
+    public ListPipelinesForProjectPipelineListResponsePipelineTrigger(@JsonProperty("actor") ListPipelinesForProjectPipelineListResponsePipelineTriggerActor actor, @JsonProperty("received_at") OffsetDateTime receivedAt, @JsonProperty("type") ListPipelinesForProjectPipelineListResponsePipelineTriggerType type) {
         this.actor = actor;
         this.receivedAt = receivedAt;
         this.type = type;

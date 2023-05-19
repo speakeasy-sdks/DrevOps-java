@@ -73,9 +73,9 @@ public class GetProjectWorkflowRuns200ApplicationJSONItems {
      * Workflow status.
      */
     @JsonProperty("status")
-    public GetProjectWorkflowRuns200ApplicationJSONItemsStatusEnum status;
+    public GetProjectWorkflowRuns200ApplicationJSONItemsStatus status;
 
-    public GetProjectWorkflowRuns200ApplicationJSONItems withStatus(GetProjectWorkflowRuns200ApplicationJSONItemsStatusEnum status) {
+    public GetProjectWorkflowRuns200ApplicationJSONItems withStatus(GetProjectWorkflowRuns200ApplicationJSONItemsStatus status) {
         this.status = status;
         return this;
     }
@@ -93,7 +93,7 @@ public class GetProjectWorkflowRuns200ApplicationJSONItems {
         return this;
     }
     
-    public GetProjectWorkflowRuns200ApplicationJSONItems(@JsonProperty("branch") String branch, @JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("credits_used") Long creditsUsed, @JsonProperty("duration") Long duration, @JsonProperty("id") String id, @JsonProperty("status") GetProjectWorkflowRuns200ApplicationJSONItemsStatusEnum status, @JsonProperty("stopped_at") OffsetDateTime stoppedAt) {
+    public GetProjectWorkflowRuns200ApplicationJSONItems(@JsonProperty("branch") String branch, @JsonProperty("created_at") OffsetDateTime createdAt, @JsonProperty("credits_used") Long creditsUsed, @JsonProperty("duration") Long duration, @JsonProperty("id") String id, @JsonProperty("status") GetProjectWorkflowRuns200ApplicationJSONItemsStatus status, @JsonProperty("stopped_at") OffsetDateTime stoppedAt) {
         this.branch = branch;
         this.createdAt = createdAt;
         this.creditsUsed = creditsUsed;

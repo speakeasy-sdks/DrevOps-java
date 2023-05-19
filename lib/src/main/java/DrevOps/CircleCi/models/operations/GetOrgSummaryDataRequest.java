@@ -34,9 +34,9 @@ public class GetOrgSummaryDataRequest {
      * The time window used to calculate summary metrics.
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=reporting-window")
-    public GetOrgSummaryDataReportingWindowEnum reportingWindow;
+    public GetOrgSummaryDataReportingWindow reportingWindow;
 
-    public GetOrgSummaryDataRequest withReportingWindow(GetOrgSummaryDataReportingWindowEnum reportingWindow) {
+    public GetOrgSummaryDataRequest withReportingWindow(GetOrgSummaryDataReportingWindow reportingWindow) {
         this.reportingWindow = reportingWindow;
         return this;
     }

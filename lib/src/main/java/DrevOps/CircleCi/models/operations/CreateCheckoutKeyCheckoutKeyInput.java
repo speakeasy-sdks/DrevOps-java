@@ -11,14 +11,14 @@ public class CreateCheckoutKeyCheckoutKeyInput {
      * The type of checkout key to create. This may be either `deploy-key` or `user-key`.
      */
     @JsonProperty("type")
-    public CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputTypeEnum type;
+    public CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputType type;
 
-    public CreateCheckoutKeyCheckoutKeyInput withType(CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputTypeEnum type) {
+    public CreateCheckoutKeyCheckoutKeyInput withType(CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputType type) {
         this.type = type;
         return this;
     }
     
-    public CreateCheckoutKeyCheckoutKeyInput(@JsonProperty("type") CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputTypeEnum type) {
+    public CreateCheckoutKeyCheckoutKeyInput(@JsonProperty("type") CreateCheckoutKeyCheckoutKeyInputCheckoutKeyInputType type) {
         this.type = type;
   }
 }
