@@ -16,20 +16,10 @@ import org.apache.http.NameValuePair;
 
 public class Pipeline {
 	
-	private HTTPClient _defaultClient;
-	private HTTPClient _securityClient;
-	private String _serverUrl;
-	private String _language;
-	private String _sdkVersion;
-	private String _genVersion;
+	private SDKConfiguration sdkConfiguration;
 
-	public Pipeline(HTTPClient defaultClient, HTTPClient securityClient, String serverUrl, String language, String sdkVersion, String genVersion) {
-		this._defaultClient = defaultClient;
-		this._securityClient = securityClient;
-		this._serverUrl = serverUrl;
-		this._language = language;
-		this._sdkVersion = sdkVersion;
-		this._genVersion = genVersion;
+	public Pipeline(SDKConfiguration sdkConfiguration) {
+		this.sdkConfiguration = sdkConfiguration;
 	}
 
     /**
@@ -40,7 +30,7 @@ public class Pipeline {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.ContinuePipelineResponse continuePipeline(DrevOps.CircleCi.models.operations.ContinuePipelineRequestBody request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(baseUrl, "/pipeline/continue");
         
         HTTPRequest req = new HTTPRequest();
@@ -50,9 +40,9 @@ public class Pipeline {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -90,7 +80,7 @@ public class Pipeline {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetPipelineByIdResponse getPipelineById(DrevOps.CircleCi.models.operations.GetPipelineByIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetPipelineByIdRequest.class, baseUrl, "/pipeline/{pipeline-id}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -98,9 +88,9 @@ public class Pipeline {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -138,7 +128,7 @@ public class Pipeline {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetPipelineByNumberResponse getPipelineByNumber(DrevOps.CircleCi.models.operations.GetPipelineByNumberRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetPipelineByNumberRequest.class, baseUrl, "/project/{project-slug}/pipeline/{pipeline-number}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -146,9 +136,9 @@ public class Pipeline {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -186,7 +176,7 @@ public class Pipeline {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetPipelineConfigByIdResponse getPipelineConfigById(DrevOps.CircleCi.models.operations.GetPipelineConfigByIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetPipelineConfigByIdRequest.class, baseUrl, "/pipeline/{pipeline-id}/config", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -194,9 +184,9 @@ public class Pipeline {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -234,7 +224,7 @@ public class Pipeline {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.ListMyPipelinesResponse listMyPipelines(DrevOps.CircleCi.models.operations.ListMyPipelinesRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ListMyPipelinesRequest.class, baseUrl, "/project/{project-slug}/pipeline/mine", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -242,7 +232,7 @@ public class Pipeline {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.ListMyPipelinesRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -250,7 +240,7 @@ public class Pipeline {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -288,7 +278,7 @@ public class Pipeline {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.ListPipelinesResponse listPipelines(DrevOps.CircleCi.models.operations.ListPipelinesRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(baseUrl, "/pipeline");
         
         HTTPRequest req = new HTTPRequest();
@@ -296,7 +286,7 @@ public class Pipeline {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.ListPipelinesRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -304,7 +294,7 @@ public class Pipeline {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -342,7 +332,7 @@ public class Pipeline {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.ListPipelinesForProjectResponse listPipelinesForProject(DrevOps.CircleCi.models.operations.ListPipelinesForProjectRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ListPipelinesForProjectRequest.class, baseUrl, "/project/{project-slug}/pipeline", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -350,7 +340,7 @@ public class Pipeline {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.ListPipelinesForProjectRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -358,7 +348,7 @@ public class Pipeline {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -396,7 +386,7 @@ public class Pipeline {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.ListWorkflowsByPipelineIdResponse listWorkflowsByPipelineId(DrevOps.CircleCi.models.operations.ListWorkflowsByPipelineIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ListWorkflowsByPipelineIdRequest.class, baseUrl, "/pipeline/{pipeline-id}/workflow", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -404,7 +394,7 @@ public class Pipeline {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.ListWorkflowsByPipelineIdRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -412,7 +402,7 @@ public class Pipeline {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -450,7 +440,7 @@ public class Pipeline {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.TriggerPipelineResponse triggerPipeline(DrevOps.CircleCi.models.operations.TriggerPipelineRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.TriggerPipelineRequest.class, baseUrl, "/project/{project-slug}/pipeline", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -460,9 +450,9 @@ public class Pipeline {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 

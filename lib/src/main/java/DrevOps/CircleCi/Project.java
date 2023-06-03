@@ -15,20 +15,10 @@ import java.time.OffsetDateTime;
 
 public class Project {
 	
-	private HTTPClient _defaultClient;
-	private HTTPClient _securityClient;
-	private String _serverUrl;
-	private String _language;
-	private String _sdkVersion;
-	private String _genVersion;
+	private SDKConfiguration sdkConfiguration;
 
-	public Project(HTTPClient defaultClient, HTTPClient securityClient, String serverUrl, String language, String sdkVersion, String genVersion) {
-		this._defaultClient = defaultClient;
-		this._securityClient = securityClient;
-		this._serverUrl = serverUrl;
-		this._language = language;
-		this._sdkVersion = sdkVersion;
-		this._genVersion = genVersion;
+	public Project(SDKConfiguration sdkConfiguration) {
+		this.sdkConfiguration = sdkConfiguration;
 	}
 
     /**
@@ -39,7 +29,7 @@ public class Project {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.CreateCheckoutKeyResponse createCheckoutKey(DrevOps.CircleCi.models.operations.CreateCheckoutKeyRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.CreateCheckoutKeyRequest.class, baseUrl, "/project/{project-slug}/checkout-key", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -49,9 +39,9 @@ public class Project {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -89,7 +79,7 @@ public class Project {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.CreateEnvVarResponse createEnvVar(DrevOps.CircleCi.models.operations.CreateEnvVarRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.CreateEnvVarRequest.class, baseUrl, "/project/{project-slug}/envvar", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -99,9 +89,9 @@ public class Project {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -139,7 +129,7 @@ public class Project {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.DeleteCheckoutKeyResponse deleteCheckoutKey(DrevOps.CircleCi.models.operations.DeleteCheckoutKeyRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.DeleteCheckoutKeyRequest.class, baseUrl, "/project/{project-slug}/checkout-key/{fingerprint}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -147,9 +137,9 @@ public class Project {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -187,7 +177,7 @@ public class Project {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.DeleteEnvVarResponse deleteEnvVar(DrevOps.CircleCi.models.operations.DeleteEnvVarRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.DeleteEnvVarRequest.class, baseUrl, "/project/{project-slug}/envvar/{name}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -195,9 +185,9 @@ public class Project {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -235,7 +225,7 @@ public class Project {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetCheckoutKeyResponse getCheckoutKey(DrevOps.CircleCi.models.operations.GetCheckoutKeyRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetCheckoutKeyRequest.class, baseUrl, "/project/{project-slug}/checkout-key/{fingerprint}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -243,9 +233,9 @@ public class Project {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -283,7 +273,7 @@ public class Project {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetEnvVarResponse getEnvVar(DrevOps.CircleCi.models.operations.GetEnvVarRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetEnvVarRequest.class, baseUrl, "/project/{project-slug}/envvar/{name}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -291,9 +281,9 @@ public class Project {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -331,7 +321,7 @@ public class Project {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetProjectBySlugResponse getProjectBySlug(DrevOps.CircleCi.models.operations.GetProjectBySlugRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetProjectBySlugRequest.class, baseUrl, "/project/{project-slug}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -339,9 +329,9 @@ public class Project {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -379,7 +369,7 @@ public class Project {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.ListCheckoutKeysResponse listCheckoutKeys(DrevOps.CircleCi.models.operations.ListCheckoutKeysRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ListCheckoutKeysRequest.class, baseUrl, "/project/{project-slug}/checkout-key", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -387,9 +377,9 @@ public class Project {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -427,7 +417,7 @@ public class Project {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.ListEnvVarsResponse listEnvVars(DrevOps.CircleCi.models.operations.ListEnvVarsRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ListEnvVarsRequest.class, baseUrl, "/project/{project-slug}/envvar", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -435,9 +425,9 @@ public class Project {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 

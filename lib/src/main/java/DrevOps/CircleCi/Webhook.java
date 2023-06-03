@@ -16,20 +16,10 @@ import org.apache.http.NameValuePair;
 
 public class Webhook {
 	
-	private HTTPClient _defaultClient;
-	private HTTPClient _securityClient;
-	private String _serverUrl;
-	private String _language;
-	private String _sdkVersion;
-	private String _genVersion;
+	private SDKConfiguration sdkConfiguration;
 
-	public Webhook(HTTPClient defaultClient, HTTPClient securityClient, String serverUrl, String language, String sdkVersion, String genVersion) {
-		this._defaultClient = defaultClient;
-		this._securityClient = securityClient;
-		this._serverUrl = serverUrl;
-		this._language = language;
-		this._sdkVersion = sdkVersion;
-		this._genVersion = genVersion;
+	public Webhook(SDKConfiguration sdkConfiguration) {
+		this.sdkConfiguration = sdkConfiguration;
 	}
 
     /**
@@ -39,7 +29,7 @@ public class Webhook {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.CreateWebhookResponse createWebhook(DrevOps.CircleCi.models.operations.CreateWebhookRequestBody request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(baseUrl, "/webhook");
         
         HTTPRequest req = new HTTPRequest();
@@ -49,9 +39,9 @@ public class Webhook {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -88,7 +78,7 @@ public class Webhook {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.DeleteWebhookResponse deleteWebhook(DrevOps.CircleCi.models.operations.DeleteWebhookRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.DeleteWebhookRequest.class, baseUrl, "/webhook/{webhook-id}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -96,9 +86,9 @@ public class Webhook {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -136,7 +126,7 @@ public class Webhook {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetWebhookByIdResponse getWebhookById(DrevOps.CircleCi.models.operations.GetWebhookByIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetWebhookByIdRequest.class, baseUrl, "/webhook/{webhook-id}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -144,9 +134,9 @@ public class Webhook {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -184,7 +174,7 @@ public class Webhook {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetWebhooksResponse getWebhooks(DrevOps.CircleCi.models.operations.GetWebhooksRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(baseUrl, "/webhook");
         
         HTTPRequest req = new HTTPRequest();
@@ -192,7 +182,7 @@ public class Webhook {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetWebhooksRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -200,7 +190,7 @@ public class Webhook {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -237,7 +227,7 @@ public class Webhook {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.UpdateWebhookResponse updateWebhook(DrevOps.CircleCi.models.operations.UpdateWebhookRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.UpdateWebhookRequest.class, baseUrl, "/webhook/{webhook-id}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -247,9 +237,9 @@ public class Webhook {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 

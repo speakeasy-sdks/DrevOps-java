@@ -16,20 +16,10 @@ import org.apache.http.NameValuePair;
 
 public class Schedule {
 	
-	private HTTPClient _defaultClient;
-	private HTTPClient _securityClient;
-	private String _serverUrl;
-	private String _language;
-	private String _sdkVersion;
-	private String _genVersion;
+	private SDKConfiguration sdkConfiguration;
 
-	public Schedule(HTTPClient defaultClient, HTTPClient securityClient, String serverUrl, String language, String sdkVersion, String genVersion) {
-		this._defaultClient = defaultClient;
-		this._securityClient = securityClient;
-		this._serverUrl = serverUrl;
-		this._language = language;
-		this._sdkVersion = sdkVersion;
-		this._genVersion = genVersion;
+	public Schedule(SDKConfiguration sdkConfiguration) {
+		this.sdkConfiguration = sdkConfiguration;
 	}
 
     /**
@@ -40,7 +30,7 @@ public class Schedule {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.CreateScheduleResponse createSchedule(DrevOps.CircleCi.models.operations.CreateScheduleRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.CreateScheduleRequest.class, baseUrl, "/project/{project-slug}/schedule", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -50,9 +40,9 @@ public class Schedule {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -90,7 +80,7 @@ public class Schedule {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.DeleteScheduleByIdResponse deleteScheduleById(DrevOps.CircleCi.models.operations.DeleteScheduleByIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.DeleteScheduleByIdRequest.class, baseUrl, "/schedule/{schedule-id}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -98,9 +88,9 @@ public class Schedule {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -138,7 +128,7 @@ public class Schedule {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetScheduleByIdResponse getScheduleById(DrevOps.CircleCi.models.operations.GetScheduleByIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetScheduleByIdRequest.class, baseUrl, "/schedule/{schedule-id}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -146,9 +136,9 @@ public class Schedule {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -186,7 +176,7 @@ public class Schedule {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.ListSchedulesForProjectResponse listSchedulesForProject(DrevOps.CircleCi.models.operations.ListSchedulesForProjectRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ListSchedulesForProjectRequest.class, baseUrl, "/project/{project-slug}/schedule", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -194,7 +184,7 @@ public class Schedule {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.ListSchedulesForProjectRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -202,7 +192,7 @@ public class Schedule {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -240,7 +230,7 @@ public class Schedule {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.UpdateScheduleResponse updateSchedule(DrevOps.CircleCi.models.operations.UpdateScheduleRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.UpdateScheduleRequest.class, baseUrl, "/schedule/{schedule-id}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -250,9 +240,9 @@ public class Schedule {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 

@@ -14,20 +14,10 @@ import org.apache.http.NameValuePair;
 
 public class Insights {
 	
-	private HTTPClient _defaultClient;
-	private HTTPClient _securityClient;
-	private String _serverUrl;
-	private String _language;
-	private String _sdkVersion;
-	private String _genVersion;
+	private SDKConfiguration sdkConfiguration;
 
-	public Insights(HTTPClient defaultClient, HTTPClient securityClient, String serverUrl, String language, String sdkVersion, String genVersion) {
-		this._defaultClient = defaultClient;
-		this._securityClient = securityClient;
-		this._serverUrl = serverUrl;
-		this._language = language;
-		this._sdkVersion = sdkVersion;
-		this._genVersion = genVersion;
+	public Insights(SDKConfiguration sdkConfiguration) {
+		this.sdkConfiguration = sdkConfiguration;
 	}
 
     /**
@@ -38,7 +28,7 @@ public class Insights {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetAllInsightsBranchesResponse getAllInsightsBranches(DrevOps.CircleCi.models.operations.GetAllInsightsBranchesRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetAllInsightsBranchesRequest.class, baseUrl, "/insights/{project-slug}/branches", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -46,7 +36,7 @@ public class Insights {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetAllInsightsBranchesRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -54,7 +44,7 @@ public class Insights {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -93,7 +83,7 @@ public class Insights {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetFlakyTestsResponse getFlakyTests(DrevOps.CircleCi.models.operations.GetFlakyTestsRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetFlakyTestsRequest.class, baseUrl, "/insights/{project-slug}/flaky-tests", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -101,9 +91,9 @@ public class Insights {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -141,7 +131,7 @@ public class Insights {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetJobTimeseriesResponse getJobTimeseries(DrevOps.CircleCi.models.operations.GetJobTimeseriesRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetJobTimeseriesRequest.class, baseUrl, "/insights/time-series/{project-slug}/workflows/{workflow-name}/jobs", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -149,7 +139,7 @@ public class Insights {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetJobTimeseriesRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -157,7 +147,7 @@ public class Insights {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -196,7 +186,7 @@ public class Insights {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetOrgSummaryDataResponse getOrgSummaryData(DrevOps.CircleCi.models.operations.GetOrgSummaryDataRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetOrgSummaryDataRequest.class, baseUrl, "/insights/{org-slug}/summary", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -204,7 +194,7 @@ public class Insights {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetOrgSummaryDataRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -212,7 +202,7 @@ public class Insights {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -250,7 +240,7 @@ public class Insights {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetProjectWorkflowJobMetricsResponse getProjectWorkflowJobMetrics(DrevOps.CircleCi.models.operations.GetProjectWorkflowJobMetricsRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetProjectWorkflowJobMetricsRequest.class, baseUrl, "/insights/{project-slug}/workflows/{workflow-name}/jobs", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -258,7 +248,7 @@ public class Insights {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetProjectWorkflowJobMetricsRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -266,7 +256,7 @@ public class Insights {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -304,7 +294,7 @@ public class Insights {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetProjectWorkflowMetricsResponse getProjectWorkflowMetrics(DrevOps.CircleCi.models.operations.GetProjectWorkflowMetricsRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetProjectWorkflowMetricsRequest.class, baseUrl, "/insights/{project-slug}/workflows", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -312,7 +302,7 @@ public class Insights {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetProjectWorkflowMetricsRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -320,7 +310,7 @@ public class Insights {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -358,7 +348,7 @@ public class Insights {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetProjectWorkflowRunsResponse getProjectWorkflowRuns(DrevOps.CircleCi.models.operations.GetProjectWorkflowRunsRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetProjectWorkflowRunsRequest.class, baseUrl, "/insights/{project-slug}/workflows/{workflow-name}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -366,7 +356,7 @@ public class Insights {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetProjectWorkflowRunsRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -374,7 +364,7 @@ public class Insights {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -412,7 +402,7 @@ public class Insights {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetProjectWorkflowTestMetricsResponse getProjectWorkflowTestMetrics(DrevOps.CircleCi.models.operations.GetProjectWorkflowTestMetricsRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetProjectWorkflowTestMetricsRequest.class, baseUrl, "/insights/{project-slug}/workflows/{workflow-name}/test-metrics", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -420,7 +410,7 @@ public class Insights {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetProjectWorkflowTestMetricsRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -428,7 +418,7 @@ public class Insights {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -469,7 +459,7 @@ public class Insights {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetProjectWorkflowsPageDataResponse getProjectWorkflowsPageData(DrevOps.CircleCi.models.operations.GetProjectWorkflowsPageDataRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetProjectWorkflowsPageDataRequest.class, baseUrl, "/insights/pages/{project-slug}/summary", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -477,7 +467,7 @@ public class Insights {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetProjectWorkflowsPageDataRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -485,7 +475,7 @@ public class Insights {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -523,7 +513,7 @@ public class Insights {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetWorkflowSummaryResponse getWorkflowSummary(DrevOps.CircleCi.models.operations.GetWorkflowSummaryRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetWorkflowSummaryRequest.class, baseUrl, "/insights/{project-slug}/workflows/{workflow-name}/summary", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -531,7 +521,7 @@ public class Insights {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.GetWorkflowSummaryRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -539,7 +529,7 @@ public class Insights {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 

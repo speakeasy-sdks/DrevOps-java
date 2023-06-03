@@ -15,20 +15,10 @@ import java.time.OffsetDateTime;
 
 public class Workflow {
 	
-	private HTTPClient _defaultClient;
-	private HTTPClient _securityClient;
-	private String _serverUrl;
-	private String _language;
-	private String _sdkVersion;
-	private String _genVersion;
+	private SDKConfiguration sdkConfiguration;
 
-	public Workflow(HTTPClient defaultClient, HTTPClient securityClient, String serverUrl, String language, String sdkVersion, String genVersion) {
-		this._defaultClient = defaultClient;
-		this._securityClient = securityClient;
-		this._serverUrl = serverUrl;
-		this._language = language;
-		this._sdkVersion = sdkVersion;
-		this._genVersion = genVersion;
+	public Workflow(SDKConfiguration sdkConfiguration) {
+		this.sdkConfiguration = sdkConfiguration;
 	}
 
     /**
@@ -39,7 +29,7 @@ public class Workflow {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.ApprovePendingApprovalJobByIdResponse approvePendingApprovalJobById(DrevOps.CircleCi.models.operations.ApprovePendingApprovalJobByIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ApprovePendingApprovalJobByIdRequest.class, baseUrl, "/workflow/{id}/approve/{approval_request_id}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -47,9 +37,9 @@ public class Workflow {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -87,7 +77,7 @@ public class Workflow {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.CancelWorkflowResponse cancelWorkflow(DrevOps.CircleCi.models.operations.CancelWorkflowRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.CancelWorkflowRequest.class, baseUrl, "/workflow/{id}/cancel", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -95,9 +85,9 @@ public class Workflow {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -135,7 +125,7 @@ public class Workflow {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetWorkflowByIdResponse getWorkflowById(DrevOps.CircleCi.models.operations.GetWorkflowByIdRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetWorkflowByIdRequest.class, baseUrl, "/workflow/{id}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -143,9 +133,9 @@ public class Workflow {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -183,7 +173,7 @@ public class Workflow {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.ListWorkflowJobsResponse listWorkflowJobs(DrevOps.CircleCi.models.operations.ListWorkflowJobsRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ListWorkflowJobsRequest.class, baseUrl, "/workflow/{id}/job", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -191,9 +181,9 @@ public class Workflow {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -231,7 +221,7 @@ public class Workflow {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.RerunWorkflowResponse rerunWorkflow(DrevOps.CircleCi.models.operations.RerunWorkflowRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.RerunWorkflowRequest.class, baseUrl, "/workflow/{id}/rerun", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -241,9 +231,9 @@ public class Workflow {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 

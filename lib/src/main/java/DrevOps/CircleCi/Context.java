@@ -16,20 +16,10 @@ import org.apache.http.NameValuePair;
 
 public class Context {
 	
-	private HTTPClient _defaultClient;
-	private HTTPClient _securityClient;
-	private String _serverUrl;
-	private String _language;
-	private String _sdkVersion;
-	private String _genVersion;
+	private SDKConfiguration sdkConfiguration;
 
-	public Context(HTTPClient defaultClient, HTTPClient securityClient, String serverUrl, String language, String sdkVersion, String genVersion) {
-		this._defaultClient = defaultClient;
-		this._securityClient = securityClient;
-		this._serverUrl = serverUrl;
-		this._language = language;
-		this._sdkVersion = sdkVersion;
-		this._genVersion = genVersion;
+	public Context(SDKConfiguration sdkConfiguration) {
+		this.sdkConfiguration = sdkConfiguration;
 	}
 
     /**
@@ -40,7 +30,7 @@ public class Context {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.AddEnvironmentVariableToContextResponse addEnvironmentVariableToContext(DrevOps.CircleCi.models.operations.AddEnvironmentVariableToContextRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.AddEnvironmentVariableToContextRequest.class, baseUrl, "/context/{context-id}/environment-variable/{env-var-name}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -50,9 +40,9 @@ public class Context {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -89,7 +79,7 @@ public class Context {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.CreateContextResponse createContext(DrevOps.CircleCi.models.operations.CreateContextRequestBody request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(baseUrl, "/context");
         
         HTTPRequest req = new HTTPRequest();
@@ -99,9 +89,9 @@ public class Context {
         req.setBody(serializedRequestBody);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -138,7 +128,7 @@ public class Context {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.DeleteContextResponse deleteContext(DrevOps.CircleCi.models.operations.DeleteContextRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.DeleteContextRequest.class, baseUrl, "/context/{context-id}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -146,9 +136,9 @@ public class Context {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -186,7 +176,7 @@ public class Context {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.DeleteEnvironmentVariableFromContextResponse deleteEnvironmentVariableFromContext(DrevOps.CircleCi.models.operations.DeleteEnvironmentVariableFromContextRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.DeleteEnvironmentVariableFromContextRequest.class, baseUrl, "/context/{context-id}/environment-variable/{env-var-name}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -194,9 +184,9 @@ public class Context {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -234,7 +224,7 @@ public class Context {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.GetContextResponse getContext(DrevOps.CircleCi.models.operations.GetContextRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.GetContextRequest.class, baseUrl, "/context/{context-id}", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -242,9 +232,9 @@ public class Context {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -282,7 +272,7 @@ public class Context {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.ListContextsResponse listContexts(DrevOps.CircleCi.models.operations.ListContextsRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(baseUrl, "/context");
         
         HTTPRequest req = new HTTPRequest();
@@ -290,7 +280,7 @@ public class Context {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.ListContextsRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -298,7 +288,7 @@ public class Context {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
@@ -336,7 +326,7 @@ public class Context {
      * @throws Exception if the API call fails
      */
     public DrevOps.CircleCi.models.operations.ListEnvironmentVariablesFromContextResponse listEnvironmentVariablesFromContext(DrevOps.CircleCi.models.operations.ListEnvironmentVariablesFromContextRequest request) throws Exception {
-        String baseUrl = this._serverUrl;
+        String baseUrl = this.sdkConfiguration.serverUrl;
         String url = DrevOps.CircleCi.utils.Utils.generateURL(DrevOps.CircleCi.models.operations.ListEnvironmentVariablesFromContextRequest.class, baseUrl, "/context/{context-id}/environment-variable", request, null);
         
         HTTPRequest req = new HTTPRequest();
@@ -344,7 +334,7 @@ public class Context {
         req.setURL(url);
 
         req.addHeader("Accept", "application/json;q=1, application/json;q=0");
-        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
+        req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this.sdkConfiguration.language, this.sdkConfiguration.sdkVersion, this.sdkConfiguration.genVersion));
         java.util.List<NameValuePair> queryParams = DrevOps.CircleCi.utils.Utils.getQueryParams(DrevOps.CircleCi.models.operations.ListEnvironmentVariablesFromContextRequest.class, request, null);
         if (queryParams != null) {
             for (NameValuePair queryParam : queryParams) {
@@ -352,7 +342,7 @@ public class Context {
             }
         }
         
-        HTTPClient client = this._securityClient;
+        HTTPClient client = this.sdkConfiguration.securityClient;
         
         HttpResponse<byte[]> httpRes = client.send(req);
 
