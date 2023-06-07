@@ -8,7 +8,7 @@ import DrevOps.CircleCi.utils.HTTPClient;
 import DrevOps.CircleCi.utils.SpeakeasyHTTPClient;
 
 /**
- * This describes the resources that make up the CircleCI API v2.
+ * CircleCI API: This describes the resources that make up the CircleCI API v2.
  * 
  * # Authentication
  * 
