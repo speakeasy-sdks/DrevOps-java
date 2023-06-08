@@ -32,7 +32,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security() {{
-                    apiKeyHeader = "YOUR_API_KEY_HERE";
+                    apiKeyHeader = "";
                 }})
                 .build();
 
@@ -72,7 +72,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security() {{
-                    apiKeyHeader = "YOUR_API_KEY_HERE";
+                    apiKeyHeader = "";
                 }})
                 .build();
 
@@ -111,7 +111,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security() {{
-                    apiKeyHeader = "YOUR_API_KEY_HERE";
+                    apiKeyHeader = "";
                 }})
                 .build();
 
@@ -155,7 +155,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security() {{
-                    apiKeyHeader = "YOUR_API_KEY_HERE";
+                    apiKeyHeader = "";
                 }})
                 .build();
 
@@ -198,7 +198,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security() {{
-                    apiKeyHeader = "YOUR_API_KEY_HERE";
+                    apiKeyHeader = "";
                 }})
                 .build();
 
@@ -241,7 +241,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security() {{
-                    apiKeyHeader = "YOUR_API_KEY_HERE";
+                    apiKeyHeader = "";
                 }})
                 .build();
 
@@ -284,7 +284,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security() {{
-                    apiKeyHeader = "YOUR_API_KEY_HERE";
+                    apiKeyHeader = "";
                 }})
                 .build();
 
@@ -327,7 +327,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security() {{
-                    apiKeyHeader = "YOUR_API_KEY_HERE";
+                    apiKeyHeader = "";
                 }})
                 .build();
 
@@ -371,7 +371,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security() {{
-                    apiKeyHeader = "YOUR_API_KEY_HERE";
+                    apiKeyHeader = "";
                 }})
                 .build();
 
@@ -416,7 +416,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security() {{
-                    apiKeyHeader = "YOUR_API_KEY_HERE";
+                    apiKeyHeader = "";
                 }})
                 .build();
 

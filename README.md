@@ -6,7 +6,7 @@
 ### Gradle
 
 ```groovy
-implementation 'DrevOps.CircleCi:CircleCi:1.10.1'
+implementation 'DrevOps.CircleCi:CircleCi:1.11.0'
 ```
 <!-- End SDK Installation -->
 
@@ -26,7 +26,7 @@ public class Application {
         try {
             SDK sdk = SDK.builder()
                 .setSecurity(new Security() {{
-                    apiKeyHeader = "YOUR_API_KEY_HERE";
+                    apiKeyHeader = "";
                 }})
                 .build();
 
