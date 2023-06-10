@@ -23,9 +23,9 @@ public class GetOrgSummaryDataRequest {
      * List of project names.
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=project-names")
-    public java.util.Map<String, Object> projectNames;
+    public GetOrgSummaryDataProjectNames projectNames;
 
-    public GetOrgSummaryDataRequest withProjectNames(java.util.Map<String, Object> projectNames) {
+    public GetOrgSummaryDataRequest withProjectNames(GetOrgSummaryDataProjectNames projectNames) {
         this.projectNames = projectNames;
         return this;
     }

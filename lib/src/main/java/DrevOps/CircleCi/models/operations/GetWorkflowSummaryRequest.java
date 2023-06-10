@@ -23,9 +23,9 @@ public class GetWorkflowSummaryRequest {
      * The names of VCS branches to include in branch-level workflow metrics.
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=branches")
-    public java.util.Map<String, Object> branches;
+    public GetWorkflowSummaryBranches branches;
 
-    public GetWorkflowSummaryRequest withBranches(java.util.Map<String, Object> branches) {
+    public GetWorkflowSummaryRequest withBranches(GetWorkflowSummaryBranches branches) {
         this.branches = branches;
         return this;
     }

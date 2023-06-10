@@ -1,0 +1,9 @@
+# GetPipelineByNumberRequest
+
+
+## Fields
+
+| Field                                                                                          | Type                                                                                           | Required                                                                                       | Description                                                                                    |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `pipelineNumber`                                                                               | *Object*                                                                                       | :heavy_check_mark:                                                                             | The number of the pipeline.                                                                    |
+| `projectSlug`                                                                                  | *String*                                                                                       | :heavy_check_mark:                                                                             | Project slug in the form `vcs-slug/org-name/repo-name`. The `/` characters may be URL-escaped. |

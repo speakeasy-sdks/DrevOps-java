@@ -12,9 +12,9 @@ public class GetProjectWorkflowsPageDataRequest {
      * The names of VCS branches to include in branch-level workflow metrics.
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=branches")
-    public java.util.Map<String, Object> branches;
+    public GetProjectWorkflowsPageDataBranches branches;
 
-    public GetProjectWorkflowsPageDataRequest withBranches(java.util.Map<String, Object> branches) {
+    public GetProjectWorkflowsPageDataRequest withBranches(GetProjectWorkflowsPageDataBranches branches) {
         this.branches = branches;
         return this;
     }
@@ -45,9 +45,9 @@ public class GetProjectWorkflowsPageDataRequest {
      * The names of workflows to include in workflow-level metrics.
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=workflow-names")
-    public java.util.Map<String, Object> workflowNames;
+    public GetProjectWorkflowsPageDataWorkflowNames workflowNames;
 
-    public GetProjectWorkflowsPageDataRequest withWorkflowNames(java.util.Map<String, Object> workflowNames) {
+    public GetProjectWorkflowsPageDataRequest withWorkflowNames(GetProjectWorkflowsPageDataWorkflowNames workflowNames) {
         this.workflowNames = workflowNames;
         return this;
     }
